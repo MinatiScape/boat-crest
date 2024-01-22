@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:gravity="end|center_vertical" android:id="@+id/date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="10dp"/>
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/rankChart" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/toppersRecyclerview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textColor="@color/black_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/no_data_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_data_available"/>
+    </LinearLayout>
+</LinearLayout>

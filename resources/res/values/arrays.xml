@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="WheelArrayDefault">
+        <item>AigeStudio</item>
+        <item>Aige</item>
+        <item>爱哥</item>
+        <item>الحب  اخي</item>
+        <item>jeg elsker</item>
+        <item>사랑해요 형</item>
+        <item>Amor de irmão</item>
+        <item>armastan</item>
+        <item>愛の兄</item>
+        <item>обичам те</item>
+        <item>любовь - братa</item>
+        <item>miłość bracie</item>
+        <item>Liebe</item>
+        <item>Lamour</item>
+        <item>rakastan sinua</item>
+        <item>láska..</item>
+        <item>dragostea.</item>
+        <item>jag älskar</item>
+        <item>ljubezen, brat.</item>
+        <item>愛哥</item>
+        <item>ชอบพี่</item>
+        <item>αγάπη μου</item>
+        <item>a szerelem.</item>
+        <item>Amore, fratello.</item>
+    </array>
+    <array name="WheelArrayWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </array>
+    <array name="activity_modes">
+        <item>Walk</item>
+        <item>Run</item>
+    </array>
+    <array name="app_name_list">
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Gmail</item>
+        <item>Telegram</item>
+        <item>Skype</item>
+    </array>
+    <array name="app_name_list_1790">
+        <item>WeChat</item>
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>Messenger</item>
+    </array>
+    <array name="app_name_list_1860">
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>Telegram</item>
+        <item>LinkedIn</item>
+    </array>
+    <array name="app_name_list_1963">
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>Telegram</item>
+        <item>LinkedIn</item>
+    </array>
+    <array name="app_name_list_ca">
+        <item>Facebook</item>
+        <item>Gmail</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>LinkedIn</item>
+        <item>Telegram</item>
+    </array>
+    <array name="app_name_list_cy">
+        <item>Facebook</item>
+        <item>Gmail</item>
+        <item>Instagram</item>
+        <item>LinkedIn</item>
+        <item>Skype</item>
+        <item>Snapchat</item>
+        <item>Telegram</item>
+        <item>Twitter</item>
+        <item>WhatsApp</item>
+        <item>YouTube</item>
+    </array>
+    <array name="app_name_list_eastapex">
+        <item>Facebook</item>
+        <item>Calendar</item>
+        <item>Gmail</item>
+        <item>Messenger</item>
+        <item>Outlook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>LinkedIn</item>
+        <item>Telegram</item>
+        <item>Snapchat</item>
+        <item>Yahoo</item>
+        <item>Youtube</item>
+    </array>
+    <array name="app_name_list_ido">
+        <item>Facebook</item>
+        <item>Calendar</item>
+        <item>Gmail</item>
+        <item>Messenger</item>
+        <item>Outlook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>LinkedIn</item>
+        <item>Telegram</item>
+        <item>Snapchat</item>
+        <item>Yahoo</item>
+        <item>Youtube</item>
+        <item>Whatsapp Bussiness</item>
+    </array>
+    <array name="app_name_list_matrix">
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>Telegram</item>
+        <item>LinkedIn</item>
+        <item>Gmail</item>
+    </array>
+    <array name="app_name_list_moyang">
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>qq</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>Line</item>
+        <item>Telegram</item>
+        <item>LinkedIn</item>
+        <item>Gmail</item>
+    </array>
+    <array name="app_name_list_moyang_gpf5">
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>qq</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>Line</item>
+        <item>Telegram</item>
+        <item>LinkedIn</item>
+        <item>Gmail</item>
+    </array>
+    <array name="app_name_list_sma_f2">
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>Telegram</item>
+        <item>LinkedIn</item>
+        <item>Gmail</item>
+    </array>
+    <array name="app_name_list_touch">
+        <item>Facebook</item>
+        <item>Calendar</item>
+        <item>Gmail</item>
+        <item>Messenger</item>
+        <item>Outlook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>LinkedIn</item>
+        <item>Telegram</item>
+        <item>Snapchat</item>
+        <item>Yahoo</item>
+        <item>Youtube</item>
+    </array>
+    <array name="app_package_list">
+        <item>com.facebook.katana</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.google.android.gm</item>
+        <item>org.telegram.messenger</item>
+        <item>com.skype.raider</item>
+    </array>
+    <array name="app_package_list_1790">
+        <item>com.tencent.mm</item>
+        <item>com.facebook.katana</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>com.facebook.orca</item>
+    </array>
+    <array name="app_package_list_1860">
+        <item>com.facebook.katana</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>org.telegram.messenger</item>
+        <item>com.linkedin.android</item>
+    </array>
+    <array name="app_package_list_1963">
+        <item>com.facebook.katana</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>org.telegram.messenger</item>
+        <item>com.linkedin.android</item>
+    </array>
+    <array name="app_package_list_ca">
+        <item>com.facebook.katana</item>
+        <item>com.google.android.gm</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>com.linkedin.android</item>
+        <item>org.telegram.messenger</item>
+    </array>
+    <array name="app_package_list_cy">
+        <item>com.facebook.katana</item>
+        <item>com.google.android.gm</item>
+        <item>com.instagram.android</item>
+        <item>com.linkedin.android</item>
+        <item>com.skype.raider</item>
+        <item>com.snapchat.android</item>
+        <item>org.telegram.messenger</item>
+        <item>com.twitter.android</item>
+        <item>com.whatsapp</item>
+        <item>com.google.android.youtube</item>
+    </array>
+    <array name="app_package_list_eastapex">
+        <item>com.facebook.katana</item>
+        <item>com.google.android.calendar</item>
+        <item>com.google.android.gm</item>
+        <item>com.facebook.orca</item>
+        <item>com.microsoft.office.outlook</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>com.linkedin.android</item>
+        <item>org.telegram.messenger</item>
+        <item>com.snapchat.android</item>
+        <item>com.yahoo.mobile.client.android.mail</item>
+        <item>com.google.android.youtube</item>
+    </array>
+    <array name="app_package_list_ido">
+        <item>com.facebook.katana</item>
+        <item>com.google.android.calendar</item>
+        <item>com.google.android.gm</item>
+        <item>com.facebook.orca</item>
+        <item>com.microsoft.office.outlook</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>com.linkedin.android</item>
+        <item>org.telegram.messenger</item>
+        <item>com.snapchat.android</item>
+        <item>com.yahoo.mobile.client.android.mail</item>
+        <item>com.google.android.youtube</item>
+        <item>com.whatsapp.w4b</item>
+    </array>
+    <array name="app_package_list_matrix">
+        <item>com.facebook.katana</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>org.telegram.messenger</item>
+        <item>com.linkedin.android</item>
+        <item>com.google.android.gm</item>
+    </array>
+    <array name="app_package_list_moyang">
+        <item>com.facebook.katana</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>jp.naver.line.android</item>
+        <item>org.telegram.messenger</item>
+        <item>com.linkedin.android</item>
+        <item>com.google.android.gm</item>
+    </array>
+    <array name="app_package_list_moyang_gpf5">
+        <item>com.facebook.katana</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>jp.naver.line.android</item>
+        <item>org.telegram.messenger</item>
+        <item>com.linkedin.android</item>
+        <item>com.google.android.gm</item>
+    </array>
+    <array name="app_package_list_sma_f2">
+        <item>com.facebook.katana</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>org.telegram.messenger</item>
+        <item>com.linkedin.android</item>
+        <item>com.google.android.gm</item>
+    </array>
+    <array name="app_package_list_touch">
+        <item>com.facebook.katana</item>
+        <item>com.google.android.calendar</item>
+        <item>com.google.android.gm</item>
+        <item>com.facebook.orca</item>
+        <item>com.microsoft.office.outlook</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>com.linkedin.android</item>
+        <item>org.telegram.messenger</item>
+        <item>com.snapchat.android</item>
+        <item>com.yahoo.mobile.client.android.mail</item>
+        <item>com.google.android.youtube</item>
+    </array>
+    <array name="apps_array">
+        <item>Uber</item>
+        <item>Swiggy</item>
+    </array>
+    <array name="connection_error_code">
+        <item>@array/connection_error_code_0</item>
+        <item>@array/connection_error_code_1</item>
+        <item>@array/connection_error_code_2</item>
+        <item>@array/connection_error_code_3</item>
+        <item>@array/connection_error_code_4</item>
+        <item>@array/connection_error_code_5</item>
+        <item>@array/connection_error_code_6</item>
+    </array>
+    <array name="connection_error_code_0">
+        <item>0</item>
+        <item>Establish connection failed</item>
+        <item>1. Remote User Terminated Connection(HCI_Disconnect, 0x0406)</item>
+    </array>
+    <array name="connection_error_code_1">
+        <item>1</item>
+        <item>GATT_DISCOVERY_FAIL</item>
+        <item>1. discovery gatt service failed</item>
+    </array>
+    <array name="connection_error_code_2">
+        <item>2</item>
+        <item>GET_SERVICE_FAIL</item>
+        <item>1. service not supported</item>
+    </array>
+    <array name="connection_error_code_3">
+        <item>3</item>
+        <item>OTA_SERVICE_LOSS</item>
+        <item>1. ota service loss</item>
+    </array>
+    <array name="connection_error_code_4">
+        <item>4</item>
+        <item>GET_CHARA_FAIL</item>
+        <item>1. get characteristic failed</item>
+    </array>
+    <array name="connection_error_code_5">
+        <item>5</item>
+        <item>READ_CHAR_ERROR</item>
+        <item>1. read characteristic failed</item>
+    </array>
+    <array name="connection_error_code_6">
+        <item>6</item>
+        <item>SPP_CONNECTION_FAIL</item>
+        <item>1. establish SPP connection failed</item>
+    </array>
+    <array name="country_isd_iso_code">
+        <item>65,SG</item>
+        <item>971,AE</item>
+        <item>91,IN</item>
+        <item>880,BD</item>
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,GB</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>256,UG</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>379,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </array>
+    <array name="country_isd_un_code">
+        <item>65,SGP</item>
+        <item>971,UAE</item>
+        <item>91,IND</item>
+        <item>880,BGD</item>
+        <item>93,AFG</item>
+        <item>355,ALB</item>
+        <item>213,DZA</item>
+        <item>376,AND</item>
+        <item>244,AGO</item>
+        <item>54,ARG</item>
+        <item>374,ARM</item>
+        <item>297,ABW</item>
+        <item>61,AUS</item>
+        <item>43,AUT</item>
+        <item>994,AZE</item>
+        <item>973,BHR</item>
+        <item>375,BLR</item>
+        <item>32,BEL</item>
+        <item>501,BLZ</item>
+        <item>229,BEN</item>
+        <item>975,BTN</item>
+        <item>591,BOL</item>
+        <item>387,BIH</item>
+        <item>267,BWA</item>
+        <item>55,BRA</item>
+        <item>673,BRN</item>
+        <item>359,BGR</item>
+        <item>226,BFA</item>
+        <item>95,MMR</item>
+        <item>257,BDI</item>
+        <item>855,KHM</item>
+        <item>237,CMR</item>
+        <item>1,CAN</item>
+        <item>238,CPV</item>
+        <item>236,CAF</item>
+        <item>235,TCD</item>
+        <item>56,CHL</item>
+        <item>86,CHN</item>
+        <item>61,CXR</item>
+        <item>61,CCK</item>
+        <item>57,COL</item>
+        <item>269,COM</item>
+        <item>242,COG</item>
+        <item>243,COD</item>
+        <item>682,COK</item>
+        <item>506,CRI</item>
+        <item>385,HRV</item>
+        <item>53,CUB</item>
+        <item>357,CYP</item>
+        <item>420,CZE</item>
+        <item>45,DNK</item>
+        <item>253,DJI</item>
+        <item>670,TLS</item>
+        <item>593,ECU</item>
+        <item>20,EGY</item>
+        <item>503,SLV</item>
+        <item>240,GNQ</item>
+        <item>291,ERI</item>
+        <item>372,EST</item>
+        <item>251,ETH</item>
+        <item>500,FLK</item>
+        <item>298,FRO</item>
+        <item>679,FJI</item>
+        <item>358,FIN</item>
+        <item>33,FRA</item>
+        <item>689,PYF</item>
+        <item>241,GAB</item>
+        <item>220,GMB</item>
+        <item>995,GEO</item>
+        <item>49,DEU</item>
+        <item>233,GHA</item>
+        <item>350,GIB</item>
+        <item>30,GRC</item>
+        <item>299,GRL</item>
+        <item>502,GTM</item>
+        <item>224,GIN</item>
+        <item>245,GNB</item>
+        <item>592,GUY</item>
+        <item>509,HTI</item>
+        <item>504,HND</item>
+        <item>852,HKG</item>
+        <item>36,HUN</item>
+        <item>62,IDN</item>
+        <item>98,IRN</item>
+        <item>964,IRQ</item>
+        <item>353,IRL</item>
+        <item>44,GBR</item>
+        <item>44,IMN</item>
+        <item>972,ISR</item>
+        <item>39,ITA</item>
+        <item>225,CIV</item>
+        <item>81,JPN</item>
+        <item>962,JOR</item>
+        <item>7,KAZ</item>
+        <item>254,KEN</item>
+        <item>686,KIR</item>
+        <item>965,KWT</item>
+        <item>996,KGZ</item>
+        <item>856,LAO</item>
+        <item>371,LVA</item>
+        <item>961,LBN</item>
+        <item>266,LSO</item>
+        <item>231,LBR</item>
+        <item>218,LBY</item>
+        <item>423,LIE</item>
+        <item>370,LTU</item>
+        <item>352,LUX</item>
+        <item>853,MAC</item>
+        <item>389,MKD</item>
+        <item>261,MDG</item>
+        <item>265,MWI</item>
+        <item>60,MYS</item>
+        <item>960,MDV</item>
+        <item>223,MLI</item>
+        <item>356,MLT</item>
+        <item>692,MHL</item>
+        <item>222,MRT</item>
+        <item>230,MUS</item>
+        <item>262,MYT</item>
+        <item>52,MEX</item>
+        <item>691,FSM</item>
+        <item>373,MDA</item>
+        <item>377,MCO</item>
+        <item>976,MNG</item>
+        <item>382,MNE</item>
+        <item>212,MAR</item>
+        <item>258,MOZ</item>
+        <item>264,NAM</item>
+        <item>674,NRU</item>
+        <item>977,NPL</item>
+        <item>31,NLD</item>
+        <item>599,ANT</item>
+        <item>687,NCL</item>
+        <item>64,NZL</item>
+        <item>505,NIC</item>
+        <item>227,NER</item>
+        <item>234,NGA</item>
+        <item>683,NIU</item>
+        <item>850,PRK</item>
+        <item>47,NOR</item>
+        <item>968,OMN</item>
+        <item>92,PAK</item>
+        <item>680,PLW</item>
+        <item>507,PAN</item>
+        <item>675,PNG</item>
+        <item>595,PRY</item>
+        <item>51,PER</item>
+        <item>63,PHL</item>
+        <item>870,PCN</item>
+        <item>48,POL</item>
+        <item>351,PRT</item>
+        <item>1,PRI</item>
+        <item>974,QAT</item>
+        <item>40,ROU</item>
+        <item>7,RUS</item>
+        <item>250,RWA</item>
+        <item>590,BLM</item>
+        <item>685,WSM</item>
+        <item>378,SMR</item>
+        <item>239,STP</item>
+        <item>966,SAU</item>
+        <item>221,SEN</item>
+        <item>381,SRB</item>
+        <item>248,SYC</item>
+        <item>232,SLE</item>
+        <item>421,SVK</item>
+        <item>386,SVN</item>
+        <item>677,SLB</item>
+        <item>252,SOM</item>
+        <item>27,ZAF</item>
+        <item>82,KOR</item>
+        <item>34,ESP</item>
+        <item>94,LKA</item>
+        <item>290,SHN</item>
+        <item>508,SPM</item>
+        <item>249,SDN</item>
+        <item>597,SUR</item>
+        <item>268,SWZ</item>
+        <item>46,SWE</item>
+        <item>41,CHE</item>
+        <item>963,SYR</item>
+        <item>886,TWN</item>
+        <item>992,TJK</item>
+        <item>255,TZA</item>
+        <item>66,THA</item>
+        <item>228,TGO</item>
+        <item>690,TKL</item>
+        <item>676,TON</item>
+        <item>216,TUN</item>
+        <item>90,TUR</item>
+        <item>993,TKM</item>
+        <item>688,TUV</item>
+        <item>256,UGA</item>
+        <item>380,UKR</item>
+        <item>598,URY</item>
+        <item>1,USA</item>
+        <item>998,UZB</item>
+        <item>678,VUT</item>
+        <item>379,VAT</item>
+        <item>58,VEN</item>
+        <item>84,VNM</item>
+        <item>681,WLF</item>
+        <item>967,YEM</item>
+        <item>260,ZMB</item>
+        <item>263,ZWE</item>
+    </array>
+    <array name="diagnosticHeaderArray">
+        <item>Charger Test</item>
+        <item>Display Test</item>
+        <item>Vibration Test</item>
+        <item>Button Test</item>
+        <item>Touchscreen Test</item>
+        <item>Sensor Test</item>
+    </array>
+    <array name="diagnosticSensorArray">
+        <item>Accelerometer Sensor Test</item>
+        <item>PPG Sensor Test</item>
+    </array>
+    <array name="error_code">
+        <item>@array/error_code_256</item>
+        <item>@array/error_code_257</item>
+        <item>@array/error_code_258</item>
+        <item>@array/error_code_259</item>
+        <item>@array/error_code_260</item>
+        <item>@array/error_code_261</item>
+        <item>@array/error_code_262</item>
+        <item>@array/error_code_263</item>
+        <item>@array/error_code_264</item>
+        <item>@array/error_code_265</item>
+        <item>@array/error_code_266</item>
+        <item>@array/error_code_267</item>
+        <item>@array/error_code_268</item>
+        <item>@array/error_code_269</item>
+        <item>@array/error_code_270</item>
+        <item>@array/error_code_271</item>
+        <item>@array/error_code_272</item>
+        <item>@array/error_code_273</item>
+        <item>@array/error_code_274</item>
+        <item>@array/error_code_275</item>
+        <item>@array/error_code_276</item>
+        <item>@array/error_code_277</item>
+        <item>@array/error_code_278</item>
+        <item>@array/error_code_279</item>
+        <item>@array/error_code_280</item>
+        <item>@array/error_code_281</item>
+        <item>@array/error_code_282</item>
+        <item>@array/error_code_283</item>
+        <item>@array/error_code_284</item>
+        <item>@array/error_code_514</item>
+        <item>@array/error_code_517</item>
+        <item>@array/error_code_520</item>
+        <item>@array/error_code_766</item>
+        <item>@array/error_code_767</item>
+        <item>@array/error_code_1027</item>
+        <item>@array/error_code_1028</item>
+        <item>@array/error_code_1037</item>
+        <item>@array/error_code_1153</item>
+        <item>@array/error_code_1157</item>
+        <item>@array/error_code_2110</item>
+        <item>@array/error_code_2177</item>
+        <item>@array/error_code_2181</item>
+        <item>@array/error_code_2305</item>
+        <item>@array/error_code_2048</item>
+        <item>@array/error_code_2056</item>
+        <item>@array/error_code_2067</item>
+        <item>@array/error_code_2088</item>
+        <item>@array/error_code_4112</item>
+        <item>@array/error_code_4113</item>
+        <item>@array/error_code_4114</item>
+        <item>@array/error_code_4128</item>
+    </array>
+    <array name="error_code_1027">
+        <item>1027</item>
+        <item>ERROR_WRITE_NOT_PERMIT</item>
+        <item>1. enable CCCD failed, please try to set getDfuConfig().addErrorAction(DfuConfig.ERROR_ACTION_REFRESH_DEVICE);</item>
+    </array>
+    <array name="error_code_1028">
+        <item>1028</item>
+        <item>GATT_INVALID_PDU</item>
+        <item>1. write command failed</item>
+    </array>
+    <array name="error_code_1037">
+        <item>1037</item>
+        <item>GATT_INVALID_ATTR_LEN</item>
+        <item>1. write command failed</item>
+    </array>
+    <array name="error_code_1153">
+        <item>1153</item>
+        <item>0x0081-GATT_INTERNAL_ERROR</item>
+        <item>0x0081-GATT_INTERNAL_ERROR</item>
+    </array>
+    <array name="error_code_1157">
+        <item>1157</item>
+        <item>GATT_ERROR</item>
+        <item>1. write command failed \n2. [Controller] Connection Timeout</item>
+    </array>
+    <array name="error_code_2048">
+        <item>2048</item>
+        <item>Connection disconnected</item>
+        <item>1. Gatt disconnection due to link disconnection exceptionally \n2. SPP connection error</item>
+    </array>
+    <array name="error_code_2056">
+        <item>2056</item>
+        <item>GATT_CONN_TIMEOUT</item>
+        <item>1. Gatt disconnection due to connect timeout</item>
+    </array>
+    <array name="error_code_2067">
+        <item>2067</item>
+        <item>0x13-GATT_CONN_TERMINATE_PEER_USER</item>
+        <item>1. 0x13-GATT_CONN_TERMINATE_PEER_USER</item>
+    </array>
+    <array name="error_code_2088">
+        <item>2088</item>
+        <item>GATT_CONN_TIMEOUT</item>
+        <item>1.connection timeout</item>
+    </array>
+    <array name="error_code_2110">
+        <item>2110</item>
+        <item>GATT_CONN_FAIL_ESTABLISH</item>
+        <item>1.connection fail to establish</item>
+    </array>
+    <array name="error_code_2177">
+        <item>2177</item>
+        <item>GATT_INTERNAL_ERROR</item>
+        <item>establish connection failed</item>
+    </array>
+    <array name="error_code_2181">
+        <item>2181</item>
+        <item>GATT_ERROR</item>
+        <item>establish connection failed</item>
+    </array>
+    <array name="error_code_2305">
+        <item>2305</item>
+        <item>Can’t register Client_if</item>
+        <item>1. Client if had be registered over</item>
+    </array>
+    <array name="error_code_256">
+        <item>256</item>
+        <item>Can’t connect the device enter OTA mode</item>
+        <item>1. Radio environment is extremely bad \n2. Android connect BLE device with BR/EDR channel \n3. Bluedroid exception</item>
+    </array>
+    <array name="error_code_257">
+        <item>257</item>
+        <item>IO error of read file</item>
+        <item>1. I/O error, the probability is very low</item>
+    </array>
+    <array name="error_code_258">
+        <item>258</item>
+        <item>Launch the GATT search service failure</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </array>
+    <array name="error_code_259">
+        <item>259</item>
+        <item>Invokes the Java synchronization lock exceptions</item>
+        <item>1. Java exception, the probability is very low</item>
+    </array>
+    <array name="error_code_260">
+        <item>260</item>
+        <item>Connect without any callback response</item>
+        <item>1. Probably other applications connection with the same device \n2. Bluedroid exception, the probability is very low</item>
+    </array>
+    <array name="error_code_261">
+        <item>261</item>
+        <item>Send command but no callback</item>
+        <item>1. Disconnect when send command \n2. If is Android4.4 system, get the error when half in upgrade, may be Bluedroid have GKI get buffer exception, please use the patch version up to 9377(The function of update connection parameters is added), or use the mobile phone above Android5.0</item>
+    </array>
+    <array name="error_code_262">
+        <item>262</item>
+        <item>Service mismatch</item>
+        <item>1. Connect error device, the probability is very low</item>
+    </array>
+    <array name="error_code_263">
+        <item>263</item>
+        <item>Characteristic mismatch</item>
+        <item>1. Connect error device, the probability is very low</item>
+    </array>
+    <array name="error_code_264">
+        <item>264</item>
+        <item>establish le connection failed</item>
+        <item>1. establish le connection failed</item>
+    </array>
+    <array name="error_code_265">
+        <item>265</item>
+        <item>0x0209--Can’t scan the device</item>
+        <item>1. Radio environment is extremely bad\n 2. Sent to the command of “entering OTA mode”, but can’t scan the device, the possible reasons is the device are not yet enter the OTA mode\n 3. [BLE] Please check if the positioning function is enabled</item>
+    </array>
+    <array name="error_code_266">
+        <item>266</item>
+        <item>Can’t enable notification</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </array>
+    <array name="error_code_267">
+        <item>267</item>
+        <item>write data error</item>
+        <item>1. connection lost when send data</item>
+    </array>
+    <array name="error_code_268">
+        <item>268</item>
+        <item>Resend time exceed max</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </array>
+    <array name="error_code_269">
+        <item>269</item>
+        <item>The battery is low</item>
+        <item>1. Remote device battery is low</item>
+    </array>
+    <array name="error_code_270">
+        <item>270</item>
+        <item>Read bank info error</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </array>
+    <array name="error_code_271">
+        <item>271</item>
+        <item>Read app info error</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </array>
+    <array name="error_code_272">
+        <item>272</item>
+        <item>Read patch info error</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </array>
+    <array name="error_code_273">
+        <item>273</item>
+        <item>Read image version failed</item>
+        <item>1. Read image version failed with no callback</item>
+    </array>
+    <array name="error_code_274">
+        <item>274</item>
+        <item>User didn’t avtive image update</item>
+        <item>1. Occur when user did’t active the image update in silent OTA update</item>
+    </array>
+    <array name="error_code_275">
+        <item>275</item>
+        <item>Buffer Check retry times exceed to MAX value</item>
+        <item>1. Occur a lot of error 517</item>
+    </array>
+    <array name="error_code_276">
+        <item>276</item>
+        <item>Request mtu failed</item>
+        <item>1. Request mtu failed with no callback</item>
+    </array>
+    <array name="error_code_277">
+        <item>277</item>
+        <item>read remote mac addr failed</item>
+        <item>1. read remote mac addr failed</item>
+    </array>
+    <array name="error_code_278">
+        <item>278</item>
+        <item>Version Check failed</item>
+        <item>1. image app version lower than remote \n2. image patch version lower than remote \n3. image patch extension version lower than remote</item>
+    </array>
+    <array name="error_code_279">
+        <item>279</item>
+        <item>send command failed</item>
+        <item>1. read characteristic failed</item>
+    </array>
+    <array name="error_code_280">
+        <item>280</item>
+        <item>enter ota mode failed</item>
+        <item>1. send command failed</item>
+    </array>
+    <array name="error_code_281">
+        <item>281</item>
+        <item>OTA Over SPP not supported</item>
+        <item>OTA Over SPP not supported</item>
+    </array>
+    <array name="error_code_282">
+        <item>282</item>
+        <item>RWS OTA NOT READY</item>
+        <item>RWS OTA NOT READY</item>
+    </array>
+    <array name="error_code_283">
+        <item>283</item>
+        <item>role swap failed</item>
+        <item>role swap failed</item>
+    </array>
+    <array name="error_code_284">
+        <item>284</item>
+        <item>enable buffer check failed</item>
+        <item>enable buffer check failed</item>
+    </array>
+    <array name="error_code_4112">
+        <item>4112</item>
+        <item>Invalid Bluetooth Address</item>
+        <item>1. Address is invalid</item>
+    </array>
+    <array name="error_code_4113">
+        <item>4113</item>
+        <item>Secret key invalid</item>
+        <item>1. Secret key invalid</item>
+    </array>
+    <array name="error_code_4114">
+        <item>4114</item>
+        <item>configuration invalid</item>
+        <item>1. configuration invalid</item>
+    </array>
+    <array name="error_code_4128">
+        <item>4128</item>
+        <item>aborted</item>
+        <item>1. aborted</item>
+    </array>
+    <array name="error_code_514">
+        <item>514</item>
+        <item>Invalid parameters</item>
+        <item>1. invalid parameters</item>
+    </array>
+    <array name="error_code_517">
+        <item>517</item>
+        <item>CRC Check failed</item>
+        <item>1. crc check failed(Packet lost, recommend to slow down) \n2. update connection params failed</item>
+    </array>
+    <array name="error_code_520">
+        <item>520</item>
+        <item>Flash erase error</item>
+        <item>1. Flash erase error</item>
+    </array>
+    <array name="error_code_766">
+        <item>766</item>
+        <item>opcode response not supported</item>
+        <item>1. opcode response not supported</item>
+    </array>
+    <array name="error_code_767">
+        <item>767</item>
+        <item>Didn’t receive remote notification</item>
+        <item>1. AES Mismatch \n2. May be the remote device have problems in config memory allocation</item>
+    </array>
+    <array name="fitness_home">
+        <item>@string/fitness</item>
+        <item>@string/vitals</item>
+    </array>
+    <array name="load_file_error_code">
+        <item>@array/load_file_error_code_4097</item>
+        <item>@array/load_file_error_code_4098</item>
+        <item>@array/load_file_error_code_4099</item>
+        <item>@array/load_file_error_code_4100</item>
+        <item>@array/load_file_error_code_4101</item>
+        <item>@array/load_file_error_code_4102</item>
+        <item>@array/load_file_error_code_4103</item>
+        <item>@array/load_file_error_code_4104</item>
+        <item>@array/load_file_error_code_4105</item>
+        <item>@array/load_file_error_code_4106</item>
+        <item>@array/load_file_error_code_4107</item>
+        <item>@array/load_file_error_code_4108</item>
+        <item>@array/load_file_error_code_4109</item>
+        <item>@array/load_file_error_code_4110</item>
+        <item>@array/load_file_error_code_4111</item>
+        <item>@array/load_file_error_code_4112</item>
+        <item>@array/load_file_error_code_4113</item>
+        <item>@array/load_file_error_code_4114</item>
+        <item>@array/load_file_error_code_4115</item>
+        <item>@array/load_file_error_code_4116</item>
+    </array>
+    <array name="load_file_error_code_4097">
+        <item>4097</item>
+        <item>load image file failed</item>
+        <item>1. load image file failed</item>
+    </array>
+    <array name="load_file_error_code_4098">
+        <item>4098</item>
+        <item>Image file path invalid</item>
+        <item>1. Image file path invalid</item>
+    </array>
+    <array name="load_file_error_code_4099">
+        <item>4099</item>
+        <item>file extension invalid</item>
+        <item>1. file extension invalid</item>
+    </array>
+    <array name="load_file_error_code_4100">
+        <item>4100</item>
+        <item>Image file not exist</item>
+        <item>1.Image file not exist</item>
+    </array>
+    <array name="load_file_error_code_4101">
+        <item>4101</item>
+        <item>ic type conflict</item>
+        <item>1. image is not match with ic</item>
+    </array>
+    <array name="load_file_error_code_4102">
+        <item>4102</item>
+        <item>file type conflict</item>
+        <item>1. unsupport file type</item>
+    </array>
+    <array name="load_file_error_code_4103">
+        <item>4103</item>
+        <item>file type conflict</item>
+        <item>1. not support combine pack file</item>
+    </array>
+    <array name="load_file_error_code_4104">
+        <item>4104</item>
+        <item>low image version</item>
+        <item>1. low image version</item>
+    </array>
+    <array name="load_file_error_code_4105">
+        <item>4105</item>
+        <item>no combine bud item exist.</item>
+        <item>1. no combine bud item exist.</item>
+    </array>
+    <array name="load_file_error_code_4106">
+        <item>4106</item>
+        <item>sub combined file must be a pack file.</item>
+        <item>1. sub combined file must be a pack file.</item>
+    </array>
+    <array name="load_file_error_code_4107">
+        <item>4107</item>
+        <item>not support pack file</item>
+        <item>1. not support pack file</item>
+    </array>
+    <array name="load_file_error_code_4108">
+        <item>4108</item>
+        <item>not support single file.</item>
+        <item>1. not support single file.</item>
+    </array>
+    <array name="load_file_error_code_4109">
+        <item>4109</item>
+        <item>section size check failed.</item>
+        <item>1. ota header section size check failed</item>
+    </array>
+    <array name="load_file_error_code_4110">
+        <item>4110</item>
+        <item>empty pack</item>
+        <item>1. pack file has no available update file</item>
+    </array>
+    <array name="load_file_error_code_4111">
+        <item>4111</item>
+        <item>not support dual bank</item>
+        <item>1. pack file not support dual bank</item>
+    </array>
+    <array name="load_file_error_code_4112">
+        <item>4112</item>
+        <item>not support OTA Header bin</item>
+        <item>1.non dualbank OTA not support OTA Header bin</item>
+    </array>
+    <array name="load_file_error_code_4113">
+        <item>4113</item>
+        <item>low image version</item>
+        <item>1.there must be at least one data image version &gt; active image version</item>
+    </array>
+    <array name="load_file_error_code_4114">
+        <item>4114</item>
+        <item>code image version low</item>
+        <item>1.all code image version must &gt;= active image version</item>
+    </array>
+    <array name="load_file_error_code_4115">
+        <item>4115</item>
+        <item>incomplete file</item>
+        <item>1.incomplete file, miss OTA Header</item>
+    </array>
+    <array name="load_file_error_code_4116">
+        <item>4116</item>
+        <item>Not support MP pack bin</item>
+        <item>1.pack for mp can not be OTA</item>
+    </array>
+    <array name="notify_me_list">
+        <item>On Time</item>
+        <item>5 min before</item>
+        <item>10 min before</item>
+        <item>15 min before</item>
+        <item>30 min before</item>
+    </array>
+    <array name="overall_stats">
+        <item>Batting</item>
+        <item>Bowling</item>
+    </array>
+    <array name="overall_stats_range">
+        <item>Last 6 months</item>
+        <item>Last 30 days</item>
+        <item>Last 7 days</item>
+    </array>
+    <array name="repeat_event_reminder_type">
+        <item>Once</item>
+        <item>Daily</item>
+        <item>Every Week</item>
+        <item>Monthly</item>
+        <item>Per Year</item>
+    </array>
+    <array name="repeat_schedule_reminder_type">
+        <item>At the time of event</item>
+        <item>5 Minutes before</item>
+        <item>15 Minutes before</item>
+        <item>30 Minutes before</item>
+        <item>1 Hour before</item>
+    </array>
+    <array name="sp02_method_info_sub_title_array">
+        <item>@string/enter_spo2_value_manually</item>
+        <item>@string/connect_bluetooth_ox_dev_to_get_spo2_reading</item>
+        <item>@string/scan_spo2_dev_capture_val</item>
+    </array>
+    <array name="sp02_method_info_title_array">
+        <item>@string/manual_entry</item>
+        <item>@string/bluetooth_device</item>
+        <item>@string/camera_scan</item>
+    </array>
+    <array name="sp02_method_sub_title_array">
+        <item>@string/update_spo2_manually</item>
+        <item>@string/connect_with_bluetooth_device</item>
+        <item>@string/use_camera_to_scan</item>
+    </array>
+    <array name="sp02_method_title_array">
+        <item>@string/manual_entry</item>
+        <item>@string/bluetooth_device</item>
+        <item>@string/camera_scan</item>
+    </array>
+    <array name="spo2_method_images_array">
+        <item>@drawable/ic_manual</item>
+        <item>?unknown_ref: 7f0804c0</item>
+        <item>@drawable/ic_scan</item>
+    </array>
+    <array name="spo2_method_info_images_array">
+        <item>@drawable/ic_manual</item>
+        <item>?unknown_ref: 7f0804c0</item>
+        <item>@drawable/ic_scan</item>
+    </array>
+    <array name="week_sun_sat">
+        <item>@string/cdrp_sun</item>
+        <item>@string/cdrp_mon</item>
+        <item>@string/cdrp_tue</item>
+        <item>@string/cdrp_wed</item>
+        <item>@string/cdrp_thu</item>
+        <item>@string/cdrp_fri</item>
+        <item>@string/cdrp_sat</item>
+    </array>
+</resources>

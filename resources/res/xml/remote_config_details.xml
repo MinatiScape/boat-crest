@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>shipbook_state
+        </key>
+        <value>ALL_ON
+        </value>
+    </entry>
+    <entry>
+        <key>cricket_filter
+        </key>
+        <value>true
+        </value>
+    </entry>
+    <entry>
+        <key>match_list_filter
+        </key>
+        <value>false
+        </value>
+    </entry>
+    <entry>
+        <key>onek_filter_android
+        </key>
+        <value>{&quot;device_models&quot;:[{&quot;name&quot;:&quot;XTEND\10            SPORT&quot;,&quot;type&quot;:&quot;WAVEPLUS&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;WAVEPLUS&quot;,&quot;XTENDSPORT&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;WAVEPRIME&quot;,&quot;type&quot;:&quot;WAVEPRIME&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;WAVEPRIME&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;STORMPRO&quot;,&quot;type&quot;:&quot;STORMPRO&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;COSMOS&quot;,&quot;STORMPRO&quot;],&quot;icon&quot;:&quot;&quot;}]}
+        </value>
+    </entry>
+    <entry>
+        <key>cricket_configuration
+        </key>
+        <value>{ &quot;supportedMatchFormats&quot;:[1,3,6,7,8], &quot;supportedTeams&quot;:[&quot;IND&quot;,&quot;IND-W&quot;],\10            &quot;supportedDomesticMatches&quot;:[&quot;IPL&quot;] } 
+        </value>
+    </entry>
+    <entry>
+        <key>custom_message_configuration
+        </key>
+        <value> {&quot;filterBy&quot;:&quot;CATEGORY&quot;,&quot;supported1kCategoriesForCustomMessage&quot;:[1,2,3,12,15,17],&quot;supported1kActivityCodeForCustomMessage&quot;:[&quot;1-60&quot;,&quot;2-40&quot;]} 
+        </value>
+    </entry>
+    <entry>
+        <key>device_filter_android
+        </key>
+        <value> {&quot;device_models&quot;:[{&quot;name&quot;:&quot;MERCURY&quot;,&quot;type&quot;:&quot;MERCURY&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;F2&quot;,&quot;MERCURY&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;VERTEX&quot;,&quot;type&quot;:&quot;VERTEX&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;VERTEX&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;WAVEPRO&quot;,&quot;type&quot;:&quot;WAVEPRO&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;C3_WA7V1&quot;,&quot;WAVEPRO&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;WAVEFIT&quot;,&quot;type&quot;:&quot;WAVEFIT&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;WAVEFIT&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;PRIMIA&quot;,&quot;type&quot;:&quot;PRIMIA&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;R9&quot;,&quot;PRIMIA&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;MATRIX&quot;,&quot;type&quot;:&quot;MATRIX&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;HLA07&quot;,&quot;MATRIX&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;XTEND\10            SPORT&quot;,&quot;type&quot;:&quot;WAVEPLUS&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;WAVEPLUS&quot;,&quot;XTENDSPORT&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;WAVEPRIME&quot;,&quot;type&quot;:&quot;WAVEPRIME&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;WAVEPRIME&quot;],&quot;icon&quot;:&quot;&quot;},{&quot;name&quot;:&quot;STORMPRO&quot;,&quot;type&quot;:&quot;STORMPRO&quot;,&quot;isRemoteFrameworkSupported&quot;:false,&quot;scanFilter&quot;:[&quot;COSMOS&quot;,&quot;STORMPRO&quot;],&quot;icon&quot;:&quot;&quot;}]}
+        </value>
+    </entry>
+    <entry>
+        <key>workout_videos_filter
+        </key>
+        <value>true
+        </value>
+    </entry>
+</defaultsMap>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/core_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_generic"/>
+    <ImageView android:id="@+id/onboarding_img2" android:layout_width="218dp" android:layout_height="209dp" android:layout_marginTop="27dp" android:src="0x7f080967" android:layout_below="@+id/toolbar" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/text_color_dark" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="74dp" android:text="@string/check_where_your_stand_by" android:layout_below="@+id/onboarding_img2" android:letterSpacing="0.06"/>
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_select_location" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginBottom="87dp" android:text="@string/title_activity_select_address" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ButtonThemeEnabled"/>
+</RelativeLayout>

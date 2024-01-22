@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="309" android:versionName="3.8.8" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.coveiot.android.boat" platformBuildVersionCode="33" platformBuildVersionName="13" xmlns:ns1="http://schemas.android.com/apk/distribution" ns1:requiredSplitTypes="base__abi,base__density" xmlns:ns2="http://schemas.android.com/apk/distribution" ns2:splitTypes="">
+    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="33"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="0x10000"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:maxSdkVersion="22"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:name="android.software.companion_device_setup" android:required="false"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE"/>
+    <uses-permission android:name="com.huawei.permission.external_app_settings.USE_COMPONENT"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.BODY_SENSORS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+    </queries>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <permission android:name="com.coveiot.android.boat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.coveiot.android.boat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher_new" android:name="com.coveiot.android.boat.GenericBandApplication" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="true" android:extractNativeLibs="false" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/ic_launcher_new_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:isSplitRequired="true">
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdatePS1" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.onboarding.paring.activities.ActivityQROnboardingFTU" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityCustomise4HButton" android:exported="true" android:screenOrientation="portrait"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="RZK-757-986Z"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="a5a-312"/>
+        <meta-data android:name="CLEVERTAP_BACKGROUND_SYNC" android:value="1"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="ic_stat_notification_icon_cove"/>
+        <receiver android:name="com.coveiot.android.leonardo.more.AppListLoaderReceiver" android:enabled="true" android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAddQRCode" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityContactusFeedback" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.rateus.ActivityRateUs" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAdditionalActivities" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateEastapex" android:exported="false" android:screenOrientation="portrait"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.coveiot.android.boat.androidx-startup">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.TroubleshootingActivityNew" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.TroubleshootingConnectivitySuccessActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFindMyWatch" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityWatchStatus" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityLinkedApplications" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.BatteryOptimizationInfoActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.permissioncheck.ActivityPermissionCheck" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.boatcoin.activities.ActivityBoatCoinsWebViewer" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/boatcoins"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.leonardo.boatcoin.activities.ActivityBoatCoinContacts" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.boatcoin.ftu.activities.ActivityBoatCoinsFTU" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityBatterySaverMode" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateKaHaApollo" android:exported="false" android:screenOrientation="portrait"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode_ui"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAutoStressSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAutoStressHRVSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareRestore" android:exported="false"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityMoreDeviceFeaturesNew" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.activities.ActivityBtCallingInfo" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityBTCalling" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.AddSyncedContactsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivitySyncContacts" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.theme.LocationPermissionActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityContactTracingSync" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.spo2.ActivitySp02FromRawPPG" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.WatchDiagnosticsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <receiver android:name="com.coveiot.android.leonardo.ReportingReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.coveiot.android.leonardo.locationbreach.LocationBreachSyncService" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.coveiot.android.leonardo.locationbreach.LocationBreachReceiver" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityConsentSetting" android:exported="false" android:screenOrientation="portrait"/>
+        <service android:name="com.coveiot.android.leonardo.threshold.KhAlertService" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.coveiot.android.leonardo.SyncCompleteReciever" android:enabled="true" android:exported="false"/>
+        <service android:name="com.coveiot.android.leonardo.probe.ReminderJobServiceJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.coveiot.mki.toolbox.ble.BleService" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.coveiot.android.leonardo.probe.ProbeBroadcastReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="probe_data_broadcast_intent"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/AppTheme_Dashboard" android:label="@string/app_name" android:name="com.coveiot.android.leonardo.dashboard.ActivityDashboardNew" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="BoatDashboardActivityIf"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.leonardo.onboarding.goal.activities.ActivityStepsGoal" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/app_name" android:name="com.coveiot.android.leonardo.onboarding.paring.activities.ActivityPairing" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.onboarding.phonevalidation.activities.ActivityReportIssue" android:exported="false" android:screenOrientation="portrait"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.coveiot.android.boat.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:theme="@style/Base.Theme.AppCompat" android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDRpOsbkTSWJ5V81yp_9Bcu10xEx_CyHrQ"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.coveiot.bleabstract.AppName" android:value="@string/app_name"/>
+        <meta-data android:name="com.coveiot.bleabstract.AppDesc" android:value="@string/app_desc"/>
+        <meta-data android:name="com.coveiot.bleabstract.EnableBPV7" android:value="false"/>
+        <meta-data android:name="com.coveiot.bleabstract.EnableActivitydetails_CZ2" android:value="true"/>
+        <meta-data android:name="com.coveiot.bleabstract.AppLauncherActivity" android:screenOrientation="portrait" android:value="BOAT_SPLASHf"/>
+        <meta-data android:name="com.coveiot.bleabstract.AppIcon" android:resource="@drawable/ic_stat_notification_icon_cove"/>
+        <meta-data android:name="com.coveiot.bleabstract.AppNotificationColor" android:resource="@color/colorPrimary"/>
+        <meta-data android:name="com.coveiot.coveaccess.ApiKey" android:value="bff9b6ecdb6a46b48b0b7511852f072b"/>
+        <meta-data android:name="com.coveiot.coveaccess.ClientId" android:value="@string/cove_client_id"/>
+        <meta-data android:name="com.coveiot.coveaccess.AppName" android:value="@string/cove_app_name"/>
+        <meta-data android:name="com.coveiot.coveaccess.TagId" android:value="@string/TAG_ID"/>
+        <meta-data android:name="com.coveiot.coveaccess.gateway.Apikey" android:value="qR643kvebf1ZRk7qUjNZj1xEpGYCFny3aCJzCbiQ"/>
+        <meta-data android:name="com.coveiot.coveaccess.gateway.Url" android:value="https://gateway.cove.kahaapi.com/"/>
+        <activity android:name="com.coveiot.android.leonardo.onboarding.phonevalidation.activities.ActivityChooseCountry" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.onboarding.phonevalidation.activities.ActivityPhoneValidation" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.coveiot.android.leonardo.onboarding.splash.activities.ActivitySplash" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="BOAT_SPLASHf"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.leonardo.websupport.ActivityInAppWebViewer" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.onboarding.profile.activities.ActivityProfile" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.spo2.activity.ActivitySpO2Measuring" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.activities.ActivityHeartRateHistory" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.activities.ActivityShareScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.activities.InfoActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityLanguageSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityStepsGoalSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivitySleepGoalSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityBandDisplay" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityBandSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityNotifications" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityHelpFeedback" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.googlefit.GoogleFitActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAboutUs" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityDisclaimer" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivitySedentaryReminder" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAboutYourDevice" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme" android:name="com.coveiot.android.leonardo.more.activities.ActivityEditProfile" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/AppTheme" android:name="com.coveiot.android.leonardo.more.activities.ActivityAutoHrSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAlarmNew" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdate" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityLiftWristToView" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.onboarding.ftu.ActivityFirstTimeUser" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityDoNotDisturb" android:exported="false" android:screenOrientation="portrait"/>
+        <service android:name="com.coveiot.android.leonardo.firebaseservices.service.CustomNotificationService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.coveiot.android.leonardo.googlefit.GoogleFitSyncService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.coveiot.android.leonardo.firebaseservices.service.FirebaseMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.coveiot.android.leonardo.firebaseservices.service.FirebaseInstanceIDService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.coveiot.android.leonardo.service.DfuService" android:exported="false"/>
+        <service android:name="com.coveiot.android.leonardo.service.SocialNotificationListenerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.coveiot.android.leonardo.firebaseservices.service.FirebaseMessagingService.OnClickListener" android:exported="false">
+            <intent-filter>
+                <action android:name="yes"/>
+                <action android:name="no"/>
+                <action android:name="maybe"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.coveiot.android.leonardo.phonelocator.PlayerService" android:exported="false"/>
+        <receiver android:name="com.coveiot.android.leonardo.phonelocator.PhoneFinderNotificationReciever" android:exported="false"/>
+        <receiver android:name="com.coveiot.android.leonardo.phonelocator.FindMyPhoneReceiver" android:permission="cove_find_my_phone_broadcast_permission" android:exported="false">
+            <intent-filter>
+                <action android:name="cove_find_my_phone_broadcast"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.coveiot.android.leonardo.onboarding.consent.ActivityConsent" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.TroubleshootConnectivityActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityTroubleshootnFAQ" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.threshold.ActivityAlertWebViewer" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateJStyle" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateSmaRealTek" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateSmaJL" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateKaHaRealTek" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityBpCalibration" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.spo2.activity.ActivitySPO2Measurement" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.spo2.activity.ActivitySPO2MethodInfo" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivitySportsType" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityShortcuts" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAutoRecognitionActivities" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityNotificationFeedBack" android:exported="false" android:screenOrientation="portrait"/>
+        <service android:name="com.coveiot.android.leonardo.probe.ReminderJobServiceJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.coveiot.android.leonardo.RebootReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/FullscreenTheme" android:name="com.coveiot.android.leonardo.remotecamera.CameraActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme" android:name="com.coveiot.android.leonardo.more.activities.ActivityAutoTemperatureSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.yalantis.ucrop.UCropActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <receiver android:name="com.coveiot.android.leonardo.utils.DeviceSettingsInfoReceiver" android:permission="device_settings_broadcast_permission" android:exported="false">
+            <intent-filter>
+                <action android:name="device_settings_broadcast"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coveiot.android.leonardo.utils.CallRejectReceiver" android:permission="call_reject_broadcast_permission" android:exported="false">
+            <intent-filter>
+                <action android:name="call_reject_broadcast"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coveiot.android.leonardo.utils.CallMuteReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="call_mute_broadcast"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityScheduleReminder" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityNudgesSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateMoyang" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityDrinkWaterReminder" android:exported="false" android:screenOrientation="portrait"/>
+        <receiver android:name="com.coveiot.android.leonardo.utils.MusicControlReceiver" android:permission="music_settings_broadcast_permission" android:exported="false">
+            <intent-filter>
+                <action android:name="music_settings_broadcast"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coveiot.android.leonardo.utils.MusicMetaDataReceiver" android:permission="music_settings_broadcast_permission" android:exported="false"/>
+        <receiver android:name="com.coveiot.android.leonardo.utils.FactoryResetReceiver" android:permission="factory_reset_broadcast_permission" android:exported="false">
+            <intent-filter>
+                <action android:name="factory_reset_broadcast"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coveiot.android.leonardo.utils.AgpsSuccessReceiver" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateMatrix" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <service android:name="com.realsil.sdk.dfu.DfuService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.coveiot.android.leonardo.quickreply.activity.ActivityManageQuickReply" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.quickreply.activity.ActivityQuickReplySettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAlarmSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityWorldClock" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityWorldClockCountrySelection" android:exported="false" android:screenOrientation="portrait"/>
+        <receiver android:name="com.coveiot.android.leonardo.utils.BluetoothClassicACLConnectionChangeReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateIDO" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.activities.ActivityAmbientSoundHistory" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAmbientSoundSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.dashboard.health.activities.AmbientSoundLevelInfoActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityExerciseMinutesGoalSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityCaloriesGoalSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityWalkHourGoalSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityAutoSPO2Settings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityEventReminder" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityFirmwareUpdateTouch" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityCameraSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <service android:name="org.eclipse.paho.android.service.MqttService" android:exported="false"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivityOverallStats" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivitySensAICompare" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivitySensAIFilter" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivitySensAIFTUNew" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivitySensAIHomeNew" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivitySensAIInfo" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivitySessionInsights" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivitySessionInsightsDetails" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivitySensAIDetails" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.sensai.activity.ActivitySensAIShareScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityDistanceGoalSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityProfileLanding" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.leonardo.more.activities.ActivityProfileGoals" android:exported="false" android:screenOrientation="portrait"/>
+        <receiver android:name="com.coveiot.android.leonardo.utils.LowBatteryReceiver" android:exported="false"/>
+        <receiver android:name="com.coveiot.android.leonardo.utils.NotifyNavigationEventReceiver" android:permission="cove_notify_navigation_event_broadcast_permission" android:exported="false">
+            <intent-filter>
+                <action android:name="cove_notify_navigation_event_broadcast"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coveiot.android.leonardo.utils.RequestNavigationEventReceiver" android:permission="cove_request_navigation_event_broadcast_permission" android:exported="false">
+            <intent-filter>
+                <action android:name="cove_request_navigation_event_broadcast_intent"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coveiot.android.leonardo.utils.SetNavigationInstructionsReceiver" android:permission="cove_request_navigation_feature_content_broadcast_permission" android:exported="false">
+            <intent-filter>
+                <action android:name="cove_request_navigation_feature_content_broadcast_intent"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coveiot.android.leonardo.utils.NavigationStatusReceiver" android:permission="cove_request_navigation_status_broadcast_permission" android:exported="false">
+            <intent-filter>
+                <action android:name="cove_request_navigation_status_broadcast_intent"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.coveiot.android.dashboard2.service.ProbeService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="true"/>
+        <activity android:name="com.coveiot.android.dashboard2.activity.ActivityEditHomeDashboardVitals" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.weather.weather.WeatherActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.femalewellness.activities.ActivityFemaleWellnessCalendarView" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.femalewellness.activities.ActivityFemaleWellnessFTU" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.femalewellness.activities.ActivityFemaleWellnessSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.femalewellness.activities.ActivityFemaleWellnessSymptoms" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.leaderboard.views.activities.ActivityStepsBadgeScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.leaderboard.views.activities.ActivityLevelBadgeScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.leaderboard.rankshare.activities.ActivityRankShare" android:exported="false" android:screenOrientation="portrait">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:theme="@style/NoActionBar" android:label="@string/my_achievement" android:name="com.coveiot.leaderboard.views.activities.LeaderBoardActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="ReflexLeaderboardIF"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_badges" android:name="com.coveiot.leaderboard.views.activities.AllBadgesActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_my_ranking" android:name="com.coveiot.leaderboard.views.activities.RankingHistoryActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <service android:name="com.coveiot.leaderboard.services.LeaderBoardApiIntentService" android:exported="false"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.coveiot.leaderboard.views.activities.LeaderBoardNotificationActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_my_ranking" android:name="com.coveiot.leaderboard.views.activities.RankingHistoryDetailsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.coveiot.leaderboard.views.activities.LeaderBoardOnboardingActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_select_address" android:name="com.coveiot.leaderboard.views.activities.SelectAddressActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_ranking" android:name="com.coveiot.leaderboard.views.activities.RankingActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FullscreenTheme" android:name="com.coveiot.leaderboard.views.activities.ActivityAchievementsHome" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FullscreenTheme" android:name="com.coveiot.leaderboard.views.activities.ActivityAddress" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FullscreenTheme" android:name="com.coveiot.leaderboard.views.activities.ActivityRanksFilter" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.fitnesschallenges.ActivityCreateChallenge" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.Uplift" android:name="com.coveiot.android.fitnesschallenges.ViewAllParticipantsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.fitnesschallenges.AddParticipantsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.fitnesschallenges.FitnessChallengesHome" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/challenges"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.fitnesschallenges.FitnessChallengeDetails" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/challenge/join"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.fitnesschallenges.ActivityViewAllParticipantsDetails" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.fitnesschallenges.ActivityRemoveParticipants" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.fitnesschallenges.ActivityViewLeaderboard" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.sos.ActivitySOS" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:path="/borrelly/sos"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.sos.ActivitySOSSettings" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:path="/borrelly/sos/ftu"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.fitnessbuddies.activities.AddBuddiesActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.fitnessbuddies.activities.FitnessBuddiesDashBoardActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/fitcrew"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.fitnessbuddies.activities.ActivityManageRequests" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.fitnessbuddies.activities.AddBuddiesActivityNew" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.fitnessbuddies.activities.ActivityBuddyDetails" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.sleepenergyscore.energymeter.activities.ActivityEnergyMeterHistory" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.sleepenergyscore.energymeter.activities.ActivityShare" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.weeklyreport.activities.ActivityWeeklyReportHistory" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.weeklyreport.activities.ActivityWeeklyReport" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/fitreport"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.weeklyreport.activities.ActivityReportIssue" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.respiratoryrate.activities.ActivityRespiratoryRateHistory" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.respiratoryrate.activities.ActivityRespiratoryRateShare" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.respiratoryrate.activities.ActivityRespiratoryRateSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.respiratoryrate.activities.ActivityRespiratoryRateInfo" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.navigation.activities.ActivityNavigationSearchPlaces" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.navigation.activities.ActivityNavigationShowRoute" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.navigation.activities.ActivityAddOrEditFavouriteLocation" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.navigation.activities.ActivityNavigationMain" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/mapnav"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.navigation.activities.ActivityDirections" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.navigation.activities.ActivityYourPlaces" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.navigation.activities.ActivityNavigationRecentHistory" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.navigation.activities.ActivityNavigationSettings" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.navigation.activities.ActivityNavigationFTU" android:exported="false" android:screenOrientation="portrait"/>
+        <service android:name="com.coveiot.android.navigation.services.CoveNavigationService" android:enabled="true" android:exported="true"/>
+        <service android:name="com.mappls.sdk.navigation.NavigationService" android:enabled="true" android:exported="false" android:stopWithTask="false" android:foregroundServiceType="location">
+            <intent-filter>
+                <action android:name="com.coveiot.android.boat.NavigationService"/>
+            </intent-filter>
+        </service>
+        <activity android:label="@string/title_activity_configure_settings" android:name="com.coveiot.android.permissionsandsettings.ConfigureSettingsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_configure_settings" android:name="com.coveiot.android.permissionsandsettings.AppConfigurationsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activity1k.OneKActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityWorkoutSession" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityWorkoutDetails" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityWorkoutHistory" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityWorkoutFeedback" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.Uplift" android:name="com.coveiot.android.activitymodes.activities.ActivityPlanDetails" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityWorkoutWebViewer" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityHistory" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityDataSummaryDetails" android:exported="false" android:screenOrientation="portrait"/>
+        <service android:name="com.coveiot.android.activitymodes.services.WorkoutSessionService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.HeartRateZoneInfoActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityInfo" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityModeShareScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.autodetection.activities.ActivityAutoRecognitionSettingsWithOneK" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.autodetection.activities.ActivityAutoRecognitionActivitiesWithOneK" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.autodetection.activities.ActivityAutoRecognitionActivitiesWithOneKDisclaimer" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.workoutVideos.activities.WorkoutVideosActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityPreparationPlan" android:exported="false" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.coveiot.android.activitymodes.workoutVideos.activities.YoutubePlayerNewActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity android:name="com.coveiot.android.activitymodes.activities.ActivityFitnessPlan" android:exported="false" android:screenOrientation="portrait" android:largeHeap="true" android:usesCleartextTraffic="true"/>
+        <activity android:name="com.coveiot.android.tappy.BoatPayHomeActivity" android:exported="false"/>
+        <activity android:name="com.coveiot.android.tappy.activity.ActivityManageRegisteredProducts" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.tappy.activity.ActivityRegisteredProductSummary" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.tappy.activity.AddNfcStrapFtuActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.tappy.activity.AddNfcStrapActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.tappy.activity.AddPaymentCardActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.tappy.activity.TermsAndConditionsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.tappy.activity.CardActivationActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.healthbuddies.activities.ActivityPendingRequests" android:exported="false">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:name="com.coveiot.android.healthbuddies.activities.AddHealthBuddiesActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.healthbuddies.activities.ManageHealthBuddiesActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.healthbuddies.activities.ActivityInAppWebViewer" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.dynamictab.DynamicTabWebActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.watchfaceui.activities.ActivityBackgroundWatchFace" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.watchfaceui.activities.ActivityWatchFace" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/watchfaces"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.watchfaceui.webSupport.ActivityInAppWebViewerWatchface" android:exported="true" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/wfstudio"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.sportsnotification.filters.SportsFilterActivity" android:exported="false"/>
+        <service android:name="com.coveiot.android.sportsnotification.SportsService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.sportsnotification.SoccerSportsService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.sportsnotification.SoccerSportsServiceNew" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <activity android:name="com.coveiot.android.sportsnotification.SportsNotificationActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.sportsnotification.SportsDisclaimerActivity" android:exported="true" android:screenOrientation="portrait"/>
+        <service android:name="com.coveiot.android.sportsnotification.MatchStartJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.coveiot.android.sportsnotification.PeriodicSportsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.coveiot.android.remotecommandframework.alexa.activity.LinkToAlexaResultActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/alexa/account-linking"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.remotecommandframework.alexa.activity.LinkToAlexaActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.remotecommandframework.alexa.AlexaActivityInAppWebViewer" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.remotecommandframework.alexa.activity.LinkToAlexaNotLoggedInActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.remotecommandframework.alexa.activity.AccountLinkFromAlexaActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/alexa/authorize/android"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.coveiot.android.remotecommandframework.alexa.service.AlexaRemoteCommandFrameworkService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <activity android:name="com.coveiot.android.customreminders.activities.ActivityEditReminder" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.customreminders.activities.ActivityAddCustomReminder" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.customreminders.activities.ActivityAddCustomReminderNew2" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.customreminders.activities.ActivityCustomReminders" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.qrtray.ActivityQRTray" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/qrtray"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.smartalert.activity.ActivitySmartAlertTesting" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.coveiot.android.smartalert.activity.SmartAlertActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="nav.coveiot.com"/>
+                <data android:pathPrefix="/borrelly/smartalert"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.camera.ActivitySquareCamera" android:exported="false">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coveiot.android.theme.StrideLengthAnimationActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:multiprocess="true" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="com.blankj.utilcode.util.UtilsFileProvider" android:exported="false" android:authorities="com.coveiot.android.boat.utilcode.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:name="com.blankj.utilcode.util.MessengerUtils.ServerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.coveiot.android.boat.messenger"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:configChanges="keyboardHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:configChanges="keyboardHidden"/>
+        <receiver android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/PlacesAutocompleteOverlay" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" android:visibleToInstantApps="true"/>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="com.google.gms.fitness.sdk.version" android:value="20.0.0"/>
+        <activity android:name="com.google.mlkit.vision.codescanner.internal.GmsBarcodeScanningDelegateActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:name="com.google.mlkit.common.internal.MlKitInitProvider" android:exported="false" android:authorities="com.coveiot.android.boat.mlkitinitprovider" android:initOrder="99"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.coveiot.android.boat.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <activity android:theme="@style/mappls_nearby_plugins_translucent" android:name="com.mappls.sdk.nearby.plugin.MapplsNearbyActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/mappls_search_translucent" android:name="com.mappls.sdk.plugins.places.autocomplete.ui.PlaceAutocompleteActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:theme="@style/mappls_search_picker" android:name="com.mappls.sdk.plugins.places.placepicker.ui.PlacePickerActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <service android:name="com.abupdate.mqtt_libs.mqtt_service.MqttService"/>
+        <service android:name="com.abupdate.iot_libs.service.OtaService" android:exported="false"/>
+        <service android:name="com.abupdate.iot_libs.service.JobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+        <receiver android:name="com.abupdate.iot_libs.receiver.UpgradeReceiver" android:exported="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sifli.siflidfu.SifliDFUService" android:exported="false"/>
+        <service android:name="com.sifli.serialtransport.serialTransService" android:enabled="true" android:exported="true"/>
+        <service android:name="com.sifli.watchfacelibrary.SifliWatchfaceService" android:exported="false" android:requestLegacyExternalStorage="true"/>
+        <service android:name="com.coveiot.android.bleabstract.services.MatrixBleService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.CRPBaseBleService" android:enabled="true" android:exported="true" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.CRPY20BleService" android:enabled="true" android:exported="true" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.SmaF2BleService" android:enabled="true" android:exported="true" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.LeonardoBleService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.LeonardoBleCmdService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.ido.ble.bluetooth.DeviceConnectService" android:exported="false"/>
+        <service android:name="com.coveiot.android.bleabstract.services.KHV5BleService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.jstyle2301.JStyle2301ABleService" android:enabled="true" android:exported="false" android:foregroundServiceType="connectedDevice"/>
+        <service android:name="com.coveiot.android.bleabstract.services.jstyle2301.JStyle2208ABleService" android:enabled="true" android:exported="false" android:foregroundServiceType="connectedDevice"/>
+        <service android:name="com.coveiot.android.bleabstract.services.KH1810GBleService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.KH1963DBleService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.PC60FBleService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.BpMeasurementService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.KH1860BleService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.TouchELXService" android:enabled="true" android:exported="true" android:foregroundServiceType="location"/>
+        <service android:name="com.coveiot.android.bleabstract.services.EastapexBleService" android:enabled="true" android:exported="true" android:foregroundServiceType="location"/>
+        <activity android:name="com.coveiot.utils.BaseActivity"/>
+        <service android:name="com.coveiot.mki.ota.OTAService" android:enabled="true"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="33dp" android:width="33dp" android:viewportWidth="33" android:viewportHeight="33">
+    <group>
+        <clip-path android:pathData="M4.5,4.082h24v24L4.5,28.082z"/>
+        <path android:fillColor="@drawable/res_0x7f0800c2_ic_duration_clock__0" android:pathData="M17.8,4.086h-3.437a0.824,0.824 0,0 0,0 1.647h3.436a0.824,0.824 0,0 0,0 -1.647zM26.986,9.506 L24.742,7.262c-0.312,-0.313 -0.823,-0.313 -1.164,0 -0.312,0.312 -0.312,0.823 0,1.164l2.215,2.216c0.17,0.17 0.37,0.227 0.569,0.227a0.844,0.844 0,0 0,0.568 -0.227,0.761 0.761,0 0,0 0.056,-1.137zM5.79,17.8A10.28,10.28 0,0 1,16.071 7.52,10.28 10.28,0 0,1 26.352,17.8c0,5.68 -4.6,10.282 -10.281,10.282A10.28,10.28 0,0 1,5.789 17.801zM16.072,18.908h4.26c0.454,0 0.824,-0.37 0.824,-0.795a0.824,0.824 0,0 0,-0.824 -0.824h-3.437v-4.544a0.824,0.824 0,0 0,-1.647 0v5.34c0,0.454 0.37,0.823 0.824,0.823z" android:fillType="evenOdd"/>
+    </group>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar_generic"/>
+    <View android:background="@color/color_a4a4a4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.2dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/activityHistoryRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/margin_6dp" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</LinearLayout>

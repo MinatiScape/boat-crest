@@ -1,0 +1,402 @@
+{
+  "meta": {
+    "capitalizeFirstLetter": true
+  },
+  "v5": {
+    "constants": {
+      "ordinalize": {
+        "1": "1st$65",
+        "2": "2nd$66",
+        "3": "3rd$67",
+        "4": "4th$68",
+        "5": "5th$69",
+        "6": "6th$70",
+        "7": "7th$71",
+        "8": "8th$71",
+        "9": "9th$71",
+        "10": "10th$71"
+      },
+      "direction": {
+        "north": "north$50",
+        "northeast": "northeast$51",
+        "east": "east$52",
+        "southeast": "southeast$53",
+        "south": "south$54",
+        "southwest": "southwest$55",
+        "west": "west$56",
+        "northwest": "northwest$57"
+      },
+      "modifier": {
+        "left": "left$0",
+        "right": "right$3",
+        "sharp left": "sharp left$1",
+        "sharp right": "sharp right$4",
+        "slight left": "slight left$2",
+        "slight right": "slight right$5",
+        "straight": "straight$7",
+        "uturn": "U-turn$41"
+      },
+      "lanes": {
+        "xo": "Keep right$5",
+        "ox": "Keep left$2",
+        "xox": "Keep in the middle$7",
+        "oxo": "Keep left or right$7"
+      }
+    },
+    "modes": {
+      "ferry": {
+        "default": "Take ferry$36",
+        "name": "Take ferry$36",
+        "destination": "Take ferry$36"
+      }
+    },
+    "arrive": {
+      "default": {
+        "default": "Destination$8"
+      },
+      "left": {
+        "default": "Destination$8"
+      },
+      "right": {
+        "default": "Destination$8"
+      },
+      "sharp left": {
+        "default": "Destination$8"
+      },
+      "sharp right": {
+        "default": "Destination$8"
+      },
+      "slight right": {
+        "default": "Destination$8"
+      },
+      "slight left": {
+        "default": "Destination$8"
+      },
+      "straight": {
+        "default": "Destination$8"
+      }
+    },
+    "continue": {
+      "default": {
+        "default": "{modifier}",
+        "name": "{modifier}",
+        "destination": "{modifier}"
+      },
+      "straight": {
+        "default": "Continue straight$21",
+        "name": "Continue straight$21",
+        "destination": "Continue straight$21"
+      },
+      "slight left": {
+        "default": "slightly left$15",
+        "name": "slightly left$15",
+        "destination": "slightly left$15"
+      },
+      "slight right": {
+        "default": "slightly right$16",
+        "name": "slightly right$16",
+        "destination": "slightly right$16"
+      },
+      "uturn": {
+        "default": "U-turn$41",
+        "name": "U-turn$41",
+        "destination": "U-turn$41"
+      }
+    },
+    "depart": {
+      "default": {
+        "default": "Head {direction}",
+        "name": "Head {direction}"
+      }
+    },
+    "end of road": {
+      "default": {
+        "default": "Turn {modifier}",
+        "name": "Turn {modifier}",
+        "destination": "Turn {modifier}"
+      },
+      "straight": {
+        "default": "Go straight$21",
+        "name": "Go straight$21",
+        "destination": "Go straight$21"
+      },
+      "uturn": {
+        "default": "U-turn$41",
+        "name": "U-turn$41",
+        "destination": "U-turn$41"
+      }
+    },
+    "fork": {
+      "default": {
+        "default": "Keep {modifier}",
+        "name": "Keep {modifier}",
+        "destination": "Keep {modifier}"
+      },
+      "slight left": {
+        "default": "Keep left$19",
+        "name": "Keep left$19",
+        "destination": "Keep left$19"
+      },
+      "slight right": {
+        "default": "Keep right$20",
+        "name": "Keep right$20",
+        "destination": "Keep right$20"
+      },
+      "sharp left": {
+        "default": "sharp left$17",
+        "name": "sharp left$17",
+        "destination": "sharp left$17"
+      },
+      "sharp right": {
+        "default": "sharp right$18",
+        "name": "sharp right$18",
+        "destination": "sharp right$18"
+      },
+      "uturn": {
+        "default": "U-turn$41",
+        "name": "U-turn$41",
+        "destination": "U-turn$41"
+      }
+    },
+    "merge": {
+      "default": {
+        "default": "Merge {modifier}",
+        "name": "Merge {modifier}",
+        "destination": "Merge {modifier}"
+      },
+      "slight left": {
+        "default": "Merge left$15",
+        "name": "Merge left$15",
+        "destination": "Merge left$15"
+      },
+      "slight right": {
+        "default": "Merge right$16",
+        "name": "Merge right$16",
+        "destination": "Merge right$16"
+      },
+      "sharp left": {
+        "default": "Merge left$1",
+        "name": "Merge left$1",
+        "destination": "Merge left$1"
+      },
+      "sharp right": {
+        "default": "Merge right$4",
+        "name": "Merge right$4",
+        "destination": "Merge right$4"
+      },
+      "uturn": {
+        "default": "U-turn$41",
+        "name": "U-turn$41",
+        "destination": "U-turn$41"
+      }
+    },
+    "new name": {
+      "default": {
+        "default": "{modifier}",
+        "name": "{modifier}",
+        "destination": "{modifier}"
+      },
+      "sharp left": {
+        "default": "sharp left$1",
+        "name": "sharp left$1",
+        "destination": "sharp left$1"
+      },
+      "sharp right": {
+        "default": "sharp right$4",
+        "name": "sharp right$4",
+        "destination": "sharp right$4"
+      },
+      "slight left": {
+        "default": "slightly left$15",
+        "name": "slightly left$15",
+        "destination": "slightly left$15"
+      },
+      "slight right": {
+        "default": "slightly right$16",
+        "name": "slightly right$16",
+        "destination": "slightly right$16"
+      },
+      "uturn": {
+        "default": "U-turn$41",
+        "name": "U-turn$41",
+        "destination": "U-turn$41"
+      }
+    },
+    "notification": {
+      "default": {
+        "default": "{modifier}",
+        "name": "{modifier}",
+        "destination": "{modifier}"
+      },
+      "uturn": {
+        "default": "U-turn$41",
+        "name": "U-turn$41",
+        "destination": "U-turn$41"
+      }
+    },
+    "off ramp": {
+      "default": {
+        "default": "Take the ramp$73",
+        "name": "Take the ramp$73",
+        "destination": "Take the ramp$73"
+      },
+      "left": {
+        "default": "Take left ramp$74",
+        "name": "Take left ramp$74",
+        "destination": "Take left ramp$74"
+      },
+      "right": {
+        "default": "Take right ramp$75",
+        "name": "Take right ramp$75",
+        "destination": "Take right ramp$75"
+      },
+      "sharp left": {
+        "default": "Take left ramp$74",
+        "name": "Take left ramp$74",
+        "destination": "Take left ramp$74"
+      },
+      "sharp right": {
+        "default": "Take right ramp$75",
+        "name": "Take right ramp$75",
+        "destination": "Take right ramp$75"
+      },
+      "slight left": {
+        "default": "Take left ramp$74",
+        "name": "Take left ramp$74",
+        "destination": "Take left ramp$74"
+      },
+      "slight right": {
+        "default": "Take right ramp$75",
+        "name": "Take right ramp$75",
+        "destination": "Take right ramp$75"
+      }
+    },
+    "on ramp": {
+      "default": {
+        "default": "Take the ramp$73",
+        "name": "Take the ramp$73",
+        "destination": "Take the ramp$73"
+      },
+      "left": {
+        "default": "Take left ramp$74",
+        "name": "Take left ramp$74",
+        "destination": "Take left ramp$74"
+      },
+      "right": {
+        "default": "Take right ramp$75",
+        "name": "Take right ramp$75",
+        "destination": "Take right ramp$75"
+      },
+      "sharp left": {
+        "default": "Take left ramp$74",
+        "name": "Take left ramp$74",
+        "destination": "Take left ramp$74"
+      },
+      "sharp right": {
+        "default": "Take right ramp$75",
+        "name": "Take right ramp$75",
+        "destination": "Take right ramp$75"
+      },
+      "slight left": {
+        "default": "Take left ramp$74",
+        "name": "Take left ramp$74",
+        "destination": "Take left ramp$74"
+      },
+      "slight right": {
+        "default": "Take right ramp$75",
+        "name": "Take right ramp$75",
+        "destination": "Take right ramp$75"
+      }
+    },
+    "rotary": {
+      "default": {
+        "default": {
+          "default": "Enter the rotary$72",
+          "name": "Enter the rotary$72",
+          "destination": "Enter the rotary$72"
+        },
+        "name": {
+          "default": "Enter the rotary$72",
+          "name": "Enter the rotary$72",
+          "destination": "Enter the rotary$72"
+        },
+        "exit": {
+          "default": "Enter the rotary$72",
+          "name": "Enter the rotary$72",
+          "destination": "Enter the rotary$72"
+        },
+        "name_exit": {
+          "default": "Enter the rotary$72",
+          "name": "Enter the rotary$72",
+          "destination": "Enter the rotary$72"
+        }
+      }
+    },
+    "roundabout": {
+      "default": {
+        "exit": {
+          "default": "take {exit_number} exit",
+          "name": "take {exit_number} exit",
+          "destination": "take {exit_number} exit"
+        },
+        "default": {
+          "default": "Enter roundabout$72",
+          "name": "Enter roundabout$72",
+          "destination": "Enter roundabout$72"
+        }
+      }
+    },
+    "roundabout turn": {
+      "default": {
+        "default": "roundabout make {modifier}",
+        "name": "roundabout make {modifier}",
+        "destination": "roundabout make {modifier}"
+      },
+      "left": {
+        "default": "roundabout turn left$0",
+        "name": "roundabout turn left$0",
+        "destination": "roundabout turn left$0"
+      },
+      "right": {
+        "default": "roundabout turn right$3",
+        "name": "roundabout turn right$3",
+        "destination": "roundabout turn right$3"
+      },
+      "straight": {
+        "default": "roundabout go straight$7",
+        "name": "roundabout go straight$7",
+        "destination": "roundabout go straight$7"
+      }
+    },
+    "turn": {
+      "default": {
+        "default": "Make {modifier}",
+        "name": "Make {modifier}",
+        "destination": "Make {modifier}"
+      },
+      "left": {
+        "default": "Turn left$0",
+        "name": "Turn left$0",
+        "destination": "Turn left$0"
+      },
+      "right": {
+        "default": "Turn right$3",
+        "name": "Turn right$3",
+        "destination": "Turn right$3"
+      },
+      "straight": {
+        "default": "Go straight$21",
+        "name": "Go straight$21",
+        "destination": "Go straight$21"
+      }
+    },
+    "use lane": {
+      "no_lanes": {
+        "default": "Continue straight$7"
+      },
+      "default": {
+        "default": "{lane_instruction}"
+      }
+    }
+  }
+}

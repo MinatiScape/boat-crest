@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/overall_stats_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/secondary_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/tab_title" android:background="@drawable/tab_selected_bg" android:padding="@dimen/padding_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="last 6 months" android:layout_marginStart="@dimen/margin_15dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

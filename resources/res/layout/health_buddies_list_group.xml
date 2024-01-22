@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="47dp" android:layout_marginTop="@dimen/margin_17dp" android:layout_marginStart="@dimen/margin_17dp" android:layout_marginEnd="@dimen/margin_17dp">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="47dp" android:layout_marginTop="@dimen/margin_10dp" android:backgroundTint="@color/transparent">
+        <RelativeLayout android:id="@+id/rl_health_buddies_group" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_14sp" android:textStyle="normal" android:textColor="@color/main_text_color" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_17dp" style="@style/medium"/>
+            <TextView android:textSize="@dimen/text_size_11sp" android:textColor="@color/main_text_color" android:gravity="center" android:id="@+id/notification_count" android:background="@drawable/notification_count_bg" android:layout_width="@dimen/margin_20dp" android:layout_height="@dimen/margin_20dp" android:layout_marginRight="@dimen/margin_25dp" android:layout_toLeftOf="@+id/arrow" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_25dp"/>
+            <ImageView android:id="@+id/arrow" android:background="@android:color/transparent" android:layout_width="@dimen/margin_24dp" android:layout_height="@dimen/margin_24dp" android:layout_marginRight="@dimen/margin_14dp" android:src="0x7f080544" android:tint="@color/main_text_color" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_14dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

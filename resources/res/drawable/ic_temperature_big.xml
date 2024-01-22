@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="72dp" android:width="72dp" android:viewportWidth="72" android:viewportHeight="72">
+    <path android:fillColor="@drawable/res_0x7f080165_ic_temperature_big__0" android:pathData="M52.895,21.595a5.797,5.797 0,1 0,0 11.593,5.797 5.797,0 0,0 0,-11.593zM52.895,29.876a2.484,2.484 0,1 1,0 -4.968,2.484 2.484,0 0,1 0,4.968zM40.472,40.244L40.472,18.282a6.625,6.625 0,0 0,-13.25 0v21.962a11.594,11.594 0,1 0,13.25 0zM37.159,26.564h-6.625v-8.282a3.313,3.313 0,0 1,6.625 0v8.282z"/>
+</vector>

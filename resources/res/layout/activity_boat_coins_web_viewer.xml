@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/activity_boat_coins_web_viewer_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/web_view_boat_coins" android:background="@color/background_color_light" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

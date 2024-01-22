@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="0x7f080853" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mappls_direction_traffic_jam"/>
+    <TextView android:textStyle="bold" android:textColor="@color/mappls_direction_eta_text_color_with_traffic" android:gravity="center" android:id="@+id/mappls_direction_delay_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/custom_view_layout" android:background="@drawable/rectangle_marker_bg" android:padding="@dimen/margin_10dp" android:layout_width="wrap_content" android:layout_height="90dp" android:backgroundTint="@color/white">
+    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/light_black" android:ellipsize="end" android:gravity="center" android:id="@+id/tvName" android:padding="@dimen/margin_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sorry sharing is not possible since the challenge is full." style="@style/regular"/>
+</LinearLayout>

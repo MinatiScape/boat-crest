@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_generic"/>
+    <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/color_4a4a4a" android:gravity="center" android:id="@+id/please_select_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_10dp" android:text="@string/select_preferred_lang" android:layout_below="@+id/toolbar"/>
+    <ListView android:id="@+id/lang_listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_marginBottom="@dimen/margin_30dp" android:divider="@null" android:layout_above="@+id/done_layout" android:layout_below="@+id/please_select_text"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/done_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_24dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@+id/done_submit" android:visibility="gone" android:layout_width="@dimen/margin_240dp" android:layout_height="@dimen/margin_54dp" android:text="@string/done" style="@style/ButtonThemeEnabled"/>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/done_frameLayout" android:background="@drawable/rounded_corner" android:visibility="gone" android:layout_width="@dimen/margin_240dp" android:layout_height="@dimen/margin_54dp" android:backgroundTint="@color/colorPrimary">
+            <ImageView android:layout_gravity="center" android:background="@drawable/ic_colored_arrow_right" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true" android:backgroundTint="@color/white"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

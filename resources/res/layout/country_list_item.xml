@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root_layout" android:background="@drawable/list_item_background_new" android:padding="@dimen/margin_5dp" android:layout_width="match_parent" android:layout_height="@dimen/margin_56dp" android:layout_marginLeft="@dimen/margin_5dp" android:layout_marginTop="@dimen/margin_8dp" android:layout_marginRight="@dimen/margin_5dp" android:layout_marginBottom="@dimen/margin_8dp" app:cardElevation="@dimen/margin_2dp" app:cardUseCompatPadding="true">
+    <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:padding="@dimen/margin_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5dp" android:layout_marginRight="@dimen/margin_5dp">
+        <ImageView android:id="@+id/flag" android:layout_width="@dimen/margin_40dp" android:layout_height="@dimen/margin_40dp" android:src="0x7f0803b3"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:layout_toRightOf="@+id/flag">
+            <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/main_text_color" android:id="@+id/countryName" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/medium"/>
+            <TextView android:textColor="@color/secondary_text_color" android:id="@+id/countryCode" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

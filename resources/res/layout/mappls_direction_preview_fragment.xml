@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/preview_container" android:tag="layout/mappls_direction_preview_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/layout_common_toolbar" layout="@layout/mappls_direction_common_toolbar"/>
+        <View android:id="@+id/preview_view" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/pager_direction_preview" android:background="@android:color/transparent" android:clickable="true" android:layout_width="match_parent" android:layout_height="110dp"/>
+        <RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:cardCornerRadius="8dp" app:cardElevation="3dp">
+                <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@+id/btn_prev_down" android:tag="binding_2" android:background="@drawable/mappls_direction_prev_down_background" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/mappls_direction_left_button_arrow_selector" android:layout_weight="1"/>
+                    <ImageButton android:id="@+id/btn_next_up" android:tag="binding_3" android:background="@drawable/mappls_direction_next_up_background" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/mappls_direction_right_button_arrow_selector" android:layout_weight="1"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

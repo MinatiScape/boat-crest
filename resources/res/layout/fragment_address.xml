@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llLocation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginRight="@dimen/margin_20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/location_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0805b0" android:tint="@color/white"/>
+            <androidx.cardview.widget.CardView android:id="@+id/place_address" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/margin_50dp" android:layout_marginLeft="@dimen/margin_20dp" android:backgroundTint="@color/transparent">
+                <fragment android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment" android:id="@+id/place_autocomplete_fragment" android:layout_width="match_parent" android:layout_height="@dimen/margin_50dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/map_fragment_details_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <fragment android:id="@+id/map_fragment_details" android:layout_width="match_parent" android:layout_height="335dp" app:uiRotateGestures="false" app:uiScrollGestures="false" app:uiTiltGestures="false" app:uiZoomGestures="false" class="com.google.android.gms.maps.SupportMapFragment"/>
+        </LinearLayout>
+        <View android:id="@+id/view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/margin_5dp"/>
+        <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/secondary_text_color" android:textColorLink="@color/secondary_text_color" android:gravity="center" android:id="@+id/tv_use_current_loc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20dp" android:text="@string/use_current_location" android:drawablePadding="@dimen/margin_10dp"/>
+    </LinearLayout>
+    <include android:id="@+id/location" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24dp" android:layout_marginBottom="@dimen/margin_24dp" android:layout_marginVertical="@dimen/margin_24dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/llLocation" layout="@layout/current_location_details"/>
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/gl_button_only" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.93"/>
+    <Button android:textColor="@color/white" android:id="@+id/selectAddress" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/apply" android:textAllCaps="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/gl_button_only" style="@style/ButtonThemeEnabled"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

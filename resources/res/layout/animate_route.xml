@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/radio_route" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:checked="true" android:text="@string/mappls_animate_routing_route" android:layout_weight="1"/>
+        <RadioButton android:id="@+id/radio_gpx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mappls_animate_routing_gpx" android:layout_weight="1"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_animate_gpx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:text="@string/mappls_select_animate_speedup"/>
+        <SeekBar android:id="@+id/Speedup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp">
+            <TextView android:gravity="left" android:id="@+id/MinSpeedup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5"/>
+            <TextView android:gravity="right" android:id="@+id/MaxSpeedup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

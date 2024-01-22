@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.V26.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light">
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="Base.V26.Widget.AppCompat.Toolbar" parent="@style/Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Toolbar" parent="@style/Base.V26.Widget.AppCompat.Toolbar">
+    </style>
+    <style name="Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="diagnosticTestHeaders" parent="">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/margin_10dp</item>
+        <item name="android:fontFamily">@font/metropolis_regular</item>
+        <item name="android:layout_marginHorizontal">@dimen/margin_20dp</item>
+    </style>
+    <style name="dialogInfoHeaderTextStyle" parent="">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_24dp</item>
+        <item name="android:fontFamily">@font/metropolis_regular</item>
+        <item name="android:paddingHorizontal">@dimen/margin_8dp</item>
+    </style>
+    <style name="dialogInfoTextStyle" parent="">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/info_text_color1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_8dp</item>
+        <item name="android:fontFamily">@font/metropolis_regular</item>
+        <item name="android:paddingHorizontal">@dimen/margin_8dp</item>
+    </style>
+    <style name="dialogInfoTextStyleNew" parent="">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/color_cccccc</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_16dp</item>
+        <item name="android:fontFamily">@font/metropolis_regular</item>
+        <item name="android:paddingHorizontal">@dimen/margin_8dp</item>
+    </style>
+    <style name="infoHeaderTextStyle" parent="">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/margin_10dp</item>
+        <item name="android:lineSpacingExtra">0.05sp</item>
+        <item name="android:fontFamily">@font/metropolis_medium</item>
+        <item name="android:paddingHorizontal">@dimen/text_size_12sp</item>
+        <item name="android:paddingVertical">@dimen/margin_4dp</item>
+    </style>
+    <style name="infoSubDataTextStyle" parent="">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/info_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">0.05sp</item>
+        <item name="android:fontFamily">@font/metropolis_regular</item>
+        <item name="android:layout_marginStart">@dimen/margin_10dp</item>
+        <item name="android:paddingHorizontal">@dimen/text_size_12sp</item>
+        <item name="android:paddingVertical">@dimen/margin_5dp</item>
+    </style>
+    <style name="toolTipDialogInfoTextStyle" parent="">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/color_1F1F20</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_8dp</item>
+        <item name="android:fontFamily">@font/metropolis_regular</item>
+        <item name="android:paddingHorizontal">@dimen/margin_8dp</item>
+    </style>
+</resources>

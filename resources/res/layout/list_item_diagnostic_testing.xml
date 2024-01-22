@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/list_item_diagnostic_testing_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/cvVibrationTest" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/clTests">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:id="@+id/tvDiagnosticTest" android:tag="binding_1" app:drawableEndCompat="0x7f080517" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/diagnosticTestHeaders"/>
+            <com.coveiot.android.theme.compundview.DottedCircleProgressBarCustom android:id="@+id/dottedProgressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.4" android:scaleY="0.4" android:layout_marginEnd="@dimen/margin_9dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:tag="layout/mappls_direction_preview_pager_0" android:background="@android:color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/maneuver_view_container" android:background="@drawable/mappls_direction_circle_black" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="16dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.mappls.sdk.plugin.directions.view.ManeuverView android:layout_gravity="center" android:id="@+id/navigate_icon" android:layout_width="24dp" android:layout_height="24dp" app:maneuverViewPrimaryColor="#4587d9" app:maneuverViewSecondaryColor="#4587d9"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+        <TextView android:textSize="16sp" android:textColor="#212121" android:id="@+id/direction_preview_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:maxLines="2" android:fontFamily="@font/mappls_direction_montserrat_medium_0"/>
+        <TextView android:textSize="12sp" android:textColor="#797979" android:gravity="left" android:id="@+id/direction_preview_dist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:minHeight="32dp" android:fontFamily="@font/mappls_direction_montserrat_medium_0"/>
+    </LinearLayout>
+</LinearLayout>

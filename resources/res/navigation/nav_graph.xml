@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph" app:startDestination="@+id/permissions_fragment">
+    <fragment android:label="PermissionsFragment" android:name="com.coveiot.android.camera.fragments.PermissionsFragment" android:id="@+id/permissions_fragment">
+        <action android:id="@+id/action_permissions_to_camera" app:destination="@+id/camera_fragment" app:popUpTo="@+id/permissions_fragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="CameraFragment" android:name="com.coveiot.android.camera.fragments.CameraFragment" android:id="@+id/camera_fragment">
+        <action android:id="@+id/action_camera_to_gallery" app:destination="@+id/gallery_fragment"/>
+        <action android:id="@+id/action_camera_to_permissions" app:destination="@+id/permissions_fragment" app:popUpTo="@+id/camera_fragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="GalleryFragment" android:name="com.coveiot.android.camera.fragments.GalleryFragment" android:id="@+id/gallery_fragment">
+        <argument android:name="root_directory" app:argType="string"/>
+    </fragment>
+</navigation>

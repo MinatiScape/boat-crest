@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="32dp" android:width="32dp" android:viewportWidth="32" android:viewportHeight="32">
+    <group>
+        <clip-path android:pathData="M0,0h32v32H0z"/>
+        <path android:fillColor="@drawable/res_0x7f080164_ic_temperature__0" android:pathData="M26.5,7a3.5,3.5 0,1 0,0 7,3.5 3.5,0 0,0 0,-7zM26.5,12a1.5,1.5 0,1 1,0 -3,1.5 1.5,0 0,1 0,3zM19,18.26L19,5a4,4 0,1 0,-8 0v13.26a7,7 0,1 0,8 0zM17,10h-4L13,5a2,2 0,1 1,4 0v5z"/>
+    </group>
+</vector>

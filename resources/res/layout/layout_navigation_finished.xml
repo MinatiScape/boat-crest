@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/layout_navigation_finished_0" android:background="#00000000" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/navigation_finished_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.mappls.sdk.navigation.ui.common.LockableBottomSheetBehavior">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:cardCornerRadius="16dp">
+            <LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/container_destination_reached" android:background="#f3f3f3" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@+id/okay_button" android:background="@color/transparent" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/mappls_navigation_ic_destination_reached" android:scaleType="fitStart"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/navigationTextColorPrimary" android:gravity="center_vertical" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mappls_navigation_destination_reached" android:layout_weight="1"/>
+                    <ImageButton android:id="@+id/finished_button" android:background="@color/transparent" android:visibility="visible" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_close_black_light" app:tint="@color/common_gray"/>
+                </LinearLayout>
+                <View android:id="@+id/view" android:background="#ffbbbbbb" android:layout_width="match_parent" android:layout_height="0.25dp"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageButton android:background="@color/transparent" android:visibility="gone" android:layout_width="96dp" android:layout_height="96dp"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/navigationTextColorPrimary" android:gravity="center_horizontal" android:id="@+id/welcome_to_a_place_text_view" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:text="@string/mappls_navigation_arrived_destination"/>
+                            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                                <TextView android:textSize="16sp" android:textColor="#f86624" android:id="@+id/destination_text_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="3" android:layout_alignParentTop="true" android:paddingStart="16dp" android:paddingEnd="10dp" android:layout_marginEnd="12dp" android:layout_alignParentStart="true"/>
+                            </RelativeLayout>
+                            <TextView android:textSize="12sp" android:textColor="@color/navigationTextColorPrimary" android:gravity="center" android:id="@+id/trip_stats_text_view" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:text="@string/your_trip_stats_are_shown_below"/>
+                            <androidx.recyclerview.widget.RecyclerView android:id="@+id/trip_stats_recycler_view" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp"/>
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/container_buttons" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp" android:layout_marginBottom="16dp" android:weightSum="2">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/know_more_button" android:background="@drawable/bg_show_map_btn" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="@string/mappls_navigation_end"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/color_white" android:id="@+id/ok_button" android:background="@drawable/bg_show_map_btn" android:visibility="gone" android:layout_width="0dp" android:layout_height="36dp" android:text="@string/mappls_navigation_ok" android:layout_weight="1" android:layout_marginStart="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

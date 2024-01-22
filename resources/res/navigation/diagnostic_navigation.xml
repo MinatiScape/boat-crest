@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/diagnostic_navigation" app:startDestination="@+id/watchDiagnosticDashboardFragment">
+    <fragment android:label="RunWatchDiagnosticFragment" android:name="com.coveiot.android.leonardo.more.fragments.RunWatchDiagnosticFragment" android:id="@+id/runWatchDiagnosticFragment">
+        <action android:id="@+id/action_runWatchDiagnosticFragment_to_runDiagnosticTestingFragment" app:destination="@+id/runDiagnosticTestingFragment"/>
+    </fragment>
+    <fragment android:label="fragment_watch_diagnostic_test_history" android:name="com.coveiot.android.leonardo.more.fragments.WatchDiagnosticTestHistoryFragment" android:id="@+id/watchDiagnosticTestHistoryFragment"/>
+    <fragment android:label="fragment_run_diagnostic_testing" android:name="com.coveiot.android.leonardo.more.fragments.RunDiagnosticTestingFragment" android:id="@+id/runDiagnosticTestingFragment"/>
+    <fragment android:label="fragment_watch_diagnostic_dashboard" android:name="com.coveiot.android.leonardo.more.fragments.WatchDiagnosticDashboardFragment" android:id="@+id/watchDiagnosticDashboardFragment"/>
+</navigation>

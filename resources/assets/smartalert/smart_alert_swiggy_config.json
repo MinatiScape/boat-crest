@@ -1,0 +1,460 @@
+{
+  "smart_alert_config_swiggy": {
+    "messages_to_parse": [
+      {
+        "messagePattern": [
+          "Order [Cc]onfirmed ([A-Za-z0-9 ]+) has started preparing your order.[ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "restaurant_name": 1
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Order Confirmed",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "{restaurant_name}",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "is preparing your order",
+            "templateId": 2005
+          },
+          {
+            "type": "bar",
+            "progress": 0,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "[Aa]rrived [Oo]ur delivery executive ([A-Za-z0-9 ]+) has arrived at ([A-Za-z0-9 ]+) and [ A-Za-z0-9,.! ]+",
+          "[Aa]rrived [Oo]ur delivery executive ([A-Za-z0-9 ]+) has arrived at ([A-Za-z0-9 ]+) and [ A-Za-z0-9,.! ]+",
+          "[Aa]rrived [Oo]ur delivery executive ([A-Za-z0-9 ]+) has arrived at ([A-Za-z0-9 ]+) and [ A-Za-z0-9,.! ]+",
+          "[Aa]rrived at [Rr]estaurant [Oo]ur delivery executive ([A-Za-z0-9 ]+) has arrived at ([A-Za-z0-9 ]+) and [ A-Za-z0-9,.! ]+",
+          "[Dd]elivery [Pp]artner arrived at restaurant ([A-Za-z0-9 ]+) has arrived at ([A-Za-z0-9 ]+) to pick [ A-Za-z0-9,.! ]+",
+          "[Dd]elivery [Pp]artner [Aa]ssigned[ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "delivery_person_name": 1,
+          "restaurant_name": 2
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Partner Assigned",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "{delivery_person_name}",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "has arrived at",
+            "templateId": 2005
+          },
+          {
+            "type": "text",
+            "text": "{restaurant_name}",
+            "templateId": 2006
+          },
+          {
+            "type": "bar",
+            "progress": 0,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Food Incoming! Your order has been picked up by our delivery executive ([A-Za-z0-9 ]+) and is [ A-Za-z0-9,.! ]+",
+          "Early Pick Up Your order has been picked up by our delivery executive ([A-Za-z0-9 ]+) and is [ A-Za-z0-9,.! ]+",
+          "Timely Pick Up Your order has been picked up by our delivery executive ([A-Za-z0-9 ]+) and is [ A-Za-z0-9,.! ]+",
+          "Order picked up[.]? Pay Online[!]? [ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "delivery_person_name": 1
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Order on the way",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "{delivery_person_name}",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "has picked your order",
+            "templateId": 2005
+          },
+          {
+            "type": "bar",
+            "progress": 20,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Your bill amount is ₹(\\d)[ A-Za-z0-9,.! ]+",
+          "Order picked up[.]? Your bill amount is ₹(\\d+)[ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "amount_to_pay": 1
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Order on the way",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "You can pay bill amount",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "₹{amount_to_pay} online",
+            "templateId": 2005
+          },
+          {
+            "type": "bar",
+            "progress": 20,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Arriving Now! ([A-Za-z0-9 ]+) is arriving [ A-Za-z0-9,.! ]+",
+          "Arriving Early! ([A-Za-z0-9 ]+) is arriving [ A-Za-z0-9,.! ]+",
+          "Arriving On-Time! ([A-Za-z0-9 ]+) is arriving  [ A-Za-z0-9,.! ]+",
+          "Arriving Now. Pay Online[!]? [ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "delivery_person_name": 1
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Arriving at your doorstep",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "{delivery_person_name}",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "is arriving at your location",
+            "templateId": 2005
+          },
+          {
+            "type": "bar",
+            "progress": 80,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Delivery partner is close to your location. You can pay your bill of ₹(\\d+)[ A-Za-z0-9,.! ]+",
+          "Arriving Soon! [ A-Za-z0-9,.! ]+ You can pay your bill of ₹(\\d+)[ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "amount_to_pay": 1
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Arriving at your doorstep",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "You can pay bill amount",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "₹{amount_to_pay} online",
+            "templateId": 2005
+          },
+          {
+            "type": "bar",
+            "progress": 80,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Your Swiggy ([A-Za-z0-9 ]+) order was successfully delivered. ([A-Za-z0-9 ]+) has delivered your order in (\\d+) [ A-Za-z0-9,.! ]+",
+          "Your Swiggy ([A-Za-z0-9 ]+) order was successfully delivered. ([A-Za-z0-9 ]+) has delivered your order in (\\d+) [ A-Za-z0-9,.! ]+",
+          "Your Swiggy ([A-Za-z0-9 ]+) order was delivered superfast! ([A-Za-z0-9 ]+) has delivered your order in (\\d+) [ A-Za-z0-9,.! ]+",
+          "Your ([A-Za-z0-9 ]+) order was delivered superfast! ([A-Za-z0-9 ]+) has delivered your Priority order in (\\d+) [ A-Za-z0-9,.! ]+",
+          "Your ([A-Za-z0-9 ]+) order was delivered before time ([A-Za-z0-9 ]+) has delivered your Priority order in (\\d+) [ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "delivery_speed": 1,
+          "delivery_person_name": 2,
+          "delivery_time": 3
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "{delivery_speed} order delivered",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "{delivery_person_name}",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "has delivered your order in {delivery_time} mins",
+            "templateId": 2005
+          },
+          {
+            "type": "bar",
+            "progress": 100,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Your Priority order was delivered superfast! ([A-Za-z0-9 ]+) has delivered [ A-Za-z0-9,.! ]+",
+          "Your order was delivered on time ([A-Za-z0-9 ]+) has delivered [ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "delivery_person_name": 1
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Order delivered",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "{delivery_person_name}",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "has delivered your order on time",
+            "templateId": 2005
+          },
+          {
+            "type": "bar",
+            "progress": 100,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Your order was delivered superfast! ([A-Za-z0-9 ]+) has delivered your order in (\\d+) [ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "delivery_person_name": 1,
+          "delivery_time": 2
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Order delivered superfast",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "{delivery_person_name}",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "has delivered your order in {delivery_time} mins",
+            "templateId": 2005
+          },
+          {
+            "type": "bar",
+            "progress": 100,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Your food is delivered! ([A-Za-z0-9 ]+) covered a distance of (\\d+) km in (\\d+) [ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "delivery_person_name": 1,
+          "delivery_time": 3
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Order delivered",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "{delivery_person_name}",
+            "templateId": 2004
+          },
+          {
+            "type": "text",
+            "text": "has delivered your order in {delivery_time} mins",
+            "templateId": 2005
+          },
+          {
+            "type": "bar",
+            "progress": 100,
+            "templateId": 2007
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Order [Dd]elivered! ([A-Za-z0-9 ]+) has delivered your order successfully.[ A-Za-z0-9,.! ]+",
+          "Your order was successfully delivered ([A-Za-z0-9 ]+) has delivered [ A-Za-z0-9,.! ]+"
+        ],
+        "groupIdMap": {
+          "delivery_person_name": 1,
+          "delivery_time": 3
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 2001
+          },
+          {
+            "type": "text",
+            "text": "SWIGGY",
+            "templateId": 2002
+          },
+          {
+            "type": "text",
+            "text": "Order delivered",
+            "templateId": 2003
+          },
+          {
+            "type": "text",
+            "text": "Your order was successfully\ndelivered",
+            "templateId": 2004
+          },
+          {
+            "type": "bar",
+            "progress": 100,
+            "templateId": 2007
+          }
+        ]
+      }
+    ]
+  }
+}

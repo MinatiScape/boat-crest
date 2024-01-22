@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/next_advise_container" android:tag="layout/layout_next_instruction_view_0" android:background="@color/app_blue" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/fontSizeSmall" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/tv_then" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/then"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <com.mappls.sdk.plugin.directions.view.ManeuverView android:id="@+id/next_instruction_image_view" android:layout_width="20dp" android:layout_height="20dp"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/next_advice_duration" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

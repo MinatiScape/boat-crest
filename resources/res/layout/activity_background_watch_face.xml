@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/activity_background_watch_face_0" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar_generic"/>
+    <FrameLayout android:id="@+id/watchfaceBackground" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/margin_16dp" app:layout_constraintBottom_toTopOf="@+id/btnSave" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    <Button android:enabled="false" android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="@dimen/margin_56dp" android:layout_marginBottom="@dimen/margin_16dp" android:text="@string/save" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" style="@style/ButtonThemeEnabled"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/rounded_dialog_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_32dp" android:layout_marginEnd="@dimen/margin_32dp" style="@style/dialogBackgroundStyle">
+    <RelativeLayout android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:layout_marginTop="@dimen/margin_0dp" android:text="@string/filter_by" android:layout_centerHorizontal="true" style="@style/dialogHeaderTextStyle"/>
+        <ImageView android:id="@+id/close" android:padding="8dp" android:visibility="visible" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="@dimen/margin_10dp" android:tint="@color/main_text_color" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="0x7f080362"/>
+    </RelativeLayout>
+    <RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16dp" android:layout_below="@+id/root_layout" android:layout_centerHorizontal="true">
+        <RadioButton android:id="@+id/locality" android:layout_width="wrap_content" android:checked="false" android:button="@drawable/radio_button_drawable_new" android:text="@string/your_locality" android:paddingStart="@dimen/margin_16dp" style="@style/dialogInfoTextStyle"/>
+        <RadioButton android:id="@+id/city" android:layout_width="wrap_content" android:checked="true" android:button="@drawable/radio_button_drawable_new" android:text="@string/your_city" android:paddingStart="@dimen/margin_16dp" style="@style/dialogInfoTextStyle"/>
+        <RadioButton android:gravity="start|center_vertical" android:id="@+id/state" android:layout_width="wrap_content" android:button="@drawable/radio_button_drawable_new" android:text="@string/your_state" android:paddingStart="@dimen/margin_16dp" style="@style/dialogInfoTextStyle"/>
+        <RadioButton android:id="@+id/country" android:layout_width="wrap_content" android:button="@drawable/radio_button_drawable_new" android:text="@string/your_country" android:paddingStart="@dimen/margin_16dp" style="@style/dialogInfoTextStyle"/>
+        <RadioButton android:textSize="18sp" android:textStyle="normal" android:textColor="@color/secondary_text_color" android:layout_gravity="start|center_vertical" android:id="@+id/global" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:checked="false" android:text="@string/global" android:buttonTint="@color/colorPrimary"/>
+    </RadioGroup>
+    <Button android:id="@+id/apply" android:background="@drawable/rounded_dialog_button_background" android:text="@string/apply" android:layout_below="@+id/radioGroup" style="@style/dialogButtonStyle"/>
+</RelativeLayout>

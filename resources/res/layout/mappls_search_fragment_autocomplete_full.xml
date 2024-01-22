@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/toolbar" android:background="#ffffff" android:layout_width="0dp" android:layout_height="56dp" android:elevation="4dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.mappls.sdk.plugins.places.autocomplete.ui.SearchView android:id="@+id/searchView" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView android:id="@+id/signature_layout_top" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/cardview_light_background" app:cardPreventCornerOverlap="true" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" layout="@layout/mappls_search_signature_layout"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@+id/current_location_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" app:cardBackgroundColor="@color/cardview_light_background" app:cardPreventCornerOverlap="true" app:layout_constraintTop_toBottomOf="@+id/signature_layout_top">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mappls_search_current_location"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@+id/poor_connection_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/cardview_light_background" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true" app:layout_constraintTop_toBottomOf="@+id/current_location_layout">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp" android:text="@string/poor_internet_connection"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/layout_result" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/current_location_layout">
+        <View android:id="@+id/scroll_drop_shadow" android:background="@drawable/mappls_search_scroll_shadow" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view_results" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/signature_layout_bottom" app:layout_constraintEnd_toEndOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/scroll_drop_shadow">
+                <com.mappls.sdk.plugins.places.autocomplete.ui.ResultView android:id="@+id/favoriteResultView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.mappls.sdk.plugins.places.autocomplete.ui.ResultView android:id="@+id/searchHistoryResultsView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.mappls.sdk.plugins.places.autocomplete.ui.ResultView android:id="@+id/searchResultView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <include android:id="@+id/offlineResultView" android:visibility="gone" layout="@layout/mappls_search_item_offline_message"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <androidx.cardview.widget.CardView android:id="@+id/signature_layout_bottom" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/cardview_light_background" app:cardPreventCornerOverlap="true" app:layout_constraintBottom_toBottomOf="0">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" layout="@layout/mappls_search_signature_layout_bottom"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

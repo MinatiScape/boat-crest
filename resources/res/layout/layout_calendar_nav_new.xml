@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlHeaderCalendar" android:padding="@dimen/dateTitlePaddingBottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imgVNavLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/main_text_color" android:gravity="center" android:id="@+id/tvYearTitle" android:tag="dateTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FEBRUARY 2014" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/semi_bold"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imgVNavRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

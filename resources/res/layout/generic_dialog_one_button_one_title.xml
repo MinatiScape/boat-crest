@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/rounded_dialog_background" style="@style/dialogBackgroundStyle">
+    <TextView android:id="@+id/title" android:layout_marginTop="@dimen/margin_0dp" app:layout_constraintBottom_toTopOf="@+id/positive_btn" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/dialogInfoHeaderTextStyle"/>
+    <Button android:id="@+id/positive_btn" android:background="@drawable/rounded_dialog_button_background" android:text="@string/button" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/title" style="@style/dialogButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

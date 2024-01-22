@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#999999" android:id="@+id/tv_interval" android:background="@drawable/interval_bg_selected" android:paddingTop="@dimen/margin_10dp" android:paddingBottom="@dimen/margin_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5.6sp" android:paddingStart="@dimen/margin_14dp" android:paddingEnd="@dimen/margin_14dp"/>
+    <View android:id="@+id/spacer" android:layout_width="@dimen/margin_10dp" android:layout_height="@dimen/margin_4dp"/>
+</LinearLayout>

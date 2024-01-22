@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/mappls_nearby_category_adapter_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp">
+    <androidx.cardview.widget.CardView android:id="@+id/mappls_nearby_category_background" android:layout_width="96dp" android:layout_height="96dp" app:cardBackgroundColor="#3a78e7" app:cardCornerRadius="12dp" app:cardUseCompatPadding="true" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/mappls_nearby_category_icon" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginBottom="24dp" android:src="0x7f0808c6" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/mappls_nearby_keyword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

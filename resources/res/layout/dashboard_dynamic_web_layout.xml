@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/webViewContainer" android:tag="layout/dashboard_dynamic_web_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <WebView android:id="@+id/dynamicWebView" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="@dimen/margin_32dp"/>
+</LinearLayout>

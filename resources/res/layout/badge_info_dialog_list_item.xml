@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/list_item_background_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+    <ImageView android:id="@+id/levelIv" android:layout_width="60dp" android:layout_height="60dp" android:layout_alignParentLeft="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/secondary_text_color" android:id="@+id/levelDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:layout_marginRight="5dp" android:text="@string/_10_times_goals_reached" android:layout_toLeftOf="@+id/isObtained" android:layout_toRightOf="@+id/levelIv" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/isObtained" android:padding="5dp" android:layout_width="23dp" android:layout_height="38dp" android:layout_marginRight="@dimen/margin_10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="0x7f0807d2"/>
+</RelativeLayout>

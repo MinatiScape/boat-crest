@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/fitness_vital_card_container_dashboard_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/clFirstFitnessVitalsCard" android:tag="binding_1" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@+id/firstFitnessVitalsCard" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@+id/firstFitnessVitalsCardWithValue" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/firstFitnessVitalsCardWithValue" layout="@layout/fitness_vitals_card_rectangle"/>
+        <include android:id="@+id/firstFitnessVitalsCardWithValue" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/item_list_fitness_vitals_layout_full"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/clFirstFitnessVitalsCard">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvVitals" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="2"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

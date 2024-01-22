@@ -1,0 +1,143 @@
+[
+  {
+    "category_name": "Coffee",
+    "category_code": "FODCOF",
+    "main_category": "Eat & Drink",
+    "icon_resource": "cat_icon_coffee",
+    "keywords": "coffee"
+  },
+  {
+    "category_name": "Restaurant",
+    "category_code": "FODIND",
+    "main_category": "Eat & Drink",
+    "icon_resource": "cat_icon_restaurant",
+    "keywords": ""
+  },
+  {
+    "category_name": "Pubs & Bars",
+    "category_code": "FODPUB",
+    "main_category": "Eat & Drink",
+    "icon_resource": "cat_icon_bar",
+    "keywords": "pub; bar"
+  },
+  {
+    "category_name": "ATMs",
+    "category_code": "FINATM",
+    "main_category": "Utilities",
+    "icon_resource": "cat_icon_atm",
+    "keywords": "atm"
+  },
+  {
+    "category_name": "Pharmacy",
+    "category_code": "HLTMDS",
+    "main_category": "Health and wellness",
+    "icon_resource": "cat_icon_chemist",
+    "keywords": "medicine; chemist; pharmacy"
+  },
+  {
+    "category_name": "Parking",
+    "category_code": "TRNPRK",
+    "main_category": "Transport",
+    "icon_resource": "cat_icon_parking",
+    "keywords": "parking"
+  },
+  {
+    "category_name":"EV Charging",
+    "category_code": "TRNECS",
+    "main_category": "Utilities",
+    "icon_resource": "cat_icon_ev",
+    "keywords": "EV"
+  },
+  {
+    "category_name": "Petrol Pump",
+    "category_code": "TRNPMP",
+    "main_category": "Utilities",
+    "icon_resource": "cat_icon_petrol",
+    "keywords": "petrol pump; gas station"
+  },
+  {
+    "category_name": "Transport",
+    "category_code": "TRNBUS",
+    "main_category": "Transport",
+    "icon_resource": "cat_icon_transport",
+    "keywords": ""
+  },
+  {
+    "category_name": "Entertainment",
+    "category_code": "RCNCIN",
+    "main_category": "Entertainment",
+    "icon_resource": "cat_icon_entertainment",
+    "keywords": ""
+  },
+  {
+    "category_name": "Hotels",
+    "category_code": "HOTALL",
+    "main_category": "Hotels",
+    "icon_resource": "cat_icon_hotel",
+    "keywords": "hotel"
+  },
+  {
+    "category_name": "Shopping",
+    "category_code": "SHPRTC",
+    "main_category": "Shopping",
+    "icon_resource": "cat_icon_shopping",
+    "keywords": ""
+  },
+  {
+    "category_name": "Groceries",
+    "category_code": "SHPMAN",
+    "main_category": "Shopping",
+    "icon_resource": "cat_icon_groceries",
+    "keywords": "grocery"
+  },
+  {
+    "category_name": "Hospitals",
+    "category_code": "HLTHSP",
+    "main_category": "Emergencies & Hospitals",
+    "icon_resource": "cat_icon_hospital",
+    "keywords": ""
+  },
+  {
+    "category_name": "Police Stations",
+    "category_code": "COMPOL",
+    "main_category": "Emergencies & Hospitals",
+    "icon_resource": "cat_icon_police",
+    "keywords": "police"
+  },
+  {
+    "category_name": "Post Offices",
+    "category_code": "COMPTO",
+    "main_category": "Utilities",
+    "icon_resource": "cat_icon_postoffice",
+    "keywords": "post office"
+  },
+  {
+    "category_name": "Banks",
+    "category_code": "FINBNK",
+    "main_category": "Bank",
+    "icon_resource": "cat_icon_bank",
+    "keywords": ""
+  },
+  {
+    "category_name": "Spas",
+    "category_code": "HLTSPA",
+    "main_category": "Health and wellness",
+    "icon_resource": "cat_icon_spa",
+    "keywords": "spa"
+  },
+  {
+    "category_name": "Toilets",
+    "category_code": "COMPUB",
+    "main_category": "MaincatName",
+    "icon_resource": "cat_icon_wc",
+    "keywords": "toilet;toilets"
+  },
+  {
+    "category_name": "CNG Station",
+    "category_code": "TRNCNG",
+    "main_category": "Utilities",
+    "icon_resource": "cat_icon_cng",
+    "keywords": "cng"
+  }
+
+]

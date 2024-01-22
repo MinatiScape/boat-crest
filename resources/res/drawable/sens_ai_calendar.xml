@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="30dp" android:width="26dp" android:viewportWidth="26" android:viewportHeight="30">
+    <group>
+        <clip-path android:pathData="M1302,-1021v2454L-108,1433L-108,-1021h1410z"/>
+        <group>
+            <clip-path android:pathData="M3.616,2.727v1.248c0,1.343 1.1,2.435 2.452,2.435h1.51a2.447,2.447 0,0 0,2.451 -2.435L10.029,2.727h3.396v1.248c0,1.343 1.1,2.435 2.452,2.435h1.51a2.447,2.447 0,0 0,2.452 -2.435L19.839,2.727h0.629c1.635,0 2.987,1.342 2.987,2.965v11.487c-0.66,-0.406 -1.415,-0.687 -2.201,-0.874L21.254,8.937L2.2,8.937v12.423c0,0.531 0.44,0.968 0.974,0.968v0.031h8.741a7.81,7.81 0,0 0,-0.157 1.498c0,0.25 0,0.469 0.031,0.687L3.175,24.544A3.155,3.155 0,0 1,0 21.393L0,5.88A3.155,3.155 0,0 1,3.175 2.727h0.44z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b0_sens_ai_calendar__0" android:pathData="M0,2.727h23.455v21.818L0,24.545L0,2.727z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M7.804,10.91c0.22,0 0.378,0.14 0.378,0.336v1.51c0,0.196 -0.158,0.336 -0.379,0.336L4.744,13.092c-0.221,0 -0.379,-0.14 -0.379,-0.336L4.365,11.246C4.364,11.05 4.522,10.91 4.744,10.91z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b1_sens_ai_calendar__1" android:pathData="M4.364,10.91h3.818v2.182L4.364,13.092L4.364,10.91z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M7.804,18c0.22,0 0.378,0.142 0.378,0.34v1.502c0,0.198 -0.157,0.34 -0.378,0.34L4.743,20.182C4.522,20.182 4.364,20.04 4.364,19.842L4.364,18.34C4.364,18.142 4.522,18 4.743,18z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b4_sens_ai_calendar__2" android:pathData="M4.364,18h3.818v2.182L4.364,20.182L4.364,18z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M19.254,10.91c0.223,0 0.382,0.142 0.382,0.34v1.502c0,0.198 -0.159,0.34 -0.382,0.34L16.2,13.092c-0.191,0 -0.382,-0.17 -0.382,-0.34L15.818,11.25C15.818,11.052 15.977,10.91 16.2,10.91z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b5_sens_ai_calendar__3" android:pathData="M15.818,10.91h3.818v2.182L15.818,13.092L15.818,10.91z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M13.254,10.91c0.223,0 0.382,0.14 0.382,0.336v1.51c0,0.196 -0.159,0.336 -0.382,0.336L10.2,13.092c-0.223,0 -0.382,-0.14 -0.382,-0.336L9.818,11.246C9.818,11.05 9.977,10.91 10.2,10.91z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b6_sens_ai_calendar__4" android:pathData="M9.818,10.91h3.818v2.182L9.818,13.092L9.818,10.91z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M13.258,18c0.22,0 0.378,0.17 0.378,0.34h-0.031v0.283a6.87,6.87 0,0 0,-1.105 1.559L10.198,20.182c-0.221,0 -0.379,-0.17 -0.379,-0.34L9.819,18.34C9.818,18.142 10.008,18 10.197,18z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b7_sens_ai_calendar__5" android:pathData="M9.818,18h3.818v2.182L9.818,20.182L9.818,18z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M7.804,14.727c0.22,0 0.378,0.142 0.378,0.34v1.502c0,0.198 -0.157,0.34 -0.378,0.34L4.743,16.909C4.522,16.909 4.364,16.767 4.364,16.569L4.364,15.067C4.364,14.869 4.522,14.727 4.743,14.727z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b8_sens_ai_calendar__6" android:pathData="M4.364,14.727h3.818v2.182L4.364,16.909L4.364,14.727z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M19.258,14.727c0.22,0 0.378,0.142 0.378,0.34v1.19a8.207,8.207 0,0 0,-3.03 0.652h-0.41A0.388,0.388 0,0 1,15.818 16.569L15.818,15.067C15.818,14.869 16.008,14.727 16.197,14.727z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b9_sens_ai_calendar__7" android:pathData="M15.818,14.727h3.818v2.182L15.818,16.909L15.818,14.727z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M13.254,14.727c0.223,0 0.382,0.17 0.382,0.34v1.502c0,0.198 -0.159,0.34 -0.382,0.34L10.2,16.909C9.977,16.909 9.818,16.767 9.818,16.569L9.818,15.067C9.818,14.869 9.977,14.727 10.2,14.727z"/>
+            <path android:fillColor="@drawable/res_0x7f0801ba_sens_ai_calendar__8" android:pathData="M9.818,14.727h3.818v2.182L9.818,16.909L9.818,14.727z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M7.893,0c0.467,0 0.835,0.365 0.835,0.83v3.25c0,0.464 -0.368,0.83 -0.835,0.83L6.29,4.91A0.824,0.824 0,0 1,5.455 4.08L5.455,0.83C5.455,0.364 5.822,0 6.29,0z"/>
+            <path android:fillColor="@drawable/res_0x7f0801bb_sens_ai_calendar__9" android:pathData="M5.455,0h3.273v4.91L5.455,4.91L5.455,0z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M17.711,0c0.467,0 0.835,0.365 0.835,0.83v3.25c0,0.464 -0.368,0.83 -0.835,0.83L16.108,4.91A0.845,0.845 0,0 1,15.273 4.08L15.273,0.83C15.273,0.364 15.64,0 16.108,0z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b2_sens_ai_calendar__10" android:pathData="M15.273,0h3.273v4.91L15.273,4.91L15.273,0z"/>
+        </group>
+        <group>
+            <clip-path android:pathData="M19.636,18a6,6 0,1 1,0 12A6,6 0,1 1,19.636 18zM19.636,19.79a0.899,0.899 0,0 0,-0.88 0.88L18.756,24c0,0.471 0.409,0.88 0.88,0.88h2.45c0.503,0 0.88,-0.409 0.88,-0.88a0.899,0.899 0,0 0,-0.88 -0.88L20.516,23.12L20.516,20.67A0.899,0.899 0,0 0,19.636 19.79z"/>
+            <path android:fillColor="@drawable/res_0x7f0801b3_sens_ai_calendar__11" android:pathData="M13.636,18h12v12L13.636,30L13.636,18z"/>
+        </group>
+    </group>
+</vector>

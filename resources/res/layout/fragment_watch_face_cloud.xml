@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/watch_container_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16dp" android:layout_centerHorizontal="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/watchface_placeholder_default" android:layout_width="108dp" android:layout_height="130dp" android:src="0x7f080bf8"/>
+        <ImageView android:id="@+id/selected_watch_face" android:layout_width="91dp" android:layout_height="109dp" android:layout_marginLeft="8dp" android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/main_text_color" android:id="@+id/choose_watch_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16dp" android:text="@string/choose_your_watch_face" android:layout_marginStart="@dimen/margin_24dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/watch_container_rl" style="@style/medium"/>
+    <androidx.cardview.widget.CardView android:id="@+id/cv_watch_faces" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/margin_24dp" android:layout_marginTop="@dimen/margin_5dp" android:layout_marginRight="@dimen/margin_24dp" android:backgroundTint="@color/transparent" android:layout_marginHorizontal="@dimen/margin_24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/choose_watch_tv">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/watchFace_recycler" android:background="@drawable/list_item_background_top_rounde_new" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_8dp"/>
+            <TextView android:textColor="@color/colorPrimary" android:id="@+id/txt_more_watch_face" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_watch_faces_coming_soon" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

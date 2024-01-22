@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/activity_sensai_share_screen_0" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <LinearLayout android:id="@+id/share_close_layout" android:layout_width="56dp" android:layout_height="56dp">
+        <ImageView android:id="@+id/share_close_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginTop="@dimen/margin_20dp" android:src="0x7f080ac0"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/container_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/margin_10dp" android:layout_weight="0.98"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/share_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:layout_weight="0.02">
+        <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/secondary_text_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:layout_marginTop="@dimen/margin_10dp" android:layout_marginRight="@dimen/margin_10dp" android:text="@string/sensai_share"/>
+        <TextView android:textSize="@dimen/text_size_18sp" android:textStyle="bold" android:textColor="@color/main_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/share_button" android:background="@drawable/button_bg" android:layout_width="231dp" android:layout_height="@dimen/margin_60dp" android:layout_marginTop="@dimen/margin_15dp" android:text="@string/share" android:backgroundTint="@color/colorPrimary"/>
+    </LinearLayout>
+</LinearLayout>

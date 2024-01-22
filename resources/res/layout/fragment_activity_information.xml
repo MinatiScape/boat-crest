@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <TableLayout android:background="@drawable/list_item_background_new" android:padding="@dimen/margin_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_12dp" android:weightSum="2">
+            <TableRow android:layout_width="match_parent" android:layout_height="60dp" android:weightSum="2">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_column="1" android:layout_weight="1">
+                    <TextView android:textSize="18sp" android:textColor="@color/color_03ff00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/regular"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/slow_leisure_light" android:layout_marginStart="4dp" style="@style/regular"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_column="2" android:layout_weight="1">
+                    <TextView android:textSize="18sp" android:textColor="@color/color_ffff00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l2" style="@style/regular"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/moderate" android:layout_marginStart="4dp" style="@style/regular"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="50dp" android:weightSum="2">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_column="1" android:layout_weight="1">
+                    <TextView android:textSize="18sp" android:textColor="@color/color_ff9900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l3" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/regular"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vigorous_fast" android:layout_marginStart="4dp" style="@style/regular"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/margin_10dp" android:layout_column="2" android:layout_weight="1">
+                    <TextView android:textSize="18sp" android:textColor="@color/color_ff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l4" style="@style/regular"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/very_vigorous" android:layout_marginStart="4dp" style="@style/regular"/>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        <EditText android:textSize="@dimen/text_size_14sp" android:textColor="@color/white" android:textColorHint="@color/light_grey_text_color" android:id="@+id/edt_search" android:background="@drawable/rounded_light_grey_background_70dp" android:paddingLeft="@dimen/margin_10dp" android:paddingRight="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="@dimen/height_50dp" android:layout_marginTop="@dimen/margin_4dp" android:layout_marginBottom="@dimen/margin_8dp" android:hint="@string/search_activity" android:maxLines="1" android:singleLine="true" android:drawablePadding="@dimen/margin_10dp" android:imeOptions="actionSearch" android:drawableStart="@drawable/ic_search_red" android:layout_marginStart="@dimen/margin_24dp" android:layout_marginEnd="@dimen/margin_24dp" android:elevation="@dimen/margin_22dp" android:paddingHorizontal="@dimen/margin_10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tvHeader" app:searchIcon="@drawable/ic_search_red"/>
+        <ExpandableListView android:id="@+id/expandableListView" android:layout_width="match_parent" android:layout_height="match_parent" android:groupIndicator="@null" android:dividerHeight="@dimen/margin_16dp" android:layout_marginStart="@dimen/margin_24dp" android:layout_marginEnd="@dimen/margin_24dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

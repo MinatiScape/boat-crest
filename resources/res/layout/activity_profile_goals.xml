@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/activity_profile_goals_0" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar_generic"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/vertical_guideline_start" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.05"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/vertical_guideline_end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.93"/>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rv_goals" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20dp" android:layout_marginBottom="@dimen/margin_10dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintEnd_toEndOf="@+id/vertical_guideline_end" app:layout_constraintStart_toEndOf="@+id/vertical_guideline_start" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

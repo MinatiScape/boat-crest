@@ -1,0 +1,78 @@
+package com.coveiot.coveaccess.model.server;
+
+import androidx.core.app.NotificationCompat;
+import com.clevertap.android.sdk.Constants;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.gson.annotations.SerializedName;
+import java.util.List;
+/* loaded from: classes8.dex */
+public class SWorkoutCategoryList {
+    @SerializedName("data")
+    private DataBean data;
+    @SerializedName(Constants.KEY_MESSAGE)
+    private String message;
+    @SerializedName(NotificationCompat.CATEGORY_STATUS)
+    private String status;
+
+    /* loaded from: classes8.dex */
+    public static class DataBean {
+        @SerializedName(FirebaseAnalytics.Param.ITEMS)
+        private List<ItemsBean> items;
+
+        /* loaded from: classes8.dex */
+        public static class ItemsBean {
+            @SerializedName("categoryId")
+            private String categoryId;
+            @SerializedName("title")
+            private String title;
+
+            public String getCategoryId() {
+                return this.categoryId;
+            }
+
+            public String getTitle() {
+                return this.title;
+            }
+
+            public void setCategoryId(String str) {
+                this.categoryId = str;
+            }
+
+            public void setTitle(String str) {
+                this.title = str;
+            }
+        }
+
+        public List<ItemsBean> getItems() {
+            return this.items;
+        }
+
+        public void setItems(List<ItemsBean> list) {
+            this.items = list;
+        }
+    }
+
+    public DataBean getData() {
+        return this.data;
+    }
+
+    public String getMessage() {
+        return this.message;
+    }
+
+    public String getStatus() {
+        return this.status;
+    }
+
+    public void setData(DataBean dataBean) {
+        this.data = dataBean;
+    }
+
+    public void setMessage(String str) {
+        this.message = str;
+    }
+
+    public void setStatus(String str) {
+        this.status = str;
+    }
+}

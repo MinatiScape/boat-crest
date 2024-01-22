@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="25dp" android:viewportWidth="25" android:viewportHeight="24">
+    <path android:fillColor="@drawable/res_0x7f080039_female_wellness_mood_energetic_selected__0" android:pathData="M0.25,12L0.25,12A12,12 0,0 1,12.25 0L12.25,0A12,12 0,0 1,24.25 12L24.25,12A12,12 0,0 1,12.25 24L12.25,24A12,12 0,0 1,0.25 12z"/>
+    <path android:fillColor="#00000000" android:pathData="M7.75,14.5s1.5,2 4.5,2c2.75,0 4.5,-2 4.5,-2" android:strokeColor="#3a3a3a" android:strokeWidth="1.5" android:strokeLineCap="round"/>
+    <group>
+        <clip-path android:pathData="M6.25,6h5v5L6.25,11z"/>
+        <path android:fillColor="#ed1c24" android:pathData="m8.747,10.448 l-0.302,-0.275C7.372,9.2 6.665,8.556 6.665,7.77c0,-0.644 0.503,-1.146 1.145,-1.146 0.362,0 0.71,0.169 0.937,0.433 0.227,-0.264 0.575,-0.433 0.938,-0.433 0.642,0 1.146,0.502 1.146,1.146 0,0.785 -0.709,1.429 -1.782,2.402l-0.302,0.275z"/>
+    </group>
+    <group>
+        <clip-path android:pathData="M13.25,6h5v5L13.25,11z"/>
+        <path android:fillColor="#ed1c24" android:pathData="m15.747,10.448 l-0.302,-0.275c-1.073,-0.973 -1.78,-1.617 -1.78,-2.402 0,-0.644 0.503,-1.146 1.145,-1.146 0.362,0 0.71,0.169 0.937,0.433 0.228,-0.264 0.575,-0.433 0.938,-0.433 0.642,0 1.146,0.502 1.146,1.146 0,0.785 -0.709,1.429 -1.782,2.402l-0.302,0.275z"/>
+    </group>
+</vector>

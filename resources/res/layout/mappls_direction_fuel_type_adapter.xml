@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/parent_layout" android:tag="layout/mappls_direction_fuel_type_adapter_0" android:background="@drawable/mappls_direction_dr_background_card_layout" android:layout_width="74dp" android:layout_height="78dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/image_view_fuel_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mappls_direction_petrol_station_grey" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/colorTextSecondary2" android:id="@+id/text_view_type_fuel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Petrol" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/image_view_fuel_type"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

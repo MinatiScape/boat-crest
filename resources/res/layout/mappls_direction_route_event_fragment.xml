@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/mappls_direction_route_event_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/route_event_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,140 @@
+package androidx.work;
+
+import android.net.Network;
+import android.net.Uri;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.RestrictTo;
+import androidx.work.impl.utils.taskexecutor.TaskExecutor;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.UUID;
+import java.util.concurrent.Executor;
+/* loaded from: classes.dex */
+public final class WorkerParameters {
+    @NonNull
+
+    /* renamed from: a  reason: collision with root package name */
+    public UUID f1790a;
+    @NonNull
+    public Data b;
+    @NonNull
+    public Set<String> c;
+    @NonNull
+    public RuntimeExtras d;
+    public int e;
+    @NonNull
+    public Executor f;
+    @NonNull
+    public TaskExecutor g;
+    @NonNull
+    public WorkerFactory h;
+    @NonNull
+    public ProgressUpdater i;
+    @NonNull
+    public ForegroundUpdater j;
+
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    /* loaded from: classes.dex */
+    public static class RuntimeExtras {
+        @RequiresApi(28)
+        public Network network;
+        @NonNull
+        public List<String> triggeredContentAuthorities = Collections.emptyList();
+        @NonNull
+        public List<Uri> triggeredContentUris = Collections.emptyList();
+    }
+
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    public WorkerParameters(@NonNull UUID uuid, @NonNull Data data, @NonNull Collection<String> collection, @NonNull RuntimeExtras runtimeExtras, @IntRange(from = 0) int i, @NonNull Executor executor, @NonNull TaskExecutor taskExecutor, @NonNull WorkerFactory workerFactory, @NonNull ProgressUpdater progressUpdater, @NonNull ForegroundUpdater foregroundUpdater) {
+        this.f1790a = uuid;
+        this.b = data;
+        this.c = new HashSet(collection);
+        this.d = runtimeExtras;
+        this.e = i;
+        this.f = executor;
+        this.g = taskExecutor;
+        this.h = workerFactory;
+        this.i = progressUpdater;
+        this.j = foregroundUpdater;
+    }
+
+    @NonNull
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    public Executor getBackgroundExecutor() {
+        return this.f;
+    }
+
+    @NonNull
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    public ForegroundUpdater getForegroundUpdater() {
+        return this.j;
+    }
+
+    @NonNull
+    public UUID getId() {
+        return this.f1790a;
+    }
+
+    @NonNull
+    public Data getInputData() {
+        return this.b;
+    }
+
+    @Nullable
+    @RequiresApi(28)
+    public Network getNetwork() {
+        return this.d.network;
+    }
+
+    @NonNull
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    public ProgressUpdater getProgressUpdater() {
+        return this.i;
+    }
+
+    @IntRange(from = 0)
+    public int getRunAttemptCount() {
+        return this.e;
+    }
+
+    @NonNull
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    public RuntimeExtras getRuntimeExtras() {
+        return this.d;
+    }
+
+    @NonNull
+    public Set<String> getTags() {
+        return this.c;
+    }
+
+    @NonNull
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    public TaskExecutor getTaskExecutor() {
+        return this.g;
+    }
+
+    @NonNull
+    @RequiresApi(24)
+    public List<String> getTriggeredContentAuthorities() {
+        return this.d.triggeredContentAuthorities;
+    }
+
+    @NonNull
+    @RequiresApi(24)
+    public List<Uri> getTriggeredContentUris() {
+        return this.d.triggeredContentUris;
+    }
+
+    @NonNull
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    public WorkerFactory getWorkerFactory() {
+        return this.h;
+    }
+}

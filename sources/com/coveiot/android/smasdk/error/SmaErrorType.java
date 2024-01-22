@@ -1,0 +1,14 @@
+package com.coveiot.android.smasdk.error;
+/* loaded from: classes6.dex */
+public enum SmaErrorType {
+    DEVICE_NOT_CONNECTED,
+    BLUETOOTH_DISABLED,
+    SERVICE_NOT_RUNNING,
+    LOCATION_PERMISSION_NEEDED,
+    SCANNING_INPROGRESS,
+    BAND_ALREADY_CONNECTED,
+    CONNECTION_IN_PROGRESS,
+    COMMAND_REQUEST_ERROR,
+    BAND_INSTRUCTION_NOT_FOLLOWED,
+    COMMAND_TIME_OUT
+}

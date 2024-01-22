@@ -1,0 +1,41 @@
+package com.google.common.collect;
+
+import com.google.common.annotations.GwtCompatible;
+import com.google.common.base.Preconditions;
+import java.io.Serializable;
+import java.util.Comparator;
+import org.checkerframework.checker.nullness.compatqual.NullableDecl;
+@GwtCompatible(serializable = true)
+/* loaded from: classes10.dex */
+public final class a0<T> extends Ordering<T> implements Serializable {
+    private static final long serialVersionUID = 0;
+    public final Comparator<T> comparator;
+
+    public a0(Comparator<T> comparator) {
+        this.comparator = (Comparator) Preconditions.checkNotNull(comparator);
+    }
+
+    @Override // com.google.common.collect.Ordering, java.util.Comparator
+    public int compare(T t, T t2) {
+        return this.comparator.compare(t, t2);
+    }
+
+    @Override // java.util.Comparator
+    public boolean equals(@NullableDecl Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof a0) {
+            return this.comparator.equals(((a0) obj).comparator);
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.comparator.hashCode();
+    }
+
+    public String toString() {
+        return this.comparator.toString();
+    }
+}

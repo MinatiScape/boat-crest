@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/activity_rank_share_0" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <LinearLayout android:gravity="center" android:id="@+id/share_close_layout" android:layout_width="@dimen/margin_40dp" android:layout_height="@dimen/margin_40dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/share_close_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080ac0" android:tint="@color/main_text_color"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/container_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/margin_5dp" android:layout_weight="0.99"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/share_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:layout_weight="0.005">
+        <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/secondary_text_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:layout_marginTop="@dimen/margin_10dp" android:layout_marginRight="@dimen/margin_10dp" android:text="@string/share_with"/>
+        <Button android:textColor="@color/main_text_color" android:id="@+id/share_button" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="@dimen/margin_20dp" android:layout_marginBottom="@dimen/margin_10dp" android:text="@string/share" style="@style/ButtonThemeEnabled"/>
+    </LinearLayout>
+</LinearLayout>

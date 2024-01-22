@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/do_more_with_your_watch_card_container_dashboard_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/sosSettings" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16dp" layout="@layout/layout_dashboard_do_more_with_your_watch_grid_item"/>
+    <include android:id="@+id/wellnessCrewSetup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16dp" layout="@layout/layout_dashboard_do_more_with_your_watch_grid_item"/>
+    <include android:id="@+id/sportScores" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16dp" layout="@layout/layout_dashboard_do_more_with_your_watch_grid_item"/>
+    <include android:id="@+id/buildFitnessPlan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16dp" layout="@layout/layout_dashboard_do_more_with_your_watch_grid_item"/>
+    <include android:id="@+id/alexaConnect" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16dp" layout="@layout/layout_dashboard_do_more_with_your_watch_grid_item"/>
+    <include android:id="@+id/tapAndPay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16dp" layout="@layout/layout_dashboard_do_more_with_your_watch_grid_item"/>
+</LinearLayout>

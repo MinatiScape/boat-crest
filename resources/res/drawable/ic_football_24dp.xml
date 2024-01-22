@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@drawable/res_0x7f0800c8_ic_football_24dp__0" android:pathData="M12,3c-4.411,0 -8,3.589 -8,8s3.589,8 8,8 8,-3.589 8,-8 -3.589,-8 -8,-8zM17.41,14.388h-1.8l-0.65,-1.116 0.578,-2.324 1.146,-0.487 1.64,1.412a6.34,6.34 0,0 1,-0.915 2.515zM7.315,10.46l1.146,0.488 0.576,2.325 -0.65,1.115L6.592,14.388a6.34,6.34 0,0 1,-0.916 -2.513l1.64,-1.415zM16.895,6.904 L16.186,8.917 14.989,9.424 12.807,7.594L12.807,6.248l1.687,-1.123a6.418,6.418 0,0 1,2.4 1.781v-0.001zM9.505,5.122 L11.191,6.246v1.346L9.01,9.424l-1.197,-0.507 -0.708,-2.012a6.418,6.418 0,0 1,2.4 -1.782zM10.521,17.21 L9.748,15.262 10.364,14.204h3.269l0.617,1.059 -0.769,1.946a6.393,6.393 0,0 1,-2.961 0l0.001,0.002z"/>
+</vector>

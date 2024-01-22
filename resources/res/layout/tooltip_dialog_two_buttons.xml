@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/tooltip_dialog_two_buttons_0" android:background="0x7f080b2d" style="@style/dialogBackgroundStyle">
+    <TextView android:id="@+id/title" android:layout_marginTop="@dimen/margin_16dp" app:layout_constraintBottom_toTopOf="@+id/message" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/toolTipDialogHeaderTextStyle"/>
+    <TextView android:id="@+id/message" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/title" style="@style/toolTipDialogInfoTextStyle"/>
+    <Button android:id="@+id/negative_btn" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_marginTop="@dimen/margin_0dp" android:text="@string/button" app:layout_constraintBottom_toBottomOf="@+id/positive_btn" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/positive_btn" style="@style/toolTipDialogButtonStyle"/>
+    <Button android:id="@+id/positive_btn" android:background="@drawable/rounded_dialog_button_background" android:layout_width="132dp" android:text="@string/button" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/message" style="@style/dialogButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

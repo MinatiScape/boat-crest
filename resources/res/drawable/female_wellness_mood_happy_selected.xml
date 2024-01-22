@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="25dp" android:viewportWidth="25" android:viewportHeight="24">
+    <path android:fillColor="@drawable/res_0x7f08003a_female_wellness_mood_happy_selected__0" android:pathData="M0.5,12L0.5,12A12,12 0,0 1,12.5 0L12.5,0A12,12 0,0 1,24.5 12L24.5,12A12,12 0,0 1,12.5 24L12.5,24A12,12 0,0 1,0.5 12z"/>
+    <path android:fillColor="#3a3a3a" android:pathData="M10.5,10.116c0,1.17 -0.895,-0.705 -2,-0.705s-2,1.874 -2,0.705C6.5,8.948 7.395,8 8.5,8s2,0.947 2,2.116z"/>
+    <path android:fillColor="#3a3a3a" android:pathData="M18.5,10.116c0,1.17 -0.895,-0.705 -2,-0.705s-2,1.874 -2,0.705c0,-1.168 0.895,-2.116 2,-2.116s2,0.947 2,2.116z"/>
+    <path android:fillColor="#00000000" android:pathData="M8,15s1.5,2 4.5,2c2.75,0 4.5,-2 4.5,-2" android:strokeColor="#3a3a3a" android:strokeWidth="1.5" android:strokeLineCap="round"/>
+</vector>

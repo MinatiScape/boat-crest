@@ -1,0 +1,85 @@
+package com.ido.ble.protocol.model;
+
+import java.io.Serializable;
+/* loaded from: classes11.dex */
+public class NewMessageInfo implements Serializable {
+    public static final int TYPE_99taxi = 73;
+    public static final int TYPE_ALARM = 14;
+    public static final int TYPE_AMAZON = 44;
+    public static final int TYPE_Aliexpress = 70;
+    public static final int TYPE_Americanas = 68;
+    public static final int TYPE_CALENDAR = 12;
+    public static final int TYPE_CHATWORK = 32;
+    public static final int TYPE_DAILYHUNT = 40;
+    public static final int TYPE_EMAIL = 2;
+    public static final int TYPE_Enjoei = 69;
+    public static final int TYPE_FACEBOOK = 6;
+    public static final int TYPE_FLIPKART = 45;
+    public static final int TYPE_GMAIL = 20;
+    public static final int TYPE_GOOGLE_MEET = 64;
+    public static final int TYPE_GPAP = 59;
+    public static final int TYPE_GPAY = 48;
+    public static final int TYPE_HOTSTAR = 41;
+    public static final int TYPE_INSHORTS = 42;
+    public static final int TYPE_INSTAGRAM = 10;
+    public static final int TYPE_JIOTV = 53;
+    public static final int TYPE_KAKAO_TALK = 19;
+    public static final int TYPE_KEEP = 54;
+    public static final int TYPE_LINE = 17;
+    public static final int TYPE_LINKEDIN = 11;
+    public static final int TYPE_MAIL_YAHOO = 34;
+    public static final int TYPE_MAKEMYTRIP = 52;
+    public static final int TYPE_MATTER = 63;
+    public static final int TYPE_MESSENGER = 9;
+    public static final int TYPE_MICROSOFT = 55;
+    public static final int TYPE_MISSED_CALL = 58;
+    public static final int TYPE_Magalu = 67;
+    public static final int TYPE_Mercado_livre = 77;
+    public static final int TYPE_Mormaii_Smartwatch = 65;
+    public static final int TYPE_NETFLIX = 47;
+    public static final int TYPE_OLA = 62;
+    public static final int TYPE_OTHER = 24;
+    public static final int TYPE_OUTLOOK = 21;
+    public static final int TYPE_PAYTM = 43;
+    public static final int TYPE_PHONPE = 49;
+    public static final int TYPE_PINTEREST_YAHOO = 37;
+    public static final int TYPE_PRIME = 46;
+    public static final int TYPE_QQ = 4;
+    public static final int TYPE_REDBUS = 39;
+    public static final int TYPE_Rappi = 76;
+    public static final int TYPE_SKYPE = 13;
+    public static final int TYPE_SLACK = 33;
+    public static final int TYPE_SMS = 1;
+    public static final int TYPE_SNAPCHAT = 22;
+    public static final int TYPE_SWIGGY = 50;
+    public static final int TYPE_Shopee = 71;
+    public static final int TYPE_TELEGRAM = 23;
+    public static final int TYPE_TIKTOK = 38;
+    public static final int TYPE_TUMBLR = 35;
+    public static final int TYPE_TWITTER = 7;
+    public static final int TYPE_Teams = 72;
+    public static final int TYPE_Technos_Connect = 66;
+    public static final int TYPE_UBER = 61;
+    public static final int TYPE_Uber_Eats = 74;
+    public static final int TYPE_VERYFIT = 79;
+    public static final int TYPE_VIBER = 18;
+    public static final int TYPE_VKONTAKTE = 16;
+    public static final int TYPE_WEIBO = 5;
+    public static final int TYPE_WHATSAPP = 8;
+    public static final int TYPE_WHATSAPP_BUSINESS = 56;
+    public static final int TYPE_WX = 3;
+    public static final int TYPE_YOUTUBE = 36;
+    public static final int TYPE_YT_MUSIC = 60;
+    public static final int TYPE_Yahoo = 78;
+    public static final int TYPE_ZOMATO = 51;
+    public static final int TYPE_lfood = 75;
+    private static final long serialVersionUID = 1;
+    public String content;
+    public String name;
+    public String number;
+    public int type;
+
+    public String toString() {
+        return "NewMessageInfo{type=" + this.type + ", name='" + this.name + "', number='" + this.number + "', content='" + this.content + "'}";
+    }
+}

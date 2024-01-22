@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="42dp" android:width="42dp" android:viewportWidth="42" android:viewportHeight="42">
+    <path android:fillColor="#666" android:pathData="M21,14.713c3.502,0.15 6.68,1.51 9.103,3.662l4.022,-3.907C30.67,11.321 26.072,9.344 21,9.188v5.525zM31.5,19.2l3.35,-3.45a17.466,17.466 0,0 1,4.524 11.087,0.685 0.685,0 0,1 -0.188,0.511 0.645,0.645 0,0 1,-0.488 0.215h-3.386a0.685,0.685 0,0 1,-0.676 -0.66,12.537 12.537,0 0,0 -3.136,-7.704z" android:fillType="evenOdd"/>
+    <path android:fillColor="#fff" android:pathData="M23.597,26.551a2.8,2.8 0,1 1,-3.456 0.812l-5.312,-6.334a0.609,0.609 0,1 1,0.93 -0.784l5.316,6.336a2.796,2.796 0,0 1,2.522 -0.03zM22.788,28.201a0.963,0.963 0,1 0,-0.847 1.73,0.963 0.963,0 0,0 0.847,-1.73z" android:fillType="evenOdd"/>
+    <path android:fillColor="@drawable/res_0x7f08016e_ic_vital_energy__0" android:pathData="M8.013,14.296a18.827,18.827 0,0 1,12.314 -5.101v5.337a13.511,13.511 0,0 0,-8.54 3.538l-3.774,-3.774zM10.978,18.933 L7.204,15.159a18.826,18.826 0,0 0,-5.095 12.13,0.737 0.737,0 0,0 0.211,0.56c0.15,0.155 0.335,0.234 0.55,0.234h3.814c0.406,0 0.74,-0.317 0.761,-0.722a13.51,13.51 0,0 1,3.533 -8.428z" android:fillType="evenOdd"/>
+</vector>

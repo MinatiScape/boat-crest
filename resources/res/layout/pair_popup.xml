@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/rounded_dialog_background" style="@style/dialogBackgroundStyle">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="right" android:id="@+id/close_icon" android:padding="@dimen/padding_10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_marginRight="@dimen/margin_10dp" android:src="0x7f080362" app:tint="@color/secondary_text_color"/>
+        <ImageView android:layout_gravity="center_horizontal" android:src="@drawable/ic_unpair_image_watch" style="@style/dialogTopIconStyle"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:text="@string/unpair_watch" style="@style/dialogHeaderTextStyle"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_marginTop="@dimen/margin_24dp" android:text="@string/unpair_info" style="@style/dialogInfoTextStyle"/>
+        <Button android:id="@+id/btn_okay" android:background="@drawable/rounded_dialog_button_background" android:text="@string/ok" style="@style/dialogButtonStyle"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

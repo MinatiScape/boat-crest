@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/home_nav_graph" app:startDestination="@+id/fragmentHome">
+    <fragment android:label="fragment_home_fragment" android:name="com.coveiot.android.dashboard2.fragment.FragmentHome" android:id="@+id/fragmentHome">
+        <argument android:name="tab_pos_child" android:defaultValue="1" app:argType="integer"/>
+    </fragment>
+    <fragment android:label="fragment_fitness" android:name="com.coveiot.android.leonardo.dashboard.home.fragments.FragmentFitnessHome" android:id="@+id/fragmentHealth">
+        <argument android:name="tab_pos" android:defaultValue="0" app:argType="integer"/>
+        <argument android:name="is_from_dashboard" android:defaultValue="0" app:argType="integer"/>
+    </fragment>
+    <fragment android:label="fragment_rank_fragment" android:name="com.coveiot.leaderboard.views.fragment.BadgesHomeFragment" android:id="@+id/fragmentRank"/>
+    <fragment android:label="fragment_settings_new" android:name="com.coveiot.android.leonardo.more.fragments.SettingsFragmentNew" android:id="@+id/fragmentSettings"/>
+    <fragment android:label="fragment_my_watch" android:name="com.coveiot.android.leonardo.more.fragments.FragmentMyWatch" android:id="@+id/fragmentMyWatch"/>
+    <fragment android:label="fragment_fitness_buddies" android:name="com.coveiot.android.fitnessbuddies.fragments.FitnessBuddiesHomeFragment" android:id="@+id/fragmentFitness">
+        <argument android:name="tab_pos" android:defaultValue="0" app:argType="integer"/>
+    </fragment>
+    <fragment android:label="fragment_home_guest" android:name="com.coveiot.android.dashboard2.fragment.FragmentHomeGuest" android:id="@+id/fragmentHomeGuest"/>
+    <fragment android:label="fragment_fitness_guest" android:name="com.coveiot.android.dashboard2.fragment.FragmentFitnessGuest" android:id="@+id/fragmentFitnessGuest"/>
+</navigation>

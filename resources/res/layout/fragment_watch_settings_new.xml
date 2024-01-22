@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/fragment_watch_settings_new_0" android:background="#0c0c0c" android:paddingTop="@dimen/margin_32dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/margin_24dp" android:paddingEnd="@dimen/margin_24dp">
+    <include android:id="@+id/watch_status_layout" layout="@layout/watch_status_settings"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rcv_settings" android:background="@drawable/list_item_background_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+    <include android:id="@+id/about_watch_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" layout="@layout/list_item_new_design"/>
+</LinearLayout>

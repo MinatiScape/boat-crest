@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="app_name_list">
+        <item>WeChat</item>
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>qq</item>
+        <item>Instagram</item>
+        <item>Gmail</item>
+        <item>Skype</item>
+        <item>Snapchat</item>
+        <item>Messenger</item>
+        <item>Qzone</item>
+        <item>Line</item>
+        <item>Calendar</item>
+    </array>
+    <array name="app_name_list_1790">
+        <item>WeChat</item>
+        <item>Facebook</item>
+        <item>WhatsApp</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Skype</item>
+        <item>Messenger</item>
+    </array>
+    <array name="app_package_list_1790">
+        <item>com.tencent.mm</item>
+        <item>com.facebook.katana</item>
+        <item>com.whatsapp</item>
+        <item>com.twitter.android</item>
+        <item>com.instagram.android</item>
+        <item>com.skype.raider</item>
+        <item>com.facebook.orca</item>
+    </array>
+</resources>

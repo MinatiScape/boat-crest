@@ -1,0 +1,163 @@
+{
+  "smart_alert_config_uber": {
+    "messages_to_parse": [
+      {
+        "messagePattern": [
+          "Your driver is on the way ([A-Za-z0-9, ]+) (\\(\\d+.\\d+ stars\\)) [ A-Za-z0-9, ]+ (\\d)+[ \\(?A-Za-z\\)? ]+[.]?"
+        ],
+        "groupIdMap": {
+          "driver": 1,
+          "rating": 2,
+          "eta": 3
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 1001
+          },
+          {
+            "type": "text",
+            "text": "UBER",
+            "templateId": 1002
+          },
+          {
+            "type": "text",
+            "text": "Pick up in {eta} mins",
+            "templateId": 1003
+          },
+          {
+            "type": "text",
+            "text": "Driver {driver}\n{rating} is on the way",
+            "templateId": 1004
+          },
+          {
+            "type": "bar",
+            "progress": 0,
+            "templateId": 1007
+          },
+          {
+            "type": "text",
+            "text": "{eta} mins",
+            "templateId": 1008
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Use PIN (\\d+) [ A-Za-z0-9, ]+"
+        ],
+        "groupIdMap": {
+          "otp": 1
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 1001
+          },
+          {
+            "type": "text",
+            "text": "UBER",
+            "templateId": 1002
+          },
+          {
+            "type": "text",
+            "text": "Your driver is arriving",
+            "templateId": 1003
+          },
+          {
+            "type": "text",
+            "text": "Use pin {otp} to verify your trip",
+            "templateId": 1004
+          },
+          {
+            "type": "bar",
+            "progress": 0,
+            "templateId": 1007
+          },
+          {
+            "type": "text",
+            "text": "{eta} mins",
+            "templateId": 1008
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "Arriving Soon ([A-Za-z ]+) is [ A-Za-z0-9,. ]+ in a ([A-Za-z ]+) \\(([A-Za-z0-9 ]+)\\). [ A-Za-z0-9, ]+ (\\d+) [ A-Za-z0-9,. ]+",
+          "Your driver is arriving ([A-Za-z ]+) is [ A-Za-z0-9,. ]+ in a ([A-Za-z ]+) \\(([A-Za-z0-9 ]+)\\). [ A-Za-z0-9, ]+ (\\d+) [ A-Za-z0-9,. ]+"
+        ],
+        "groupIdMap": {
+          "vehicle": 2,
+          "vehicleNo": 3
+        },
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 1001
+          },
+          {
+            "type": "text",
+            "text": "UBER",
+            "templateId": 1002
+          },
+          {
+            "type": "text",
+            "text": "Driver arriving soon",
+            "templateId": 1003
+          },
+          {
+            "type": "text",
+            "text": "{vehicle}",
+            "templateId": 1004
+          },
+          {
+            "type": "text",
+            "text": "{vehicleNo}",
+            "templateId": 1005
+          },
+          {
+            "type": "text",
+            "text": "Use pin {otp} to verify your trip",
+            "templateId": 1006
+          },
+          {
+            "type": "bar",
+            "progress": 100,
+            "templateId": 1007
+          },
+          {
+            "type": "text",
+            "text": "0 mins",
+            "templateId": 1008
+          }
+        ]
+      },
+      {
+        "messagePattern": [
+          "([Rr]ide|[Tt]rip) [Vv]erified [ A-Za-z0-9,.! ]+"
+        ],
+        "transform_to": [
+          {
+            "type": "circle",
+            "templateId": 1001
+          },
+          {
+            "type": "text",
+            "text": "UBER",
+            "templateId": 1002
+          },
+          {
+            "type": "text",
+            "text": "Trip verified",
+            "templateId": 1003
+          },
+          {
+            "type": "text",
+            "text": "Have a great trip",
+            "templateId": 1004
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/text_size_16sp" android:textColor="@color/main_text_color" android:textColorHint="@color/color_666666" android:id="@+id/tv_time_info" android:background="@drawable/start_time_bg" android:padding="@dimen/margin_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_8dp" android:hint="HH:MM"/>

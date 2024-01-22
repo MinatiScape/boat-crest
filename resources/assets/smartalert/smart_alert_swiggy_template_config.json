@@ -1,0 +1,68 @@
+{
+  "deviceConfig": {
+    "resolution": "466X466",
+    "displayShape": "round/rectagle/square",
+    "applicapleModels": "Sifli/CY1"
+  },
+  "messageType": "SMART_ALERT",
+  "smart_alert_templateId_config": [
+    {
+      "type": "circle",
+      "templateId": 2001,
+      "width": 466,
+      "height": 466,
+      "color":"#000000",
+      "x_position": 1,
+      "y_position": 1
+    },
+    {
+      "type": "text",
+      "templateId": 2002,
+      "textSize": 32,
+      "color": "#fc8019",
+      "y_position": 50
+    },
+    {
+      "type": "text",
+      "templateId": 2003,
+      "textSize": 26,
+      "height": 36,
+      "color": "#FFFFFF",
+      "y_position": 118
+    },
+    {
+      "type": "text",
+      "templateId": 2004,
+      "textSize": 24,
+      "height": 36,
+      "color": "#cccccc",
+      "y_position": 177
+    },
+    {
+      "type": "text",
+      "templateId": 2005,
+      "textSize": 24,
+      "height": 68,
+      "color": "#cccccc",
+      "y_position": 210
+    },
+    {
+      "type": "text",
+      "templateId": 2006,
+      "textSize": 24,
+      "height": 36,
+      "color": "#cccccc",
+      "y_position": 244
+    },
+    {
+      "type": "bar",
+      "templateId": 2007,
+      "progressColor": "#FFFFFF",
+      "progressBgImg": 38008,
+      "startImage": 38001,
+      "endImage": 38002,
+      "x_position": 50,
+      "y_position": 330
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+package org.bouncycastle.jcajce.provider.asymmetric.rsa;
+
+import java.security.InvalidKeyException;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.security.SignatureException;
+import java.security.SignatureSpi;
+import java.security.interfaces.RSAPrivateKey;
+import java.security.interfaces.RSAPublicKey;
+import java.security.spec.AlgorithmParameterSpec;
+import org.bouncycastle.crypto.AsymmetricBlockCipher;
+import org.bouncycastle.crypto.Digest;
+import org.bouncycastle.crypto.digests.RIPEMD160Digest;
+import org.bouncycastle.crypto.digests.WhirlpoolDigest;
+import org.bouncycastle.crypto.engines.RSABlindedEngine;
+import org.bouncycastle.crypto.signers.ISO9796d2Signer;
+import org.bouncycastle.crypto.util.DigestFactory;
+/* loaded from: classes13.dex */
+public class ISOSignatureSpi extends SignatureSpi {
+
+    /* renamed from: a  reason: collision with root package name */
+    public ISO9796d2Signer f14956a;
+
+    /* loaded from: classes13.dex */
+    public static class MD5WithRSAEncryption extends ISOSignatureSpi {
+        public MD5WithRSAEncryption() {
+            super(DigestFactory.createMD5(), new RSABlindedEngine());
+        }
+    }
+
+    /* loaded from: classes13.dex */
+    public static class RIPEMD160WithRSAEncryption extends ISOSignatureSpi {
+        public RIPEMD160WithRSAEncryption() {
+            super(new RIPEMD160Digest(), new RSABlindedEngine());
+        }
+    }
+
+    /* loaded from: classes13.dex */
+    public static class SHA1WithRSAEncryption extends ISOSignatureSpi {
+        public SHA1WithRSAEncryption() {
+            super(DigestFactory.createSHA1(), new RSABlindedEngine());
+        }
+    }
+
+    /* loaded from: classes13.dex */
+    public static class SHA224WithRSAEncryption extends ISOSignatureSpi {
+        public SHA224WithRSAEncryption() {
+            super(DigestFactory.createSHA224(), new RSABlindedEngine());
+        }
+    }
+
+    /* loaded from: classes13.dex */
+    public static class SHA256WithRSAEncryption extends ISOSignatureSpi {
+        public SHA256WithRSAEncryption() {
+            super(DigestFactory.createSHA256(), new RSABlindedEngine());
+        }
+    }
+
+    /* loaded from: classes13.dex */
+    public static class SHA384WithRSAEncryption extends ISOSignatureSpi {
+        public SHA384WithRSAEncryption() {
+            super(DigestFactory.createSHA384(), new RSABlindedEngine());
+        }
+    }
+
+    /* loaded from: classes13.dex */
+    public static class SHA512WithRSAEncryption extends ISOSignatureSpi {
+        public SHA512WithRSAEncryption() {
+            super(DigestFactory.createSHA512(), new RSABlindedEngine());
+        }
+    }
+
+    /* loaded from: classes13.dex */
+    public static class SHA512_224WithRSAEncryption extends ISOSignatureSpi {
+        public SHA512_224WithRSAEncryption() {
+            super(DigestFactory.createSHA512_224(), new RSABlindedEngine());
+        }
+    }
+
+    /* loaded from: classes13.dex */
+    public static class SHA512_256WithRSAEncryption extends ISOSignatureSpi {
+        public SHA512_256WithRSAEncryption() {
+            super(DigestFactory.createSHA512_256(), new RSABlindedEngine());
+        }
+    }
+
+    /* loaded from: classes13.dex */
+    public static class WhirlpoolWithRSAEncryption extends ISOSignatureSpi {
+        public WhirlpoolWithRSAEncryption() {
+            super(new WhirlpoolDigest(), new RSABlindedEngine());
+        }
+    }
+
+    public ISOSignatureSpi(Digest digest, AsymmetricBlockCipher asymmetricBlockCipher) {
+        this.f14956a = new ISO9796d2Signer(asymmetricBlockCipher, digest, true);
+    }
+
+    @Override // java.security.SignatureSpi
+    public Object engineGetParameter(String str) {
+        throw new UnsupportedOperationException("engineSetParameter unsupported");
+    }
+
+    @Override // java.security.SignatureSpi
+    public void engineInitSign(PrivateKey privateKey) throws InvalidKeyException {
+        this.f14956a.init(true, RSAUtil.b((RSAPrivateKey) privateKey));
+    }
+
+    @Override // java.security.SignatureSpi
+    public void engineInitVerify(PublicKey publicKey) throws InvalidKeyException {
+        this.f14956a.init(false, RSAUtil.c((RSAPublicKey) publicKey));
+    }
+
+    @Override // java.security.SignatureSpi
+    public void engineSetParameter(String str, Object obj) {
+        throw new UnsupportedOperationException("engineSetParameter unsupported");
+    }
+
+    @Override // java.security.SignatureSpi
+    public void engineSetParameter(AlgorithmParameterSpec algorithmParameterSpec) {
+        throw new UnsupportedOperationException("engineSetParameter unsupported");
+    }
+
+    @Override // java.security.SignatureSpi
+    public byte[] engineSign() throws SignatureException {
+        try {
+            return this.f14956a.generateSignature();
+        } catch (Exception e) {
+            throw new SignatureException(e.toString());
+        }
+    }
+
+    @Override // java.security.SignatureSpi
+    public void engineUpdate(byte b) throws SignatureException {
+        this.f14956a.update(b);
+    }
+
+    @Override // java.security.SignatureSpi
+    public void engineUpdate(byte[] bArr, int i, int i2) throws SignatureException {
+        this.f14956a.update(bArr, i, i2);
+    }
+
+    @Override // java.security.SignatureSpi
+    public boolean engineVerify(byte[] bArr) throws SignatureException {
+        return this.f14956a.verifySignature(bArr);
+    }
+}

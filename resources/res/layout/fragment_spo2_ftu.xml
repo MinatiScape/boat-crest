@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/background_color_light" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:elevation="12dp" android:contentInsetStart="0dp" android:contentInsetEnd="0dp" android:contentInsetLeft="0dp" android:contentInsetRight="0dp" app:contentInsetEnd="0dp" app:contentInsetLeft="0dp" app:contentInsetRight="0dp" app:contentInsetStart="0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/toolbar_generic" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="@dimen/text_size_20sp" android:textColor="@color/colorPrimary" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/instructions" android:layout_weight="2.5" android:paddingStart="@dimen/margin_20dp"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/first_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.15"/>
+    <androidx.cardview.widget.CardView android:id="@+id/ftu_cv" android:layout_width="300dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/first_guideline">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080ae6"/>
+                <TextView android:textSize="@dimen/margin_14dp" android:textColor="@color/color_4a4a4a" android:paddingLeft="@dimen/margin_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/spo2_ftu1_text" android:textAlignment="textStart"/>
+            </LinearLayout>
+            <View android:background="#979797" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080ae7"/>
+                <TextView android:textSize="@dimen/margin_14dp" android:textColor="@color/color_4a4a4a" android:paddingLeft="@dimen/margin_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/spo2_ftu2_text" android:textAlignment="textStart"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:layout_gravity="center" android:id="@+id/next" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next" android:paddingStart="50dp" android:paddingEnd="50dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ftu_cv" style="@style/ButtonThemeEnabled"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

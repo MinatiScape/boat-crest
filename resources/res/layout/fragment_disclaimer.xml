@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/fragment_disclaimer_0" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/webview_tbt_navigation" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/btnAccept" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <Button android:id="@+id/btnAccept" android:layout_width="match_parent" android:layout_height="@dimen/margin_50dp" android:layout_marginBottom="@dimen/margin_16dp" android:text="@string/accept" android:textAllCaps="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/webview_tbt_navigation" style="@style/ButtonThemeEnabled"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/mappls_direction_route_view_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/mappls_direction_back" android:layout_toEndOf="@+id/mappls_direction_back" app:layout_constraintTop_toTopOf="0">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22dp"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tab_layout_profile" android:background="@color/mappls_directions_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabGravity="center" app:tabIndicatorColor="@null" app:tabIndicatorHeight="6dp" app:tabRippleColor="@color/mappls_direction_colorPrimaryDark" app:tabSelectedTextColor="@color/mappls_direction_colorRed">
+        <com.google.android.material.tabs.TabItem android:id="@+id/tab_drive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Drive"/>
+        <com.google.android.material.tabs.TabItem android:id="@+id/tab_bike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bike"/>
+        <com.google.android.material.tabs.TabItem android:id="@+id/tab_walk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Walk"/>
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>

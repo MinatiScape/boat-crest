@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="@dimen/share_fragment_height">
+    <ImageView android:id="@+id/ecg_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/margin_10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

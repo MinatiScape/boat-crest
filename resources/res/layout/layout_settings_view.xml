@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/layout_settings_view_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/setting_view" android:background="@color/white" android:paddingBottom="12dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.mappls.sdk.navigation.ui.common.LockableBottomSheetBehavior">
+        <androidx.cardview.widget.CardView android:id="@+id/toolbar_setting" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" app:cardBackgroundColor="@color/white" app:cardElevation="2dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/close_bottom_sheet" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:srcCompat="@drawable/ic_arrow_back_light"/>
+                <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/toolbar_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/settings" android:layout_marginStart="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar_setting">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="12dp" android:layout_below="@+id/toolbar_setting">
+                <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/tvMapSetting" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="12dp" android:text="Map Settings"/>
+                <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tvMapType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/map_type"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/map_type_text_color_light" android:gravity="center" android:id="@+id/tv_two_d" android:background="@drawable/bg_map_type" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/two_d"/>
+                    <TextView android:textColor="@color/colorGray700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:text="@string/or"/>
+                    <TextView android:textColor="@color/map_type_text_color_light" android:gravity="center" android:id="@+id/tv_three_d" android:background="@drawable/bg_map_type" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/three_d"/>
+                </LinearLayout>
+                <TextView android:textStyle="bold" android:textColor="@color/colorGray700" android:layout_gravity="center" android:id="@+id/reset_map_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12dp" android:text="@string/reset_map_type"/>
+                <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/tv_nav_setting" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="Navigation Settings"/>
+                <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tvUnitType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/mappls_navigation_unit"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/map_type_text_color_light" android:gravity="center" android:id="@+id/tv_km_unit" android:background="@drawable/bg_map_type" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/mappls_navigation_km_unit"/>
+                    <TextView android:textColor="@color/map_type_text_color_light" android:gravity="center" android:id="@+id/tv_mile_unit" android:background="@drawable/bg_map_type" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="12dp" android:text="@string/mappls_navigation_mile_unit" android:layout_marginStart="12dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_junction_view" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/navigation_junction_view" android:layout_weight="0.8"/>
+                    <Switch android:id="@+id/sw_junction_view" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_navigation_event" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/navigation_events" android:layout_weight="0.8"/>
+                    <Switch android:id="@+id/sw_navigation_event" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_safety_event" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/navigation_safety_events" android:layout_weight="0.8"/>
+                    <Switch android:id="@+id/sw_safety_event" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_traffic_event" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/navigation_traffic_event" android:layout_weight="0.8"/>
+                    <Switch android:id="@+id/sw_traffic_event" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_road_cond_event" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/navigation_road_condition" android:layout_weight="0.8"/>
+                    <Switch android:id="@+id/sw_road_cond_event" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/tv_nav_voice_setting" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="12dp" android:text="Navigation Voice Settings"/>
+                <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tvSoundVolume" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="@string/instruction_volume"/>
+                <SeekBar android:layout_gravity="center" android:id="@+id/volume_seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:max="100" android:progress="50" android:progressDrawable="@drawable/volume_seekbar_line" android:thumb="@drawable/volume_seekbar_thumb"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_enable_instruction_during_phone_call" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mappls_navigation_play_during_phone_call" android:layout_weight="0.8"/>
+                    <Switch android:id="@+id/sw_play_during_phone_call" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_play_voice_call" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/navigation_play_voice_call" android:layout_weight="0.8"/>
+                    <androidx.appcompat.widget.SwitchCompat android:id="@+id/sw_play_voice_call" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_navigation_event_audio" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/navigation_event_audio" android:layout_weight="0.8"/>
+                    <Switch android:id="@+id/sw_navigation_event_audio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_safety_event_audio" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/safety_events_voice" android:layout_weight="0.8"/>
+                    <Switch android:id="@+id/sw_safety_event_audio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_traffic_event_audio" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/traffic_event_voice" android:layout_weight="0.8"/>
+                    <androidx.appcompat.widget.SwitchCompat android:id="@+id/sw_traffic_event_audio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_road_cond_event_audio" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/road_condition_voice" android:layout_weight="0.8"/>
+                    <androidx.appcompat.widget.SwitchCompat android:id="@+id/sw_road_cond_event_audio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="12dp">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_interrupt_music" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/interrupt_music" android:layout_weight="0.8"/>
+                    <Switch android:id="@+id/sw_interrupt_music" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

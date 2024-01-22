@@ -1,0 +1,34 @@
+{
+  "filters": [
+    {
+      "name": "Leagues",
+      "filterBy": "name",
+      "options": [
+        {
+          "optionId": 1,
+          "displayName": "EPL",
+          "name": "EPL",
+          "cid": 19
+        },
+        {
+          "optionId": 2,
+          "displayName": "LA Liga",
+          "name": "LaLiga",
+          "cid": 19
+        },
+        {
+          "optionId": 3,
+          "displayName": "ISL",
+          "name": "ISL",
+          "cid": 19
+        },
+        {
+          "optionId": 4,
+          "displayName": "FIFA World Cup",
+          "name": "FIFA World Cup",
+          "cid": 19
+        }
+      ]
+    }
+  ]
+}

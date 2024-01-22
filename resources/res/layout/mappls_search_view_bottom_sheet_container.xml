@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|top" android:id="@+id/user_location_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginEnd="8dp" app:backgroundTint="@color/mappls_search_plugins_white" app:elevation="3dp" app:layout_anchor="@+id/root_bottom_sheet" app:layout_anchorGravity="end|top" app:srcCompat="@drawable/mappls_search_ic_user_location" app:useCompatPadding="true"/>
+    <ImageView android:layout_gravity="start" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginStart="4dp" app:layout_anchor="@+id/root_bottom_sheet" app:srcCompat="0x7f0808a6"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/root_bottom_sheet" android:background="@drawable/mappls_search_bottom_sheet_bg" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <include layout="@layout/mappls_search_view_details_bottom_header"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

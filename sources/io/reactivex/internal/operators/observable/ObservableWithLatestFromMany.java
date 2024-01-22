@@ -1,0 +1,256 @@
+package io.reactivex.internal.operators.observable;
+
+import io.reactivex.ObservableSource;
+import io.reactivex.Observer;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.annotations.Nullable;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.exceptions.Exceptions;
+import io.reactivex.functions.Function;
+import io.reactivex.internal.disposables.DisposableHelper;
+import io.reactivex.internal.disposables.EmptyDisposable;
+import io.reactivex.internal.functions.ObjectHelper;
+import io.reactivex.internal.util.AtomicThrowable;
+import io.reactivex.internal.util.HalfSerializer;
+import io.reactivex.plugins.RxJavaPlugins;
+import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.atomic.AtomicReferenceArray;
+/* loaded from: classes12.dex */
+public final class ObservableWithLatestFromMany<T, R> extends io.reactivex.internal.operators.observable.a<T, R> {
+    @Nullable
+    public final ObservableSource<?>[] h;
+    @Nullable
+    public final Iterable<? extends ObservableSource<?>> i;
+    @NonNull
+    public final Function<? super Object[], R> j;
+
+    /* loaded from: classes12.dex */
+    public final class a implements Function<T, R> {
+        public a() {
+        }
+
+        /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Object[], java.lang.Object] */
+        @Override // io.reactivex.functions.Function
+        public R apply(T t) throws Exception {
+            return (R) ObjectHelper.requireNonNull(ObservableWithLatestFromMany.this.j.apply(new Object[]{t}), "The combiner returned a null value");
+        }
+    }
+
+    /* loaded from: classes12.dex */
+    public static final class b<T, R> extends AtomicInteger implements Observer<T>, Disposable {
+        private static final long serialVersionUID = 1577321883966341961L;
+        public final Function<? super Object[], R> combiner;
+        public volatile boolean done;
+        public final Observer<? super R> downstream;
+        public final AtomicThrowable error;
+        public final c[] observers;
+        public final AtomicReference<Disposable> upstream;
+        public final AtomicReferenceArray<Object> values;
+
+        public b(Observer<? super R> observer, Function<? super Object[], R> function, int i) {
+            this.downstream = observer;
+            this.combiner = function;
+            c[] cVarArr = new c[i];
+            for (int i2 = 0; i2 < i; i2++) {
+                cVarArr[i2] = new c(this, i2);
+            }
+            this.observers = cVarArr;
+            this.values = new AtomicReferenceArray<>(i);
+            this.upstream = new AtomicReference<>();
+            this.error = new AtomicThrowable();
+        }
+
+        public void cancelAllBut(int i) {
+            c[] cVarArr = this.observers;
+            for (int i2 = 0; i2 < cVarArr.length; i2++) {
+                if (i2 != i) {
+                    cVarArr[i2].dispose();
+                }
+            }
+        }
+
+        @Override // io.reactivex.disposables.Disposable
+        public void dispose() {
+            DisposableHelper.dispose(this.upstream);
+            for (c cVar : this.observers) {
+                cVar.dispose();
+            }
+        }
+
+        public void innerComplete(int i, boolean z) {
+            if (z) {
+                return;
+            }
+            this.done = true;
+            cancelAllBut(i);
+            HalfSerializer.onComplete(this.downstream, this, this.error);
+        }
+
+        public void innerError(int i, Throwable th) {
+            this.done = true;
+            DisposableHelper.dispose(this.upstream);
+            cancelAllBut(i);
+            HalfSerializer.onError(this.downstream, th, this, this.error);
+        }
+
+        public void innerNext(int i, Object obj) {
+            this.values.set(i, obj);
+        }
+
+        @Override // io.reactivex.disposables.Disposable
+        public boolean isDisposed() {
+            return DisposableHelper.isDisposed(this.upstream.get());
+        }
+
+        @Override // io.reactivex.Observer
+        public void onComplete() {
+            if (this.done) {
+                return;
+            }
+            this.done = true;
+            cancelAllBut(-1);
+            HalfSerializer.onComplete(this.downstream, this, this.error);
+        }
+
+        @Override // io.reactivex.Observer
+        public void onError(Throwable th) {
+            if (this.done) {
+                RxJavaPlugins.onError(th);
+                return;
+            }
+            this.done = true;
+            cancelAllBut(-1);
+            HalfSerializer.onError(this.downstream, th, this, this.error);
+        }
+
+        @Override // io.reactivex.Observer
+        public void onNext(T t) {
+            if (this.done) {
+                return;
+            }
+            AtomicReferenceArray<Object> atomicReferenceArray = this.values;
+            int length = atomicReferenceArray.length();
+            Object[] objArr = new Object[length + 1];
+            int i = 0;
+            objArr[0] = t;
+            while (i < length) {
+                Object obj = atomicReferenceArray.get(i);
+                if (obj == null) {
+                    return;
+                }
+                i++;
+                objArr[i] = obj;
+            }
+            try {
+                HalfSerializer.onNext(this.downstream, ObjectHelper.requireNonNull(this.combiner.apply(objArr), "combiner returned a null value"), this, this.error);
+            } catch (Throwable th) {
+                Exceptions.throwIfFatal(th);
+                dispose();
+                onError(th);
+            }
+        }
+
+        @Override // io.reactivex.Observer
+        public void onSubscribe(Disposable disposable) {
+            DisposableHelper.setOnce(this.upstream, disposable);
+        }
+
+        public void subscribe(ObservableSource<?>[] observableSourceArr, int i) {
+            c[] cVarArr = this.observers;
+            AtomicReference<Disposable> atomicReference = this.upstream;
+            for (int i2 = 0; i2 < i && !DisposableHelper.isDisposed(atomicReference.get()) && !this.done; i2++) {
+                observableSourceArr[i2].subscribe(cVarArr[i2]);
+            }
+        }
+    }
+
+    /* loaded from: classes12.dex */
+    public static final class c extends AtomicReference<Disposable> implements Observer<Object> {
+        private static final long serialVersionUID = 3256684027868224024L;
+        public boolean hasValue;
+        public final int index;
+        public final b<?, ?> parent;
+
+        public c(b<?, ?> bVar, int i) {
+            this.parent = bVar;
+            this.index = i;
+        }
+
+        public void dispose() {
+            DisposableHelper.dispose(this);
+        }
+
+        @Override // io.reactivex.Observer
+        public void onComplete() {
+            this.parent.innerComplete(this.index, this.hasValue);
+        }
+
+        @Override // io.reactivex.Observer
+        public void onError(Throwable th) {
+            this.parent.innerError(this.index, th);
+        }
+
+        @Override // io.reactivex.Observer
+        public void onNext(Object obj) {
+            if (!this.hasValue) {
+                this.hasValue = true;
+            }
+            this.parent.innerNext(this.index, obj);
+        }
+
+        @Override // io.reactivex.Observer
+        public void onSubscribe(Disposable disposable) {
+            DisposableHelper.setOnce(this, disposable);
+        }
+    }
+
+    public ObservableWithLatestFromMany(@NonNull ObservableSource<T> observableSource, @NonNull ObservableSource<?>[] observableSourceArr, @NonNull Function<? super Object[], R> function) {
+        super(observableSource);
+        this.h = observableSourceArr;
+        this.i = null;
+        this.j = function;
+    }
+
+    @Override // io.reactivex.Observable
+    public void subscribeActual(Observer<? super R> observer) {
+        int length;
+        ObservableSource<?>[] observableSourceArr = this.h;
+        if (observableSourceArr == null) {
+            observableSourceArr = new ObservableSource[8];
+            try {
+                length = 0;
+                for (ObservableSource<?> observableSource : this.i) {
+                    if (length == observableSourceArr.length) {
+                        observableSourceArr = (ObservableSource[]) Arrays.copyOf(observableSourceArr, (length >> 1) + length);
+                    }
+                    int i = length + 1;
+                    observableSourceArr[length] = observableSource;
+                    length = i;
+                }
+            } catch (Throwable th) {
+                Exceptions.throwIfFatal(th);
+                EmptyDisposable.error(th, observer);
+                return;
+            }
+        } else {
+            length = observableSourceArr.length;
+        }
+        if (length == 0) {
+            new ObservableMap(this.source, new a()).subscribeActual(observer);
+            return;
+        }
+        b bVar = new b(observer, this.j, length);
+        observer.onSubscribe(bVar);
+        bVar.subscribe(observableSourceArr, length);
+        this.source.subscribe(bVar);
+    }
+
+    public ObservableWithLatestFromMany(@NonNull ObservableSource<T> observableSource, @NonNull Iterable<? extends ObservableSource<?>> iterable, @NonNull Function<? super Object[], R> function) {
+        super(observableSource);
+        this.h = null;
+        this.i = iterable;
+        this.j = function;
+    }
+}

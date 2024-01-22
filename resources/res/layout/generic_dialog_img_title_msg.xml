@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/rounded_dialog_background" style="@style/dialogBackgroundStyle">
+    <ImageView android:id="@+id/ivCross" android:visibility="gone" android:src="@drawable/ic_close_grey" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/dialogCrossButtonStyle"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/clIcon" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/img_title" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/dialogTopIconStyle"/>
+        <ImageView android:id="@+id/ivBigIcon" android:visibility="gone" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/dialogTopIconStyleBig"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:gravity="center" android:id="@+id/title" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/clIcon" style="@style/dialogHeaderTextStyle"/>
+    <TextView android:id="@+id/message_textView" android:text="@string/enable_location_access_in_the_next_screen" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/title" style="@style/dialogInfoTextStyle"/>
+    <TextView android:id="@+id/dialog_desc" android:visibility="gone" android:text="@string/enable_location_access_in_the_next_screen" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/message_textView" style="@style/dialogInfoTextStyle"/>
+    <Button android:id="@+id/positive_btn" android:background="@drawable/rounded_dialog_button_background" android:text="@string/ok" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/dialog_desc" style="@style/dialogButtonStyle"/>
+    <ImageView android:id="@+id/close_icon" android:visibility="gone" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" style="@style/dialogCrossButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

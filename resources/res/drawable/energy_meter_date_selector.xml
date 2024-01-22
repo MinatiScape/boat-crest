@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/circle_with_primary_color_solid_energy_meter"/>
+    <item android:state_selected="true" android:drawable="@drawable/circle_with_primary_color_solid_energy_meter"/>
+    <item android:drawable="@drawable/un_selected_date_energy_meter"/>
+</selector>

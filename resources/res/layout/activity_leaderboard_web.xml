@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_layout" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/webview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/flyRecyclerView"/>
+    <TextView android:textSize="20sp" android:gravity="center" android:id="@+id/invalidUrl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/not_an_valid_url" android:layout_centerInParent="true"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/flyRecyclerView" android:background="#04152e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

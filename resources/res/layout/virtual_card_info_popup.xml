@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/virtual_card_info_popup_0" android:background="@drawable/rounded_dialog_background" style="@style/dialogBackgroundStyle">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/guideline1" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintGuide_percent="0.7"/>
+    <ImageButton android:id="@+id/imgv_close" android:background="@null" android:src="0x7f080362" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:tint="@color/white" style="@style/dialogCrossButtonStyle"/>
+    <ImageView android:id="@+id/imgv_virtualCard" android:src="0x7f08076c" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/dialogTopIconStyle"/>
+    <TextView android:id="@+id/tv_virtualCard" android:text="@string/virtual_card" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/imgv_virtualCard" style="@style/dialogHeaderTextStyle"/>
+    <TextView android:id="@+id/tv_virtualCardInfo" android:text="@string/virtual_card_info" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_virtualCard" style="@style/dialogInfoTextStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

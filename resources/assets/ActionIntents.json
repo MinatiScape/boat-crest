@@ -1,0 +1,183 @@
+[
+  {
+    "manufacturer": "vivo",
+    "autostart_intents": [
+      {
+        "component": "com.iqoo.secure",
+        "action": "com.iqoo.secure.ui.phoneoptimize.AddWhiteListActivity"
+      },
+      {
+        "component": "com.vivo.permissionmanager",
+        "action": "com.vivo.permissionmanager.activity.BgStartUpManagerActivity"
+      },
+      {
+        "component": "com.iqoo.secure",
+        "action": "com.iqoo.secure.ui.phoneoptimize.BgStartUpManager"
+      }
+    ],
+    "powersave_intents": []
+  },
+  {
+    "manufacturer": "xiaomi",
+    "autostart_intents": [
+      {
+        "component": "",
+        "action": "miui.intent.action.OP_AUTO_START",
+        "extras": [
+          "package_name",
+          "package_label"
+        ]
+      },
+      {
+        "component": "com.miui.securitycenter",
+        "action": "com.miui.permcenter.autostart.AutoStartManagementActivity"
+      }
+    ],
+    "powersave_intents": [
+      {
+        "component": "com.miui.powerkeeper",
+        "action": "com.miui.powerkeeper.ui.HiddenAppsConfigActivity",
+        "extras": [
+          "package_name",
+          "package_label"
+        ]
+      }
+    ]
+  },
+  {
+    "manufacturer": "asus",
+    "autostart_intents": [
+      {
+        "component": "com.asus.mobilemanager",
+        "action": "com.asus.mobilemanager.entry.FunctionActivity"
+      },
+      {
+        "component": "com.asus.mobilemanager",
+        "action": "com.asus.mobilemanager.MainActivity"
+      }
+    ],
+    "powersave_intents": []
+  },
+  {
+    "manufacturer": "htc",
+    "autostart_intents": [],
+    "powersave_intents": [
+      {
+        "component": "com.htc.pitroad",
+        "action": "com.htc.pitroad.landingpage.activity.LandingPageActivity"
+      }
+    ]
+  },
+  {
+    "manufacturer": "letv",
+    "autostart_intents": [
+      {
+        "component": "com.letv.android.letvsafe",
+        "action": "com.letv.android.letvsafe.AutobootManageActivity"
+      }
+    ],
+    "powersave_intents": [
+      {
+        "component": "com.letv.android.letvsafe",
+        "action": "com.letv.android.letvsafe.BackgroundAppManageActivity"
+      }
+    ]
+  },
+  {
+    "manufacturer": "meizu",
+    "autostart_intents": [
+      {
+        "component": "",
+        "action": "com.meizu.safe.security.SHOW_APPSEC",
+        "extras": [
+          "packageName"
+        ]
+      }
+    ],
+    "powersave_intents": [
+      {
+        "component": "",
+        "action": "com.meizu.power.PowerAppKilledNotification"
+      },
+      {
+        "component": "com.meizu.safe",
+        "action": "com.meizu.safe.cleaner.RubbishCleanMainActivity"
+      },
+      {
+        "component": "com.meizu.safe",
+        "action": "com.meizu.safe.powerui.AppPowerManagerActivity"
+      },
+      {
+        "component": "com.meizu.safe",
+        "action": "com.meizu.safe.powerui.PowerAppPermissionActivity"
+      }
+    ]
+  },
+  {
+    "manufacturer": "samsung",
+    "autostart_intents": [],
+    "powersave_intents": [
+      {
+        "component": "",
+        "action": "com.samsung.android.sm.ACTION_BATTERY"
+      },
+      {
+        "component": "com.samsung.android.lool",
+        "action": "com.samsung.android.sm.ui.battery.BatteryActivity"
+      },
+      {
+        "component": "com.samsung.android.sm_cn",
+        "action": "com.samsung.android.sm.ui.battery.BatteryActivity"
+      },
+      {
+        "component": "com.samsung.android.sm",
+        "action": "com.samsung.android.sm.ui.battery.BatteryActivity"
+      },
+      {
+        "component": "com.samsung.memorymanager",
+        "action": "com.samsung.memorymanager.RamActivity"
+      }
+    ]
+  },
+  {
+    "manufacturer": "zte",
+    "autostart_intents": [
+      {
+        "component": "com.zte.heartyservice",
+        "action": "com.zte.heartyservice.autorun.AppAutoRunManager"
+      }
+    ],
+    "powersave_intents": [
+      {
+        "component": "com.zte.heartyservice",
+        "action": "com.zte.heartyservice.setting.ClearAppSettingsActivity"
+      }
+    ]
+  },
+  {
+    "manufacturer": "huawei",
+    "autostart_intents": [],
+    "powersave_intents": [
+      {
+        "component": "",
+        "action": "huawei.intent.action.HSM_PROTECTED_APPS"
+      },
+      {
+        "component": "com.huawei.systemmanager",
+        "action": "com.huawei.systemmanager.optimize.process.ProtectActivity"
+      },
+      {
+        "component": "com.huawei.systemmanager",
+        "action": "com.huawei.systemmanager.startupmgr.ui.StartupNormalAppListActivity"
+      },
+      {
+        "component": "com.huawei.systemmanager",
+        "action": "com.huawei.systemmanager.appcontrol.activity.StartupAppControlActivity"
+      },
+      {
+        "component": "com.huawei.systemmanager",
+        "action": "com.huawei.systemmanager.optimize.bootstart.BootStartActivity"
+      }
+    ]
+  }
+]

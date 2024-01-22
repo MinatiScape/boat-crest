@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/cv_compare" android:tag="layout/compare_popup_0" android:background="@color/color_313131" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginStart="@dimen/margin_15dp" android:layout_marginEnd="@dimen/margin_15dp" app:cardCornerRadius="5dp" app:cardElevation="3dp" app:cardUseCompatPadding="true">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="#323232" android:padding="@dimen/padding_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_size_14sp" android:textStyle="normal" android:textColor="@color/main_text_color" android:id="@+id/tv_compare" android:padding="@dimen/padding_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compare_max_error" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_layout" android:padding="@dimen/margin_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5dp" android:layout_marginTop="@dimen/margin_1dp" android:layout_marginRight="@dimen/margin_5dp" app:cardElevation="@dimen/margin_5dp" app:cardUseCompatPadding="true">
+    <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:padding="@dimen/margin_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5dp" android:layout_marginRight="@dimen/margin_5dp">
+        <TextView android:id="@+id/language_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <RadioButton android:id="@+id/language_radio" android:layout_width="@dimen/margin_40dp" android:layout_height="@dimen/margin_40dp" android:button="@drawable/radiobutton_selector" android:src="0x7f0803b3" android:layout_alignParentRight="true" android:buttonTint="@color/colorPrimary"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

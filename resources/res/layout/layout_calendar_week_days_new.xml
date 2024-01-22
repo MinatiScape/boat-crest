@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/llTitleWeekContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.coveiot.android.theme.calendardaterangepicker.customviews.CalendarCustomTextView android:id="@+id/tvDayOfWeek1" android:tag="dayOfWeek1" android:text="@string/cdrp_sun" style="@style/WeekDayTitleStyleNew"/>
+    <com.coveiot.android.theme.calendardaterangepicker.customviews.CalendarCustomTextView android:id="@+id/tvDayOfWeek2" android:tag="dayOfWeek2" android:text="@string/cdrp_mon" style="@style/WeekDayTitleStyleNew"/>
+    <com.coveiot.android.theme.calendardaterangepicker.customviews.CalendarCustomTextView android:id="@+id/tvDayOfWeek3" android:tag="dayOfWeek3" android:text="@string/cdrp_tue" style="@style/WeekDayTitleStyleNew"/>
+    <com.coveiot.android.theme.calendardaterangepicker.customviews.CalendarCustomTextView android:id="@+id/tvDayOfWeek4" android:tag="dayOfWeek4" android:text="@string/cdrp_wed" style="@style/WeekDayTitleStyleNew"/>
+    <com.coveiot.android.theme.calendardaterangepicker.customviews.CalendarCustomTextView android:id="@+id/tvDayOfWeek5" android:tag="dayOfWeek5" android:text="@string/cdrp_thu" style="@style/WeekDayTitleStyleNew"/>
+    <com.coveiot.android.theme.calendardaterangepicker.customviews.CalendarCustomTextView android:id="@+id/tvDayOfWeek6" android:tag="dayOfWeek6" android:text="@string/cdrp_fri" style="@style/WeekDayTitleStyleNew"/>
+    <com.coveiot.android.theme.calendardaterangepicker.customviews.CalendarCustomTextView android:id="@+id/tvDayOfWeek7" android:tag="dayOfWeek7" android:text="@string/cdrp_sat" style="@style/WeekDayTitleStyleNew"/>
+</LinearLayout>

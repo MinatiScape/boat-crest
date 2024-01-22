@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/rounded_dialog_background" style="@style/dialogBackgroundStyle">
+    <ImageView android:id="@+id/success_image" android:visibility="visible" android:src="@drawable/sucess_img" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/dialogTopIconStyleNew"/>
+    <TextView android:id="@+id/title" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/success_image" style="@style/dialogHeaderTextStyle"/>
+    <TextView android:id="@+id/message_textView" android:text="@string/congratulations_your_challenge_is_set_best_of_luck_on_your_journey" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/title" style="@style/dialogInfoTextStyleNew"/>
+    <Button android:id="@+id/positive_btn" android:background="@drawable/rounded_dialog_button_background" android:layout_width="132dp" android:layout_height="wrap_content" android:text="@string/okay" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/message_textView" style="@style/dialogButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

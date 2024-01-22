@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/baseLayout" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#6f6f6f" android:id="@+id/min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/one" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#6f6f6f" android:id="@+id/max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                <TextView android:gravity="start|center_vertical" android:id="@+id/location" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginTop="10dp" android:layout_weight="7"/>
+                <TextView android:gravity="center" android:id="@+id/rankObtainedDate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_weight="3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

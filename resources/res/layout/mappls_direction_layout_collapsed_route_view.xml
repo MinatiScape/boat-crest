@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/collapsed_route_timeline" android:tag="layout/mappls_direction_layout_collapsed_route_view_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:elevation="4dp" app:cardBackgroundColor="#ffffff">
+        <RelativeLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_click_back" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/mappls_direction_baseline_arrow_back_24"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/soucre_location_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/img_click_back">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_source_location" android:layout_width="24dp" android:layout_height="24dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/mappls_direction_colorBlack" android:layout_gravity="center_vertical" android:id="@+id/text_source_route" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:fontFamily="@font/mappls_direction_montserrat_semi_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/view_source_location" android:paddingBottom="1dp" android:visibility="visible" android:layout_width="24dp" android:layout_height="16dp" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/img_click_back" android:layout_below="@+id/soucre_location_layout" android:layerType="software">
+                <View android:background="0x7f08084d" android:visibility="visible" android:layout_width="1.5dp" android:layout_height="match_parent" android:layerType="software"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/waypoints_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/img_click_back" android:layout_below="@+id/view_source_location">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_waypoints" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/mappls_direction_waypoints_rectangle_icon"/>
+                <TextView android:textSize="14sp" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:id="@+id/text_view_waypoints" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:fontFamily="@font/mappls_direction_montserrat_medium_0"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/view_waypoints" android:paddingTop="1dp" android:visibility="visible" android:layout_width="24dp" android:layout_height="16dp" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/img_click_back" android:layout_below="@+id/waypoints_layout" android:layerType="software">
+                <View android:layout_gravity="center_horizontal" android:background="0x7f08084d" android:visibility="visible" android:layout_width="1.5dp" android:layout_height="match_parent" android:layerType="software"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/img_click_back" android:layout_below="@+id/view_waypoints">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_destination" android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080861"/>
+                <TextView android:textSize="14sp" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:id="@+id/text_destination_route" android:tag="binding_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_weight="1" android:fontFamily="@font/mappls_direction_montserrat_semi_bold"/>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/edit_waypoints_btn" android:tag="binding_5" android:background="@android:color/transparent" android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080846"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

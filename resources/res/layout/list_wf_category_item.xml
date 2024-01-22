@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/list_wf_category_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_3dp">
+    <ImageView android:id="@+id/ivCategory" android:tag="binding_1" android:visibility="gone" android:layout_width="@dimen/margin_24dp" android:layout_height="@dimen/margin_28dp" android:src="0x7f080745" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:gravity="center" android:id="@+id/tvCategory" android:tag="binding_2" android:paddingLeft="@dimen/margin_18dp" android:paddingRight="@dimen/margin_18dp" android:layout_width="wrap_content" android:layout_height="@dimen/margin_36dp" android:paddingHorizontal="@dimen/margin_18dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/regular"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

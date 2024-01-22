@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/ic_activity_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:textSize="@dimen/text_size_12sp" android:textColor="@color/main_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/ic_pace_activity" android:text="@string/recent_activity" app:tint="@color/colorPrimary"/>
+    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/main_text_color" android:gravity="center_horizontal" android:id="@+id/recent_activity" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/recent_activity" style="@style/medium"/>
+    <androidx.cardview.widget.CardView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_2dp" android:backgroundTint="@color/color_333131">
+        <include android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/activity_history_bean_layout"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/toolbar_generic"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/secondary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_30dp" android:layout_marginTop="@dimen/margin_20dp" android:layout_marginRight="@dimen/margin_30dp" android:text="@string/confirm_connectivity_issue"/>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:backgroundTint="#17ffffff" app:cardUseCompatPadding="true" style="@style/CardView">
+                <RadioButton android:textColor="@color/main_text_color" android:id="@+id/band_charged_radio" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginTop="@dimen/margin_30dp" android:layout_marginRight="@dimen/margin_20dp" android:layout_marginBottom="@dimen/margin_30dp" android:text="@string/band_is_charged" android:layoutDirection="rtl" android:buttonTint="@color/colorPrimary"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:backgroundTint="#17ffffff" app:cardUseCompatPadding="true" style="@style/CardView">
+                <RadioButton android:textColor="@color/main_text_color" android:id="@+id/band_nearby_radio" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginTop="@dimen/margin_30dp" android:layout_marginRight="@dimen/margin_20dp" android:layout_marginBottom="@dimen/margin_30dp" android:text="@string/band_is_nearby" android:layoutDirection="rtl" android:buttonTint="@color/colorPrimary"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:backgroundTint="#17ffffff" app:cardUseCompatPadding="true" style="@style/CardView">
+                <RadioButton android:textColor="@color/main_text_color" android:id="@+id/bluetooth_on_radio" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginTop="@dimen/margin_30dp" android:layout_marginRight="@dimen/margin_20dp" android:layout_marginBottom="@dimen/margin_30dp" android:text="@string/bluetooth_is_on_mobile" android:layoutDirection="rtl" android:buttonTint="@color/colorPrimary"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/color_99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20dp" android:text="@string/toggle_aeroplane_mode_message" android:layout_marginStart="@dimen/margin_30dp" android:layout_marginEnd="@dimen/margin_30dp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="120dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/troubleshoot_fix_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/troubleshoot_fix" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ButtonThemeEnabled"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_333131" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/toolbar" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="@color/main_text_color" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/information" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_close_clear_cancel" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_18dp" android:layout_alignParentEnd="true" app:tint="@color/color_979797"/>
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageView23" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="0x7f080329"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

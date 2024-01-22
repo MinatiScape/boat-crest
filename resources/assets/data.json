@@ -1,0 +1,674 @@
+{
+  "data": {
+    "activityData": [
+      {
+        "date": "2022-01-02",
+        "fitnessActivitySessions": [],
+        "fitnessData": [
+          {
+            "activityBaseUnit": "STEPS",
+            "activityType": "WALK",
+            "calories": "67.63",
+            "createdDate": "2022-01-02",
+            "date": "2022-01-02",
+            "meters": "1550",
+            "timeLog": {
+              "logs": [
+                {
+                  "endTime": "01:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "00:00:00"
+                },
+                {
+                  "endTime": "02:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "01:00:00"
+                },
+                {
+                  "endTime": "03:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "02:00:00"
+                },
+                {
+                  "endTime": "04:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "03:00:00"
+                },
+                {
+                  "endTime": "05:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "04:00:00"
+                },
+                {
+                  "endTime": "06:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "05:00:00"
+                },
+                {
+                  "endTime": "07:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "06:00:00"
+                },
+                {
+                  "endTime": "08:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "07:00:00"
+                },
+                {
+                  "endTime": "09:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "08:00:00"
+                },
+                {
+                  "endTime": "10:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "09:00:00"
+                },
+                {
+                  "endTime": "11:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "10:00:00"
+                },
+                {
+                  "endTime": "12:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "11:00:00"
+                },
+                {
+                  "endTime": "13:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "12:00:00"
+                },
+                {
+                  "endTime": "14:00:00",
+                  "intervalCalories": 1,
+                  "startTime": "13:00:00"
+                },
+                {
+                  "endTime": "15:00:00",
+                  "intervalCalories": 1,
+                  "startTime": "14:00:00"
+                },
+                {
+                  "endTime": "16:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "15:00:00"
+                },
+                {
+                  "endTime": "17:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "16:00:00"
+                },
+                {
+                  "endTime": "18:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "17:00:00"
+                },
+                {
+                  "endTime": "19:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "18:00:00"
+                },
+                {
+                  "endTime": "20:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "19:00:00"
+                },
+                {
+                  "endTime": "21:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "20:00:00"
+                },
+                {
+                  "endTime": "22:00:00",
+                  "intervalCalories": 41,
+                  "startTime": "21:00:00"
+                },
+                {
+                  "endTime": "23:00:00",
+                  "intervalCalories": 24,
+                  "startTime": "22:00:00"
+                },
+                {
+                  "endTime": "00:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "23:00:00"
+                }
+              ]
+            },
+            "value": "2517"
+          }
+        ],
+        "sleepSummary": {
+          "summary": {
+            "sleepScore": 0
+          }
+        }
+      },
+      {
+        "date": "2022-01-03",
+        "fitnessActivitySessions": [
+          {
+            "activityDuration": 158,
+            "sessionEndDate": "2022-01-03T10:39:38",
+            "sessionStartDate": "2022-01-03T10:37:00",
+            "sessionType": "RUN",
+            "totalCalories": 7
+          },
+          {
+            "activityDuration": 521,
+            "sessionEndDate": "2022-01-03T10:48:41",
+            "sessionStartDate": "2022-01-03T10:40:00",
+            "sessionType": "CYCLE",
+            "totalCalories": 29
+          },
+          {
+            "activityDuration": 142,
+            "sessionEndDate": "2022-01-03T10:55:22",
+            "sessionStartDate": "2022-01-03T10:53:00",
+            "sessionType": "RUN",
+            "totalCalories": 6
+          },
+          {
+            "activityDuration": 242,
+            "sessionEndDate": "2022-01-03T11:44:02",
+            "sessionStartDate": "2022-01-03T11:40:00",
+            "sessionType": "WALK",
+            "totalCalories": 10
+          },
+          {
+            "activityDuration": 152,
+            "sessionEndDate": "2022-01-03T11:46:32",
+            "sessionStartDate": "2022-01-03T11:44:00",
+            "sessionType": "CYCLE",
+            "totalCalories": 8
+          },
+          {
+            "activityDuration": 160,
+            "sessionEndDate": "2022-01-03T12:53:40",
+            "sessionStartDate": "2022-01-03T12:51:00",
+            "sessionType": "WALK",
+            "totalCalories": 14
+          }
+        ],
+        "fitnessData": [
+          {
+            "activityBaseUnit": "STEPS",
+            "activityType": "WALK",
+            "calories": "84.53",
+            "createdDate": "2022-01-03",
+            "date": "2022-01-03",
+            "meters": "1690",
+            "timeLog": {
+              "logs": [
+                {
+                  "endTime": "01:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "00:00:00"
+                },
+                {
+                  "endTime": "02:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "01:00:00"
+                },
+                {
+                  "endTime": "03:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "02:00:00"
+                },
+                {
+                  "endTime": "04:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "03:00:00"
+                },
+                {
+                  "endTime": "05:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "04:00:00"
+                },
+                {
+                  "endTime": "06:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "05:00:00"
+                },
+                {
+                  "endTime": "07:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "06:00:00"
+                },
+                {
+                  "endTime": "08:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "07:00:00"
+                },
+                {
+                  "endTime": "09:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "08:00:00"
+                },
+                {
+                  "endTime": "10:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "09:00:00"
+                },
+                {
+                  "endTime": "11:00:00",
+                  "intervalCalories": 34,
+                  "startTime": "10:00:00"
+                },
+                {
+                  "endTime": "12:00:00",
+                  "intervalCalories": 18,
+                  "startTime": "11:00:00"
+                },
+                {
+                  "endTime": "13:00:00",
+                  "intervalCalories": 14,
+                  "startTime": "12:00:00"
+                },
+                {
+                  "endTime": "14:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "13:00:00"
+                },
+                {
+                  "endTime": "15:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "14:00:00"
+                },
+                {
+                  "endTime": "16:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "15:00:00"
+                },
+                {
+                  "endTime": "17:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "16:00:00"
+                },
+                {
+                  "endTime": "18:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "17:00:00"
+                },
+                {
+                  "endTime": "19:00:00",
+                  "intervalCalories": 16,
+                  "startTime": "18:00:00"
+                },
+                {
+                  "endTime": "20:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "19:00:00"
+                },
+                {
+                  "endTime": "21:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "20:00:00"
+                },
+                {
+                  "endTime": "22:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "21:00:00"
+                },
+                {
+                  "endTime": "23:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "22:00:00"
+                },
+                {
+                  "endTime": "00:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "23:00:00"
+                }
+              ]
+            },
+            "value": "2308"
+          }
+        ],
+        "sleepSummary": {
+          "summary": {
+            "sleepScore": 0
+          }
+        }
+      },
+      {
+        "date": "2022-01-04",
+        "fitnessActivitySessions": [
+          {
+            "activityDuration": 156,
+            "sessionEndDate": "2022-01-04T14:08:36",
+            "sessionStartDate": "2022-01-04T14:06:00",
+            "sessionType": "WALK",
+            "totalCalories": 9
+          },
+          {
+            "activityDuration": 132,
+            "sessionEndDate": "2022-01-04T14:11:12",
+            "sessionStartDate": "2022-01-04T14:09:00",
+            "sessionType": "RUN",
+            "totalCalories": 5
+          },
+          {
+            "activityDuration": 134,
+            "sessionEndDate": "2022-01-04T14:14:14",
+            "sessionStartDate": "2022-01-04T14:12:00",
+            "sessionType": "FOOTBALL",
+            "totalCalories": 13
+          },
+          {
+            "activityDuration": 129,
+            "sessionEndDate": "2022-01-04T14:16:09",
+            "sessionStartDate": "2022-01-04T14:14:00",
+            "sessionType": "DANCE",
+            "totalCalories": 8
+          },
+          {
+            "activityDuration": 134,
+            "sessionEndDate": "2022-01-04T14:19:14",
+            "sessionStartDate": "2022-01-04T14:17:00",
+            "sessionType": "CYCLE",
+            "totalCalories": 7
+          },
+          {
+            "activityDuration": 230,
+            "sessionEndDate": "2022-01-04T14:22:50",
+            "sessionStartDate": "2022-01-04T14:19:00",
+            "sessionType": "TENNIS",
+            "totalCalories": 10
+          }
+        ],
+        "fitnessData": [
+          {
+            "activityBaseUnit": "STEPS",
+            "activityType": "WALK",
+            "calories": "85.27",
+            "createdDate": "2022-01-04",
+            "date": "2022-01-04",
+            "meters": "2060",
+            "timeLog": {
+              "logs": [
+                {
+                  "endTime": "01:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "00:00:00"
+                },
+                {
+                  "endTime": "02:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "01:00:00"
+                },
+                {
+                  "endTime": "03:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "02:00:00"
+                },
+                {
+                  "endTime": "04:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "03:00:00"
+                },
+                {
+                  "endTime": "05:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "04:00:00"
+                },
+                {
+                  "endTime": "06:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "05:00:00"
+                },
+                {
+                  "endTime": "07:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "06:00:00"
+                },
+                {
+                  "endTime": "08:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "07:00:00"
+                },
+                {
+                  "endTime": "09:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "08:00:00"
+                },
+                {
+                  "endTime": "10:00:00",
+                  "intervalCalories": 12,
+                  "startTime": "09:00:00"
+                },
+                {
+                  "endTime": "11:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "10:00:00"
+                },
+                {
+                  "endTime": "12:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "11:00:00"
+                },
+                {
+                  "endTime": "13:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "12:00:00"
+                },
+                {
+                  "endTime": "14:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "13:00:00"
+                },
+                {
+                  "endTime": "15:00:00",
+                  "intervalCalories": 49,
+                  "startTime": "14:00:00"
+                },
+                {
+                  "endTime": "16:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "15:00:00"
+                },
+                {
+                  "endTime": "17:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "16:00:00"
+                },
+                {
+                  "endTime": "18:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "17:00:00"
+                },
+                {
+                  "endTime": "19:00:00",
+                  "intervalCalories": 22,
+                  "startTime": "18:00:00"
+                },
+                {
+                  "endTime": "20:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "19:00:00"
+                },
+                {
+                  "endTime": "21:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "20:00:00"
+                },
+                {
+                  "endTime": "22:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "21:00:00"
+                },
+                {
+                  "endTime": "23:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "22:00:00"
+                },
+                {
+                  "endTime": "00:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "23:00:00"
+                }
+              ]
+            },
+            "value": "2830"
+          }
+        ],
+        "sleepSummary": {
+          "summary": {
+            "sleepScore": 0
+          }
+        }
+      },
+      {
+        "date": "2022-01-05",
+        "fitnessActivitySessions": [],
+        "fitnessData": [
+          {
+            "activityBaseUnit": "STEPS",
+            "activityType": "WALK",
+            "calories": "30.31",
+            "createdDate": "2022-01-05",
+            "date": "2022-01-05",
+            "meters": "680",
+            "timeLog": {
+              "logs": [
+                {
+                  "endTime": "01:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "00:00:00"
+                },
+                {
+                  "endTime": "02:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "01:00:00"
+                },
+                {
+                  "endTime": "03:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "02:00:00"
+                },
+                {
+                  "endTime": "04:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "03:00:00"
+                },
+                {
+                  "endTime": "05:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "04:00:00"
+                },
+                {
+                  "endTime": "06:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "05:00:00"
+                },
+                {
+                  "endTime": "07:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "06:00:00"
+                },
+                {
+                  "endTime": "08:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "07:00:00"
+                },
+                {
+                  "endTime": "09:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "08:00:00"
+                },
+                {
+                  "endTime": "10:00:00",
+                  "intervalCalories": 16,
+                  "startTime": "09:00:00"
+                },
+                {
+                  "endTime": "11:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "10:00:00"
+                },
+                {
+                  "endTime": "12:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "11:00:00"
+                },
+                {
+                  "endTime": "13:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "12:00:00"
+                },
+                {
+                  "endTime": "14:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "13:00:00"
+                },
+                {
+                  "endTime": "15:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "14:00:00"
+                },
+                {
+                  "endTime": "16:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "15:00:00"
+                },
+                {
+                  "endTime": "17:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "16:00:00"
+                },
+                {
+                  "endTime": "18:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "17:00:00"
+                },
+                {
+                  "endTime": "19:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "18:00:00"
+                },
+                {
+                  "endTime": "20:00:00",
+                  "intervalCalories": 14,
+                  "startTime": "19:00:00"
+                },
+                {
+                  "endTime": "21:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "20:00:00"
+                },
+                {
+                  "endTime": "22:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "21:00:00"
+                },
+                {
+                  "endTime": "23:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "22:00:00"
+                },
+                {
+                  "endTime": "00:00:00",
+                  "intervalCalories": 0,
+                  "startTime": "23:00:00"
+                }
+              ]
+            },
+            "value": "1063"
+          }
+        ],
+        "sleepSummary": {
+          "summary": {
+            "sleepScore": 0
+          }
+        }
+      }
+    ],
+    "userInfo": {
+      "age": 27,
+      "gender": "FEMALE",
+      "height": 169,
+      "weight": 54
+    }
+  }
+}

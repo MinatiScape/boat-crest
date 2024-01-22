@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/baseLayout" android:tag="layout/share_card_item_0" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp">
+    <ImageView android:layout_gravity="center" android:id="@+id/badgeIV" android:layout_width="50dp" android:layout_height="50dp"/>
+    <TextView android:textSize="@dimen/text_size_12sp" android:textStyle="normal" android:textColor="@color/main_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/badgeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="1"/>
+</LinearLayout>

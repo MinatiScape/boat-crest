@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="11sp" android:textColor="@color/main_text_color" android:ellipsize="end" android:gravity="center" android:id="@+id/tvContent" android:background="@drawable/button_gradiant_bg" android:padding="@dimen/margin_5dp" android:layout_width="110dp" android:layout_height="wrap_content"/>
+    <View android:layout_gravity="center" android:background="@color/colorPrimary" android:visibility="gone" android:layout_width="2dp" android:layout_height="8dp"/>
+</LinearLayout>

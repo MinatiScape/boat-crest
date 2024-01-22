@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mappls_category_layout_background" android:tag="layout/mappls_category_search_item_fragment_0" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/mappls_category_appbar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/mappls_category_search_layout_parent" android:background="@drawable/mappls_category_background_card_layout" android:padding="2dp" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_margin="8dp">
+            <ImageView android:id="@+id/mappls_category_back_icon" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0" app:srcCompat="@drawable/mappls_category_ic_baseline_arrow_back"/>
+            <EditText android:textSize="16sp" android:textColorHint="#797979" android:ellipsize="end" android:id="@+id/mappls_category_search_input" android:background="@null" android:layout_width="206dp" android:layout_height="wrap_content" android:hint="Search a Category" android:maxLines="1" android:layout_weight="1" android:inputType="textNoSuggestions" android:imeOptions="flagNoExtractUi|actionSearch" android:fontFamily="@font/mappls_category_montserrat_medium_0"/>
+            <ImageButton android:id="@+id/mappls_category_search_clear_btn" android:background="?attr/selectableItemBackground" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0" app:srcCompat="0x7f080803"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/mappls_category_linear_layout" android:background="@drawable/mappls_category_background_card_layout" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <TextView android:textSize="14sp" android:textColor="#212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="Powered by" android:layout_centerVertical="true" android:fontFamily="@font/mappls_category_montserrat_medium_0"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="4dp" android:src="0x7f080831"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/mappls_category_button_next" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/mappls_category_linear_layout">
+                <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/mappls_category_category_recycler_view" android:background="@drawable/mappls_category_background_recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+            </RelativeLayout>
+            <TextView android:textColor="@color/mappls_category_white" android:gravity="center" android:id="@+id/mappls_category_button_next" android:background="@drawable/mappls_category_button_background" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="16dp" android:layout_marginRight="32dp" android:layout_marginBottom="16dp" android:text="Next" android:textAllCaps="true" android:fontFamily="@font/mappls_category_montserrat_semi_bold" app:layout_constraintBottom_toBottomOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:id="@+id/mappls_category_progress_bar" android:background="#00000000" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="64dp" android:layout_height="64dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

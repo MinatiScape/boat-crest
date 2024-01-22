@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/mappls_direction_route_summary_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/route_summary_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center" android:id="@+id/nearby_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mappls_direction_nearby_report"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/mappls_directions_steps_text" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="Route Summary" android:layout_weight="1" android:layout_marginStart="12dp" android:lineHeight="18sp"/>
+        <ImageView android:id="@+id/imageViewClose" android:padding="3dp" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginRight="16dp" android:layout_marginEnd="16dp" app:srcCompat="@drawable/mappls_direction_baseline_close_24"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/routeSummarySelectorLayout" android:background="@color/mappls_directions_white_smoke" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/route_summary_title">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@+id/routeSummaryTabLayout" android:layout_width="wrap_content" android:layout_height="70dp" app:tabGravity="center" app:tabIndicatorColor="@color/mappls_direction_colorPrimaryDark" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="2dp" app:tabMode="scrollable"/>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/routeSummaryEventViewPager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

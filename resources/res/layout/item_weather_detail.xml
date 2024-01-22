@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/background_color_dark" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="55dp" android:layout_margin="4dp" android:weightSum="1">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_weather" android:layout_width="0dp" android:layout_height="wrap_content" android:src="0x7f080b2a" android:layout_weight="0.2"/>
+        <TextView android:textSize="@dimen/text_size_20sp" android:textStyle="bold" android:textColor="@color/color_137cf8" android:layout_gravity="center_vertical" android:id="@+id/txt_temp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.33" android:layout_marginStart="@dimen/margin_10dp"/>
+        <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/txt_status" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.33"/>
+        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#007eff" android:layout_gravity="center_vertical" android:id="@+id/txt_day" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+    </LinearLayout>
+    <View android:id="@+id/divider2" android:background="@drawable/list_item_divider_new" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>
